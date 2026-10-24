@@ -6,8 +6,8 @@ export default function ProjectStatus() {
       <p className="text-sm">Project workspace · Phase 1</p>
       <h1 className="mt-4 text-3xl font-semibold">{site.business.name}</h1>
       <p className="mt-4 leading-7">
-        Content drafts are prepared for review. Website design and page implementation
-        will begin after the next phase is authorized.
+        Content drafts are prepared for review. Website design and page
+        implementation will begin after the next phase is authorized.
       </p>
     </main>
   );
