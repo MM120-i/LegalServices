@@ -13,7 +13,10 @@
     "typecheck": "tsc --noEmit",
     "content:sync": "node scripts/sync-content.mjs",
     "content:check": "node scripts/sync-content.mjs --check && node --experimental-strip-types scripts/check-content.ts",
-    "check": "npm run content:check && npm run typecheck && npm run lint"
+    "check": "npm run content:check && npm run contact:check && npm run typecheck && npm run lint",
+    "contact:check": "node --experimental-strip-types scripts/check-contact.ts",
+    "pages:check": "node scripts/check-pages.mjs",
+    "format": "prettier --write src scripts README.md docs"
   },
   "dependencies": {
     "next": "^16.4.3",
@@ -27,6 +30,7 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.3",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },

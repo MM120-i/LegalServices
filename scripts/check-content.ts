@@ -1,11 +1,6 @@
 import assert from "node:assert/strict";
 
-import {
-  pageDrafts,
-  sharedCopyDraft,
-  getPageDraft,
-  resolveCopy,
-} from "../src/content/index.ts";
+import { pageDrafts, sharedCopyDraft, getPageDraft, resolveCopy } from "../src/content/index.ts";
 
 import { site } from "../src/config/site.ts";
 
@@ -27,10 +22,7 @@ for (const page of pageDrafts) {
   assert.ok(description.length <= 155, `Description too long: ${page.route}`);
   assert.ok(!titles.has(title), `Duplicate title: ${page.route}`);
 
-  assert.ok(
-    !descriptions.has(description),
-    `Duplicate description: ${page.route}`,
-  );
+  assert.ok(!descriptions.has(description), `Duplicate description: ${page.route}`);
 
   titles.add(title);
   descriptions.add(description);
@@ -41,10 +33,7 @@ for (const page of pageDrafts) {
   for (const section of page.sections) {
     for (const block of section.blocks) {
       for (const match of block.markdown.matchAll(/`(\/[^`\s]*)`/g)) {
-        assert.ok(
-          routes.has(match[1]),
-          `Unknown internal route ${match[1]} in ${page.route}`,
-        );
+        assert.ok(routes.has(match[1]), `Unknown internal route ${match[1]} in ${page.route}`);
       }
     }
   }
@@ -60,31 +49,20 @@ for (const page of pageDrafts) {
 
 resolveCopy(JSON.stringify(sharedCopyDraft));
 
-assert.equal(
-  getPageDraft("/thank-you")?.metadata.productionIndexing,
-  "noindex",
-);
-
+assert.equal(getPageDraft("/thank-you")?.metadata.productionIndexing, "noindex");
 assert.equal(getPageDraft("404")?.metadata.productionIndexing, "noindex");
 assert.equal(getPageDraft("/missing"), undefined);
 assert.throws(() => resolveCopy("{{unknown.token}}"), /Unknown content token/);
 assert.equal(resolveCopy("{{business.name}}"), site.business.name);
 assert.equal(site.email, null, "Do not invent a business email");
 assert.equal(site.domain, null, "Do not invent a production domain");
-
-assert.equal(
-  site.consultationModel,
-  null,
-  "Consultation terms are not confirmed",
-);
+assert.equal(site.consultationModel, null, "Consultation terms are not confirmed");
 
 assert.ok(
   !pageDrafts
     .flatMap((page) =>
       page.sections.flatMap((section) =>
-        section.blocks
-          .filter((block) => block.kind !== "editorial")
-          .map((block) => block.markdown),
+        section.blocks.filter((block) => block.kind !== "editorial").map((block) => block.markdown),
       ),
     )
     .join("\n")
@@ -93,12 +71,11 @@ assert.ok(
 );
 
 const home = getPageDraft("/");
+
 assert.ok(home);
 assert.equal(home.faqs.length, 6);
 
-const reviews = home.sections.find((section) =>
-  section.heading.startsWith("Reviews"),
-);
+const reviews = home.sections.find((section) => section.heading.startsWith("Reviews"));
 
 assert.ok(reviews);
 const reviewCopy = reviews.blocks.map((block) => block.markdown).join("\n");
@@ -110,15 +87,11 @@ assert.equal(
 );
 
 for (const page of pageDrafts.filter(
-  (page) =>
-    page.route.startsWith("/practice-areas/") ||
-    page.route === "/notary-public",
+  (page) => page.route.startsWith("/practice-areas/") || page.route === "/notary-public",
 )) {
   assert.ok(page.faqs.length >= 3, `Missing service FAQs: ${page.route}`);
   assert.ok(
-    page.sections.some((section) =>
-      section.blocks.some((block) => block.kind === "editorial"),
-    ),
+    page.sections.some((section) => section.blocks.some((block) => block.kind === "editorial")),
     `Keep review notes for ${page.route}`,
   );
 }

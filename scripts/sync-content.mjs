@@ -10,10 +10,7 @@ const tokenPairs = [
   ["Lexora", "business.shortName"],
   ["Sharf Uddin Abead", "business.principal"],
   ["Trust | Dedication | Results", "business.tagline"],
-  [
-    "Licensed Paralegal | Law Society of Ontario",
-    "business.paralegalCredential",
-  ],
+  ["Licensed Paralegal | Law Society of Ontario", "business.paralegalCredential"],
   ["Advocate | Supreme Court of Bangladesh", "business.bangladeshCredential"],
   ["Notary Public", "business.notaryCredential"],
   ["tel:+14167223244", "phone.primaryHref"],
@@ -26,10 +23,7 @@ const tokenPairs = [
 ].sort((a, b) => b[0].length - a[0].length);
 
 const tokenize = (text) =>
-  tokenPairs.reduce(
-    (value, [literal, key]) => value.replaceAll(literal, `{{${key}}}`),
-    text,
-  );
+  tokenPairs.reduce((value, [literal, key]) => value.replaceAll(literal, `{{${key}}}`), text);
 
 // CSV reader handles quoted commas, newlines, and escaped quotes without extra dependencies.
 function parseCsv(text) {
@@ -60,6 +54,7 @@ function parseCsv(text) {
       cell += char;
     }
   }
+
   if (quoted) {
     throw new Error("Unclosed CSV field");
   }
@@ -73,12 +68,10 @@ function parseCsv(text) {
 }
 
 const metadata = new Map(
-  parseCsv(read("content/phase-1/06-metadata.csv")).map(
-    ([route, title, description, indexing]) => [
-      route,
-      { title, description, productionIndexing: indexing },
-    ],
-  ),
+  parseCsv(read("content/phase-1/06-metadata.csv")).map(([route, title, description, indexing]) => [
+    route,
+    { title, description, productionIndexing: indexing },
+  ]),
 );
 
 function sectionsFrom(text) {
@@ -97,14 +90,13 @@ function sectionsFrom(text) {
       return;
     }
 
-    const kind =
-      /^(Editorial (?:note|status):|Research:|Asset:|Portrait:|Office photograph:)/.test(
-        value,
-      )
-        ? "editorial"
-        : /^(?:`)?\[(?:PLACEHOLDER|CONFIRM):/.test(value)
-          ? "placeholder"
-          : "copy";
+    const kind = /^(Editorial (?:note|status):|Research:|Asset:|Portrait:|Office photograph:)/.test(
+      value,
+    )
+      ? "editorial"
+      : /^(?:`)?\[(?:PLACEHOLDER|CONFIRM):/.test(value)
+        ? "placeholder"
+        : "copy";
     section.blocks.push({ kind, markdown: tokenize(value) });
   }
 

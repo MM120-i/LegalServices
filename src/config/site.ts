@@ -1,6 +1,6 @@
 /** Supplied business-card facts; current licence and services await client approval. */
 export const site = {
-  stage: "phase-1-content-draft",
+  stage: "phase-3-website-preview",
   business: {
     name: "Lexora Legal Services",
     shortName: "Lexora",
