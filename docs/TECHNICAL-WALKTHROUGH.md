@@ -61,6 +61,8 @@ Publication requires both `SITE_PUBLISHED=true` and a valid `NEXT_PUBLIC_SITE_UR
 
 ## 6. What the checks establish
 
-`npm run check` runs content checks, contact-handler tests, TypeScript, and ESLint. `npm run build` verifies that Next.js can generate the site and compile the API. `npm run pages:check` inspects generated page HTML for missing content, duplicate metadata, drafting-text leaks, invalid structured data, and preview indexing errors.
+Automated tests live in `tests/` and run through Node’s built-in test runner. `npm test` runs content and contact-handler tests, including the content synchronization check. `npm run check` adds TypeScript and ESLint. `scripts/sync-content.mjs` remains an operational utility in `scripts/`.
+
+`npm run build` verifies that Next.js can generate the site and compile the API. After a build, `npm run pages:check` runs `tests/pages.test.mjs` to inspect generated HTML for missing content, duplicate metadata, drafting-text leaks, invalid structured data, and preview indexing errors.
 
 Browser checks exercise responsive navigation, real form validation, missing-configuration failure handling, and service-page rendering. They do not replace a complete accessibility audit, client scope approval, real-device testing, or real email-delivery tests.

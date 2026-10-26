@@ -13,6 +13,7 @@ export function getPublishedOrigin(): string | null {
 
   try {
     const url = new URL(value);
+
     if (
       url.protocol !== "https:" ||
       url.username ||

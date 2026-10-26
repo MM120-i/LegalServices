@@ -12,11 +12,12 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "content:sync": "node scripts/sync-content.mjs",
-    "content:check": "node scripts/sync-content.mjs --check && node --experimental-strip-types scripts/check-content.ts",
-    "check": "npm run content:check && npm run contact:check && npm run typecheck && npm run lint",
-    "contact:check": "node --experimental-strip-types scripts/check-contact.ts",
-    "pages:check": "node scripts/check-pages.mjs",
-    "format": "prettier --write src scripts README.md docs"
+    "content:check": "node scripts/sync-content.mjs --check && node --experimental-strip-types --test tests/content.test.ts",
+    "check": "npm test && npm run typecheck && npm run lint",
+    "contact:check": "node --experimental-strip-types --test tests/contact.test.ts",
+    "pages:check": "node --test tests/pages.test.mjs",
+    "format": "prettier --write src scripts tests README.md docs",
+    "test": "npm run content:check && npm run contact:check"
   },
   "dependencies": {
     "next": "^16.4.3",

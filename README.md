@@ -49,13 +49,24 @@ The baseline rate limiter is per process. Configure host-level or distributed ra
 
 ## Verification
 
+Automated test cases live in `tests/` and use Node’s built-in test runner:
+
+- `content.test.ts`: content routes, metadata, links, FAQs, and placeholder labels.
+- `contact.test.ts`: validation, mocked delivery, native form fallback, and failure paths.
+- `pages.test.mjs`: generated HTML, metadata, structured data, and preview indexing.
+
+`scripts/` contains the content synchronization utility rather than test cases.
+
 ```sh
+npm test
 npm run check
 npm run build
 npm run pages:check
 ```
 
-Formatting: `npm run format`. Generated content is excluded from formatting so the sync check stays deterministic.
+`npm test` runs the content and contact tests. `npm run check` adds TypeScript and ESLint. Built-page tests require a completed build and run separately with `npm run pages:check`.
+
+Formatting: `npm run format` covers source, scripts, tests, and documentation. Generated content is excluded from formatting so the sync check stays deterministic. Preserve intentional blank lines between logical steps and follow the conventions in `AGENTS.md`.
 
 ## Publication remains a separate step
 
