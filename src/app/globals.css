@@ -14,7 +14,7 @@
   --forest-dark: #12342c;
   --sage: #edf0e9;
   --ink: #243c34;
-  --muted: #65716b;
+  --muted: #526158;
   --line: #dce1d8;
   --accent: #d4ac82;
   --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
@@ -650,7 +650,7 @@ main {
 .service-index {
   font-size: 0.64rem;
   letter-spacing: 0.09em;
-  color: #7b867d;
+  color: #53634f;
 }
 .practice-card h3 {
   font-family: var(--serif);
@@ -726,7 +726,7 @@ main {
 .portrait-initials {
   font-family: var(--serif);
   font-size: 8rem;
-  color: #7c9576;
+  color: #526d4b;
   line-height: 1.1;
   position: relative;
   letter-spacing: -0.07em;
@@ -735,7 +735,7 @@ main {
   position: relative;
   font-size: 0.54rem;
   letter-spacing: 0.16em;
-  color: #4b6347;
+  color: #40593c;
 }
 .portrait-name {
   position: absolute;
@@ -2300,4 +2300,44 @@ textarea {
   .hero-actions {
     gap: 16px;
   }
+}
+
+/* QA: standalone contact controls need comfortable, non-overlapping hit areas. */
+.location-detail a,
+.cta-secondary-phone,
+.cta-phone,
+.hero-call,
+.sidebar-links a,
+.footer-grid > div:not(.footer-brand) > a,
+.topbar-inner > a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .header-cta {
+    min-height: 44px;
+  }
+}
+
+/* Escape dismisses the desktop flyout while retaining focus on its trigger. */
+.nav-dropdown[data-dismissed="true"] .dropdown-panel {
+  display: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.brand-mark svg {
+  width: 30px;
+  height: 37px;
 }

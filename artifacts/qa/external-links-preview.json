@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://127.0.0.1:3100",
+  "results": [
+    {
+      "url": "https://www.google.com/maps/dir/?api=1&destination=3205%20Danforth%20Avenue%2C%20Scarborough%2C%20ON%20M1L%201B8",
+      "status": "passed",
+      "httpStatus": 200
+    },
+    {
+      "url": "https://www.google.com/maps/search/?api=1&query=3205%20Danforth%20Avenue%2C%20Scarborough%2C%20ON%20M1L%201B8",
+      "status": "passed",
+      "httpStatus": 200
+    }
+  ]
+}

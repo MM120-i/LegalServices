@@ -15,3 +15,7 @@ Checked October 23, 2026. This is implementation verification for Phases 2–3, 
 Screenshots: `artifacts/home-desktop.jpg` and `artifacts/home-mobile.jpg`.
 
 Still outstanding before launch: real recipient/sender credentials and three inbox-delivery tests; final business facts, biography and images; approved scope and policies; replacement/removal of dummy testimonials; distributed or host-level abuse protection; full accessibility/performance and real-device QA; domain and publication configuration. No deployment, analytics, or Google Business Profile changes were made.
+
+## Phase 4 follow-up
+
+October 26, 2026: see [the Phase 4 QA report](PHASE-4-QA-REPORT.md) for the newer automated, browser, Lighthouse, and structured-data evidence. The historical Phase 2–3 checks above are preserved. Client facts, inbox receipt, and written approval remain pending; Safari and physical-device coverage are reported separately.

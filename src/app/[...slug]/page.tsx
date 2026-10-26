@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { pageDrafts, getPageDraft } from "@/content";
 import type { ContentRoute } from "@/content/types";
-import { ContentPage, getPublicPageContent } from "@/components/content-page";
+import { ContentPage } from "@/components/content-page";
+import { getPublicPageContent } from "@/lib/public-content";
 import { JsonLd } from "@/components/json-ld";
 
 import {

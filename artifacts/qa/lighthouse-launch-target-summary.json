@@ -1,0 +1,24 @@
+{
+  "mode": "launch",
+  "runs": 1,
+  "generatedAt": "2026-10-26T21:59:08.079Z",
+  "results": [
+    {
+      "name": "target",
+      "route": "/",
+      "scores": [
+        {
+          "performance": 94,
+          "accessibility": 100,
+          "seo": 100,
+          "benchmarkIndex": 833.5
+        }
+      ],
+      "median": {
+        "performance": 94,
+        "accessibility": 100,
+        "seo": 100
+      }
+    }
+  ]
+}

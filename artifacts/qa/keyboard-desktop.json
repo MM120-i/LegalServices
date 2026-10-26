@@ -1,0 +1,10 @@
+{
+  "skipResult": {
+    "focusedId": "main-content",
+    "visibleOutline": "solid"
+  },
+  "dropdownResult": {
+    "dropdownDisplay": "none",
+    "focusedHref": "/practice-areas"
+  }
+}

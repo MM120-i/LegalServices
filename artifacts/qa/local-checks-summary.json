@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-26T22:20:19.032Z",
+  "results": [
+    {
+      "mode": "preview",
+      "status": "passed",
+      "contentRoutes": 15,
+      "custom404": true
+    },
+    {
+      "mode": "launch",
+      "status": "passed",
+      "contentRoutes": 15,
+      "custom404": true
+    }
+  ]
+}

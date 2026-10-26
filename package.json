@@ -12,12 +12,16 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "content:sync": "node scripts/sync-content.mjs",
-    "content:check": "node scripts/sync-content.mjs --check && node --experimental-strip-types --test tests/content.test.ts",
+    "content:check": "node scripts/sync-content.mjs --check && node --experimental-strip-types --test tests/content.test.ts tests/public-content.test.ts",
     "check": "npm test && npm run typecheck && npm run lint",
-    "contact:check": "node --experimental-strip-types --test tests/contact.test.ts",
+    "contact:check": "node --experimental-strip-types --test tests/contact.test.ts tests/contact-submissions.test.ts",
     "pages:check": "node --test tests/pages.test.mjs",
     "format": "prettier --write src scripts tests README.md docs",
-    "test": "npm run content:check && npm run contact:check"
+    "test": "npm run content:check && npm run contact:check",
+    "qa": "npm run qa:checks && npm run qa:lighthouse",
+    "qa:links": "node --experimental-strip-types --test tests/links.test.mjs tests/seo.test.mjs",
+    "qa:lighthouse": "node scripts/qa-lighthouse.mjs",
+    "qa:checks": "npm run check && node scripts/run-qa.mjs"
   },
   "dependencies": {
     "next": "^16.4.3",
@@ -29,8 +33,11 @@
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "chrome-launcher": "^1.2.2",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.3",
+    "lighthouse": "^13.5.0",
+    "linkedom": "^0.18.14",
     "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"

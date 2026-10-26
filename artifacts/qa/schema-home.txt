@@ -1,0 +1,20 @@
+ewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Call 416-722-3244 and explain the date at the start of the conversation. Do not rely on a website inquiry as confirmation that someone is handling your matter or protecting your deadline.</p></div></details>
+- generic: "7"
+- text: <details class="faq-item"><summary>Do you offer notary services?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Sharf Uddin Abead lists Notary Public among his credentials. Call with your document type and the receiving organization’s instructions to confirm whether Lexora can provide the service you need.</p></div></details></body></html>
+- generic: Detected
+- text: 0 ERRORS
+- text: 0 WARNINGS
+- text: 2 ITEMS
+- list:
+  - generic: LegalService
+  - text: 0 ERRORS
+  - text: 0 WARNINGS
+  - text: 1 ITEM
+  - generic: FAQPage
+  - text: 0 ERRORS
+  - text: 0 WARNINGS
+  - text: 1 ITEM
+- button "play_arrow" [disabled]:
+  - generic: play_arrow
+- generic: VALIDATE
+- button

@@ -1,6 +1,6 @@
 # Lexora Legal Services
 
-Responsive paralegal-practice website built with Next.js App Router, TypeScript, and Tailwind CSS. Phases 1–3 are implemented locally; this is a private development preview, not a launched business website.
+Responsive paralegal-practice website built with Next.js App Router, TypeScript, and Tailwind CSS. Phases 1–3 are implemented locally. Phase 4 local QA and client-review preparation are implemented; client approval is pending. This is a private development preview, not a launched business website.
 
 ## Run
 
@@ -55,7 +55,7 @@ Automated test cases live in `tests/` and use Node’s built-in test runner:
 - `contact.test.ts`: validation, mocked delivery, native form fallback, and failure paths.
 - `pages.test.mjs`: generated HTML, metadata, structured data, and preview indexing.
 
-`scripts/` contains the content synchronization utility rather than test cases.
+`scripts/` contains operational utilities. Assertions and test scenarios remain in `tests/`, including the local browser fixture in `tests/fixtures/`.
 
 ```sh
 npm test
@@ -67,6 +67,25 @@ npm run pages:check
 `npm test` runs the content and contact tests. `npm run check` adds TypeScript and ESLint. Built-page tests require a completed build and run separately with `npm run pages:check`.
 
 Formatting: `npm run format` covers source, scripts, tests, and documentation. Generated content is excluded from formatting so the sync check stays deterministic. Preserve intentional blank lines between logical steps and follow the conventions in `AGENTS.md`.
+
+## Phase 4 QA
+
+```sh
+npm run qa:checks
+npm run qa:lighthouse
+```
+
+`qa:checks` runs the source tests, TypeScript, and ESLint, then builds and checks separate preview and launch-mode candidates. Both servers bind to loopback and explicitly disable email delivery. The launch test uses the reserved origin `https://qa.lexora.test`; it does not change your environment files, publish anything, or resolve that domain. Output goes into `.next-qa-preview` and `.next-qa-launch`.
+
+`qa:lighthouse` requires the launch QA build from `qa:checks` and installed Microsoft Edge at its standard macOS path. Set `CHROME_PATH` to another installed Chromium executable if needed. It runs three mobile audits each for Home, Contact, and Small Claims, retaining individual HTML/JSON reports and median scores. It fails when median Performance is below 90, Accessibility is below 100, or launch SEO is below 100. It also fails on confirmed logo-name, contrast, touch-target, or link-name audit failures even if the category score is 100. Stop other intensive tasks during measurement.
+
+`npm run qa` runs both commands in order. Summaries and browser/validator evidence are in `artifacts/qa/`; large raw Lighthouse reports remain local under the ignored `artifacts/qa/raw/` directory, grouped by run timestamp. Preserve or export these reports with the candidate being reviewed.
+
+For a quick link/SEO recheck against an already running QA server, use `npm run qa:links`. It defaults to preview at `http://127.0.0.1:3100`; supply `QA_MODE=launch QA_BASE_URL=http://127.0.0.1:3101` for the launch candidate. External reachability checks are included in `qa:checks` and distinguish blocked requests from confirmed bad links.
+
+Browser fixture: run the preview QA server on port 3100, then `node tests/fixtures/form-browser-server.mjs`. Visit port 3102. `QA_FORM_RESULT=success` tests the redirect; the default is a delayed error. `QA_BLOCK_MAP=true` blocks embedded maps to inspect the fallback. This fixture replaces only the local contact response; it cannot prove actual email delivery and is never part of the production application.
+
+Read [the Phase 4 QA report](docs/PHASE-4-QA-REPORT.md), [client review checklist](docs/CLIENT-REVIEW.md), and [code lessons](docs/PHASE-4-CODE-LESSONS.md). Safari, physical devices, inbox delivery, approved business facts, and written sign-off must be resolved before closing Phase 4.
 
 ## Publication remains a separate step
 

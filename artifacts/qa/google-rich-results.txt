@@ -1,0 +1,53 @@
+ead lists Notary Public among his credentials. Call with your document type and the receiving organization’s instructions to confirm whether Lexora can provide the service you need.\"}}]}</script></head><body><h1>A clearer next stepfor your legal matter.</h1><details class=\"faq-item\"><summary>What can a licensed Ontario paralegal help with?<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 4v16M4 12h16\" /></svg></summary><div class=\"faq-answer\"><p>Licensed paralegals can provide legal services within a defined scope, including certain court and tribunal proceedings. Whether Lexora can help depends on the type of matter, the forum, and the circumstances. Call to discuss the basics before sending documents.</p></div></details>"
+- generic: "3"
+- text: <details class="faq-item"><summary>Is the first consultation free?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Call to confirm consultation fees and appointment arrangements before booking.</p></div></details>
+- generic: "4"
+- text: <details class="faq-item"><summary>What should I prepare?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Have the names of the parties, a short timeline, and any ticket, notice, claim, or decision available. Mention dates that may be urgent. Ask how to share documents before sending personal records.</p></div></details>
+- generic: "5"
+- text: <details class="faq-item"><summary>Can I visit without an appointment?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Please call before travelling to the office to confirm availability and appointment arrangements.</p></div></details>
+- generic: "6"
+- text: <details class="faq-item"><summary>What if I have a deadline approaching?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Call 416-722-3244 and explain the date at the start of the conversation. Do not rely on a website inquiry as confirmation that someone is handling your matter or protecting your deadline.</p></div></details>
+- generic: "7"
+- text: <details class="faq-item"><summary>Do you offer notary services?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Sharf Uddin Abead lists Notary Public among his credentials. Call with your document type and the receiving organization’s instructions to confirm whether Lexora can provide the service you need.</p></div></details></body></html>
+- navigation "Breadcrumbs":
+  - heading "Test results" [level=1]
+- button "Share":
+  - generic: 
+  - generic: Share
+- generic: check_circle
+- generic: 2 valid items detected
+- text: Valid items are eligible for Google Search's rich results.
+- link "Learn more":
+  - /url: https://support.google.com/webmasters/answer/9012289#enhancements
+- button "View tested page":
+  - generic: View tested page
+- button "See preview of your URL on Google Search" [disabled]:
+  - generic: Preview results
+- generic: Detected structured data
+- link "Local businesses 1 valid item detected Non-critical issues detected":
+  - /url: ./test/rich-results/result/r%2Flocal-business?id=6exq-1AqTjOWWT06nmCbvg
+  - generic: check_circle
+  - generic: Local businesses
+  - generic: 1 valid item detected
+  - generic "Non-critical issues detected"
+  - generic: 
+- link "Organization 1 valid item detected":
+  - /url: ./test/rich-results/result/r%2Forganization-info?id=6exq-1AqTjOWWT06nmCbvg
+  - generic: check_circle
+  - generic: Organization
+  - generic: 1 valid item detected
+  - generic: 
+- generic: Additional resources
+- link "Monitor Rich Results for your entire site Go to search console":
+  - /url: ./search-console/welcome
+  - generic: 
+  - text: Monitor Rich Results for your entire site
+  - generic: Go to search console
+- link "Privacy":
+  - /url: https://myaccount.google.com/privacypolicy?hl=en-US
+- link "Terms":
+  - /url: https://myaccount.google.com/termsofservice?hl=en-US
+- iframe [name="a-jb968soumwzv"]:
+  - text: protected by
+  - strong: reCAPTCHA
+- generic: Rich Results Test - Google Search Console

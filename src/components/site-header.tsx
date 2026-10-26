@@ -13,6 +13,8 @@ export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const close = () => setMenuOpen(false);
+  const dropdownTrigger = useRef<HTMLAnchorElement>(null);
+  const [dropdownDismissed, setDropdownDismissed] = useState(false);
 
   const nav = [
     { href: "/", label: "Home" },
@@ -45,9 +47,17 @@ export function SiteHeader() {
       <header
         className="site-header"
         onKeyDown={(event) => {
-          if (event.key === "Escape" && menuOpen) {
+          if (event.key !== "Escape") {
+            return;
+          }
+
+          if (menuOpen) {
             close();
             menuButton.current?.focus();
+          } else if (event.target instanceof Element && event.target.closest(".nav-dropdown")) {
+            event.preventDefault();
+            dropdownTrigger.current?.focus();
+            setDropdownDismissed(true);
           }
         }}
       >
@@ -57,9 +67,25 @@ export function SiteHeader() {
             {nav.map((item) => (
               <div
                 key={item.href}
+                data-dismissed={
+                  item.label === "Practice Areas" && dropdownDismissed ? "true" : undefined
+                }
+                onMouseEnter={() => setDropdownDismissed(false)}
+                onBlur={(event) => {
+                  if (
+                    !(event.relatedTarget instanceof Node) ||
+                    !event.currentTarget.contains(event.relatedTarget)
+                  ) {
+                    setDropdownDismissed(false);
+                  }
+                }}
                 className={item.label === "Practice Areas" ? "nav-dropdown" : "nav-item"}
               >
-                <Link href={item.href} aria-current={pathname === item.href ? "page" : undefined}>
+                <Link
+                  ref={item.label === "Practice Areas" ? dropdownTrigger : undefined}
+                  href={item.href}
+                  aria-current={pathname === item.href ? "page" : undefined}
+                >
                   {item.label}
                   {item.label === "Practice Areas" ? (
                     <span className="nav-chevron" aria-hidden="true">

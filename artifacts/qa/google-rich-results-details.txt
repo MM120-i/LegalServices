@@ -1,0 +1,115 @@
+ dates that may be urgent. Ask how to share documents before sending personal records.</p></div></details>
+- generic: "5"
+- text: <details class="faq-item"><summary>Can I visit without an appointment?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Please call before travelling to the office to confirm availability and appointment arrangements.</p></div></details>
+- generic: "6"
+- text: <details class="faq-item"><summary>What if I have a deadline approaching?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Call 416-722-3244 and explain the date at the start of the conversation. Do not rely on a website inquiry as confirmation that someone is handling your matter or protecting your deadline.</p></div></details>
+- generic: "7"
+- text: <details class="faq-item"><summary>Do you offer notary services?<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg></summary><div class="faq-answer"><p>Sharf Uddin Abead lists Notary Public among his credentials. Call with your document type and the receiving organization’s instructions to confirm whether Lexora can provide the service you need.</p></div></details></body></html>
+- navigation "Breadcrumbs":
+  - link "Test results":
+    - /url: ./test/rich-results/result?id=6exq-1AqTjOWWT06nmCbvg
+  - generic: 
+  - heading "Local businesses" [level=1]
+- button "Share":
+  - generic: 
+  - generic: Share
+- generic: check_circle
+- generic: 1 valid item detected
+- text: Valid items are eligible for Google Search's rich results.
+- link "Learn more":
+  - /url: https://support.google.com/webmasters/answer/9012289#enhancements
+- button "View tested page":
+  - generic: View tested page
+- button "See preview of your URL on Google Search" [disabled]:
+  - generic: Preview results
+- generic: Details
+- generic: Detected items
+- button "Lexora Legal Services 2 non-critical issues null" [expanded] [active]:
+  - generic: check_circle
+  - generic: Lexora Legal Services
+  - generic: 2 non-critical issues
+  - button "null":
+    - generic: 
+  - generic: 
+- button "Missing field \"priceRange\" (optional) Go to issue documentation":
+  - generic: Missing field "priceRange" (optional)
+  - generic "Go to issue documentation":
+    - link "Go to issue documentation":
+      - /url: https://developers.google.com/search/docs/data-types/local-business
+      - generic: 
+- button "Missing field \"image\" (optional) Go to issue documentation":
+  - generic: Missing field "image" (optional)
+  - generic "Go to issue documentation":
+    - link "Go to issue documentation":
+      - /url: https://developers.google.com/search/docs/data-types/local-business
+      - generic: 
+- button "type LegalService":
+  - generic: type
+  - generic: LegalService
+- button "id https://qa.lexora.test/#practice":
+  - generic: id
+  - generic: https://qa.lexora.test/#practice
+- button "url https://qa.lexora.test":
+  - generic: url
+  - generic: https://qa.lexora.test
+- button "name Lexora Legal Services":
+  - generic: name
+  - generic: Lexora Legal Services
+- button "telephone 416-722-3244":
+  - generic: telephone
+  - generic: 416-722-3244
+- button "address":
+  - generic: address
+- button "type PostalAddress":
+  - generic: type
+  - generic: PostalAddress
+- button "streetAddress 3205 Danforth Avenue":
+  - generic: streetAddress
+  - generic: 3205 Danforth Avenue
+- button "addressLocality Scarborough":
+  - generic: addressLocality
+  - generic: Scarborough
+- button "addressRegion ON":
+  - generic: addressRegion
+  - generic: "ON"
+- button "postalCode M1L 1B8":
+  - generic: postalCode
+  - generic: M1L 1B8
+- button "addressCountry":
+  - generic: addressCountry
+- button "type Country":
+  - generic: type
+  - generic: Country
+- button "name CA":
+  - generic: name
+  - generic: CA
+- button "founder":
+  - generic: founder
+- button "type Person":
+  - generic: type
+  - generic: Person
+- button "name Sharf Uddin Abead":
+  - generic: name
+  - generic: Sharf Uddin Abead
+- button "jobTitle Licensed Paralegal":
+  - generic: jobTitle
+  - generic: Licensed Paralegal
+- button "areaServed":
+  - generic: areaServed
+- button "type City":
+  - generic: type
+  - generic: City
+- button "name Scarborough, Toronto":
+  - generic: name
+  - generic: Scarborough, Toronto
+- button "description Paralegal practice at 3205 Danforth Avenue, Scarborough, ON M1L 1B8.":
+  - generic: description
+  - generic: Paralegal practice at 3205 Danforth Avenue, Scarborough, ON M1L 1B8.
+- link "Privacy":
+  - /url: https://myaccount.google.com/privacypolicy?hl=en-US
+- link "Terms":
+  - /url: https://myaccount.google.com/termsofservice?hl=en-US
+- iframe [name="a-jb968soumwzv"]:
+  - text: protected by
+  - strong: reCAPTCHA
+- generic: Rich Results Test - Google Search Console

@@ -1,0 +1,517 @@
+{
+  "browser": "in-app Chromium",
+  "checks": [
+    {
+      "route": "/",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/about",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas/traffic-tickets-provincial-offences",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas/accident-benefits-claims",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas/refugee-hearings-appeals",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas/landlord-tenant-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas/employment-human-rights-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/practice-areas/small-claims-court-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/notary-public",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/contact",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/privacy-policy",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/accessibility",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/disclaimer",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/thank-you",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/qa-page-that-does-not-exist",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "route": "/",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/about",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas/traffic-tickets-provincial-offences",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas/accident-benefits-claims",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas/refugee-hearings-appeals",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas/landlord-tenant-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas/employment-human-rights-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/practice-areas/small-claims-court-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/notary-public",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/contact",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/privacy-policy",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/accessibility",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/disclaimer",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/thank-you",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/qa-page-that-does-not-exist",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "route": "/",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/about",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas/traffic-tickets-provincial-offences",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas/accident-benefits-claims",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas/refugee-hearings-appeals",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas/landlord-tenant-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas/employment-human-rights-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/practice-areas/small-claims-court-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/notary-public",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/contact",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/privacy-policy",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/accessibility",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/disclaimer",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/thank-you",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/qa-page-that-does-not-exist",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "route": "/",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/about",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas/traffic-tickets-provincial-offences",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas/accident-benefits-claims",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas/refugee-hearings-appeals",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas/landlord-tenant-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas/employment-human-rights-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/practice-areas/small-claims-court-matters",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/notary-public",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/contact",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/privacy-policy",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/accessibility",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/disclaimer",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/thank-you",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "route": "/qa-page-that-does-not-exist",
+      "footerClearsBar": true,
+      "h1": 1,
+      "overflow": false,
+      "smallControls": [],
+      "width": 1440
+    }
+  ]
+}

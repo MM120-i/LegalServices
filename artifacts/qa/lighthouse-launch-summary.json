@@ -1,0 +1,104 @@
+{
+  "mode": "launch",
+  "runs": 3,
+  "reportsDirectory": "artifacts/qa/raw/lighthouse-launch/2026-10-26T22-21-32-883Z",
+  "generatedAt": "2026-10-26T22:23:05.815Z",
+  "results": [
+    {
+      "name": "home",
+      "route": "/",
+      "scores": [
+        {
+          "performance": 63,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1354.5
+        },
+        {
+          "performance": 99,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 907
+        },
+        {
+          "performance": 96,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1748
+        }
+      ],
+      "median": {
+        "performance": 96,
+        "accessibility": 100,
+        "seo": 100
+      }
+    },
+    {
+      "name": "contact",
+      "route": "/contact",
+      "scores": [
+        {
+          "performance": 96,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1763.5
+        },
+        {
+          "performance": 98,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1896.5
+        },
+        {
+          "performance": 98,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1916
+        }
+      ],
+      "median": {
+        "performance": 98,
+        "accessibility": 100,
+        "seo": 100
+      }
+    },
+    {
+      "name": "small-claims",
+      "route": "/practice-areas/small-claims-court-matters",
+      "scores": [
+        {
+          "performance": 99,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1878.5
+        },
+        {
+          "performance": 91,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1548.5
+        },
+        {
+          "performance": 98,
+          "accessibility": 100,
+          "seo": 100,
+          "accessibilityFailures": [],
+          "benchmarkIndex": 1858
+        }
+      ],
+      "median": {
+        "performance": 98,
+        "accessibility": 100,
+        "seo": 100
+      }
+    }
+  ]
+}

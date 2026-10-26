@@ -2,6 +2,7 @@ import Link from "next/link";
 import { fullAddress, site } from "@/config/site";
 import { services } from "@/content/services";
 import { Icon } from "./icon";
+import { DeferredMap } from "./deferred-map";
 
 export function PracticeGrid({ overview = false }: { overview?: boolean }) {
   return (
@@ -127,18 +128,14 @@ export function LocationSection({ large = false }: { large?: boolean }) {
               View address on Google Maps <Icon name="arrow-up-right" />
             </a>
           </div>
-          <div className="map-frame">
-            <iframe
-              src={map}
-              loading="lazy"
-              title={`Map showing ${site.business.name} address: ${fullAddress}`}
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+          <DeferredMap
+            src={map}
+            title={`Map showing ${site.business.name} address: ${fullAddress}`}
+          >
             <span className="map-caption">
               {site.address.street} · {site.address.city}
             </span>
-          </div>
+          </DeferredMap>
         </div>
       </div>
     </section>

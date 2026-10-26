@@ -3,7 +3,7 @@ import Link from "next/link";
 import { site } from "@/config/site";
 import { getPageDraft, resolveCopy } from "@/content";
 import { getPageMetadata, getLegalServiceSchema, getFaqSchema } from "@/lib/seo";
-import { getPublicPageContent } from "@/components/content-page";
+import { getPublicPageContent } from "@/lib/public-content";
 import { Icon } from "@/components/icon";
 import { CTABand, LocationSection, Portrait, PracticeGrid } from "@/components/site-sections";
 import { RichText } from "@/components/rich-text";
@@ -66,7 +66,8 @@ export default function HomePage() {
                 alt="Toronto’s waterfront skyline with the CN Tower"
                 fill
                 sizes="(max-width: 760px) 100vw, 45vw"
-                preload
+                loading="eager"
+                fetchPriority="high"
                 className="hero-image"
               />
               <div className="hero-image-shade" />

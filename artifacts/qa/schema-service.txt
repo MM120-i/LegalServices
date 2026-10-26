@@ -1,0 +1,26 @@
+an aria-hidden=\"true\">+</span></summary><div class=\"prose\"><p>Ask about defence services and provide the response date immediately. Acceptance depends on the matter, availability, and any conflict of interest.</p></div></details>"
+- generic: "4"
+- text: <details class="faq-item"><summary>Does winning mean I will receive the money immediately?<span aria-hidden="true">+</span></summary><div class="prose"><p>No. A judgment and collecting payment are separate matters. Enforcement may require further steps, costs, and an assessment of what is practical.</p></div></details>
+- generic: "5"
+- text: <details class="faq-item"><summary>Will my dispute go to trial?<span aria-hidden="true">+</span></summary><div class="prose"><p>Not every dispute does. Settlement may be discussed, but neither settlement nor a particular court outcome can be promised.</p></div></details></body></html>
+- generic: Detected
+- text: 0 ERRORS
+- text: 0 WARNINGS
+- text: 3 ITEMS
+- list:
+  - generic: LegalService
+  - text: 0 ERRORS
+  - text: 0 WARNINGS
+  - text: 1 ITEM
+  - generic: BreadcrumbList
+  - text: 0 ERRORS
+  - text: 0 WARNINGS
+  - text: 1 ITEM
+  - generic: FAQPage
+  - text: 0 ERRORS
+  - text: 0 WARNINGS
+  - text: 1 ITEM
+- button "play_arrow" [disabled]:
+  - generic: play_arrow
+- generic: VALIDATE
+- button

@@ -1,0 +1,18 @@
+{
+  "initial": {
+    "width": 390,
+    "frames": 0,
+    "mapTop": 3529.265625,
+    "height": 330,
+    "overflow": false
+  },
+  "afterKeyboardApproach": {
+    "directions": "https://www.google.com/maps/dir/?api=1&destination=3205%20Danforth%20Avenue%2C%20Scarborough%2C%20ON%20M1L%201B8",
+    "frames": 1,
+    "height": 330,
+    "mapTop": -595.734375,
+    "overflow": false,
+    "title": "Map showing Lexora Legal Services address: 3205 Danforth Avenue, Scarborough, ON M1L 1B8",
+    "width": 390
+  }
+}
