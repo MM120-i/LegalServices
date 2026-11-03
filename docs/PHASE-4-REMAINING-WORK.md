@@ -30,4 +30,4 @@ These are existing/prepared deliverables, not a claim that all checks were rerun
 
 ## Completion boundary
 
-Client requirements are tracked in [CLIENT-REQUIREMENTS.md](CLIENT-REQUIREMENTS.md). Technical QA gaps belong to this file and the QA report. Phase 4 stays open until both are resolved and written sign-off is recorded. No later phase is authorized by this checklist.
+Client requirements are tracked in [CLIENT-REQUIREMENTS.md](CLIENT-REQUIREMENTS.md). Technical QA gaps belong to this file and the QA report. Phase 4 stays open until both are resolved and written sign-off is recorded. This checklist does not authorize later phases. On November 2, 2026, the user separately authorized independent Phase 5 launch preparation; see [PHASE-5-LAUNCH.md](PHASE-5-LAUNCH.md). Phase 4 acceptance remains pending.

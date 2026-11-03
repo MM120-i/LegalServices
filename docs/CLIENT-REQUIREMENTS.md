@@ -102,3 +102,21 @@ Automated mocks already cover these scenarios, but they do not prove inbox deliv
 | Remaining conditions                       | Pending |
 
 Written client approval does not itself deploy the website. Publication remains a separate authorized step.
+
+## 9. Phase 5 launch dependencies — November 2, 2026 checkpoint
+
+Phase 5 preparation is underway; launch is not complete. All unchecked Phase 4 items above still apply. Additions needed for launch:
+
+- [ ] Confirm the exact owned domain and preferred canonical address: www or non-www.
+- [ ] Confirm the hosting account/project and who can authorize DNS/hosting changes; arrange delegated access instead of sharing passwords. Preserve existing email DNS records.
+- [ ] Identify the client-owned Google account and delegate appropriate Search Console access; complete the issued DNS or meta-token verification steps.
+- [ ] Provide or authorize a client-owned GA4 property/web stream and measurement ID. Approve analytics/privacy wording, consent behavior, and which inquiry/call/directions actions count as key events.
+- [ ] Confirm whether a Google Business Profile already exists, provide its URL and owner/manager access, or authorize creation if appropriate. Participate in the actual verification steps Google offers.
+- [ ] Approve final business category, address/service model, hours, service descriptions, and photos for the Business Profile.
+- [ ] Supply approved placeholder replacements or approve omission; fictional testimonials and portrait placeholders cannot remain in the published candidate.
+- [ ] Complete the real inbox tests and approve the exact final candidate in writing before publication.
+- [ ] Confirm the release owner and authorized launch timing once remaining checks pass.
+
+Our responsibilities after these inputs are available: configure/verify HTTPS and redirects, publish only the approved candidate, submit the sitemap and indexing request, implement/test approved analytics, assist Business Profile verification, and perform the live mobile-data test. These technical tasks are not requests for the client to carry out our QA.
+
+**Next phase checkpoint:** update this file with newly discovered dependencies and mark fulfilled items only when confirmed. The execution record is [PHASE-5-LAUNCH.md](PHASE-5-LAUNCH.md). No client communication has been sent.

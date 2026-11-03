@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Licensed paralegal services in Scarborough, Toronto. Find a clearer next step for your legal matter.",
   robots: { index: false, follow: false },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-11-03T03:08:21.727Z",
+  "status": "blocked",
+  "renderedPages": 17,
+  "findings": [
+    {
+      "scope": "configuration",
+      "reason": "Real HTTPS production origin required"
+    },
+    {
+      "scope": "configuration",
+      "reason": "Publication remains disabled"
+    },
+    {
+      "scope": "client",
+      "reason": "Real contact email and verified business facts required"
+    },
+    {
+      "scope": "configuration",
+      "reason": "Real email delivery configuration required"
+    },
+    {
+      "scope": "source",
+      "file": "src/app/page.tsx",
+      "reasons": [
+        "sample-review"
+      ]
+    },
+    {
+      "scope": "source",
+      "file": "src/components/site-sections.tsx",
+      "reasons": [
+        "portrait-placeholder"
+      ]
+    },
+    {
+      "scope": "source",
+      "file": "src/content/generated.ts",
+      "reasons": [
+        "example-domain",
+        "draft-token",
+        "sample-review",
+        "portrait-placeholder"
+      ]
+    },
+    {
+      "scope": "rendered",
+      "file": ".next/server/app/about.html",
+      "reasons": [
+        "portrait-placeholder"
+      ]
+    },
+    {
+      "scope": "rendered",
+      "file": ".next/server/app/index.html",
+      "reasons": [
+        "sample-review",
+        "portrait-placeholder"
+      ]
+    }
+  ],
+  "manualChecksRequired": [
+    "Written client approval and approved assets/policies",
+    "HTTPS and alternate-host redirect on live hosting",
+    "Search Console ownership, sitemap submission, indexing request",
+    "GA4 consent/privacy configuration and actual event receipt",
+    "Business Profile ownership and verification status",
+    "Three confirmed inbox receipts and phone test on mobile data"
+  ]
+}

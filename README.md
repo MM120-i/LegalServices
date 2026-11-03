@@ -92,3 +92,13 @@ Read [the Phase 4 QA report](docs/PHASE-4-QA-REPORT.md), [client review checklis
 The preview stays noindex by default. `SITE_PUBLISHED=true` plus a valid HTTPS `NEXT_PUBLIC_SITE_URL` controls production canonical URLs, crawl rules, and sitemap output. Leave these disabled until the real domain, contact details, policies, service scope, and reviews are approved. Deployment, DNS, Google Business Profile, analytics, and launch approval have not been performed.
 
 Read [the technical walkthrough](docs/TECHNICAL-WALKTHROUGH.md) for a plain-language explanation of the code. Image source and licence are recorded in `public/ASSETS.md`.
+
+## Phase 5 launch preparation
+
+Read [the launch execution record](docs/PHASE-5-LAUNCH.md) and the updated [client requirements](docs/CLIENT-REQUIREMENTS.md). The site has not been launched. Phase 4 acceptance remains pending.
+
+`npm run launch:check` scans the existing build and shipping source, writes `artifacts/launch/readiness.json`, and returns exit code 1 while launch blockers remain. Run a build first; optionally use `LAUNCH_BUILD_DIR` for an isolated build. This command reads `.env.local` without printing credentials. It does not publish, send email, prove client approval, or replace the documented live checks. The current preview is expected to fail because it retains labelled sample material and missing real configuration.
+
+The canonical redirect is conditional on a valid HTTPS `NEXT_PUBLIC_SITE_URL` and `SITE_PUBLISHED=true`. Hosting must handle HTTPS/certificates for both www and non-www. `GOOGLE_SITE_VERIFICATION` optionally adds a public Search Console verification token; Domain properties use DNS verification. GA4 activation remains pending client-owned account details and privacy/consent decisions.
+
+At each phase checkpoint, update `docs/CLIENT-REQUIREMENTS.md` with all remaining client dependencies; do not mark a phase complete merely because its preparation is finished.

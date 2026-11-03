@@ -1,43 +1,11 @@
 import type { Metadata } from "next";
+import { parsePublishedOrigin } from "./launch.ts";
 import { site, fullAddress } from "@/config/site";
 import { getPageDraft, resolveCopy } from "@/content";
 import type { ContentRoute, DraftFaq, PageDraft } from "@/content/types";
 
-/** A missing production domain must never become a made-up canonical URL. */
 export function getPublishedOrigin(): string | null {
-  const value = process.env.NEXT_PUBLIC_SITE_URL;
-
-  if (!value) {
-    return null;
-  }
-
-  try {
-    const url = new URL(value);
-
-    if (
-      url.protocol !== "https:" ||
-      url.username ||
-      url.password ||
-      url.port ||
-      url.pathname !== "/" ||
-      url.search ||
-      url.hash
-    ) {
-      return null;
-    }
-
-    if (
-      !url.hostname.includes(".") ||
-      /(^|\.)(localhost|example\.(com|org|net)|invalid)$/.test(url.hostname) ||
-      /^\d+(\.\d+){3}$/.test(url.hostname)
-    ) {
-      return null;
-    }
-
-    return url.origin;
-  } catch {
-    return null;
-  }
+  return parsePublishedOrigin(process.env.NEXT_PUBLIC_SITE_URL);
 }
 
 export function isPublished(): boolean {
