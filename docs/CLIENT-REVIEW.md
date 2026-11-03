@@ -2,6 +2,8 @@
 
 Prepared October 26, 2026. Status: **pending client review**. This document has not been sent. A local preview and technical QA are not client approval.
 
+For the separate client information request, use [CLIENT-REQUIREMENTS.md](CLIENT-REQUIREMENTS.md), prepared November 2, 2026. Keep page decisions, inbox acceptance, and written sign-off recorded here. Our independent follow-up work is listed in [PHASE-4-REMAINING-WORK.md](PHASE-4-REMAINING-WORK.md).
+
 ## Pages and service scope
 
 Review the rendered pages and confirm the services actually offered. Mark each row Approved / Changes requested / Not offered. Do not approve a page solely because its layout looks finished.
