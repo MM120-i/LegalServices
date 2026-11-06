@@ -5,8 +5,10 @@ import { services } from "@/content/services";
 import type { DraftFaq, PageDraft } from "@/content/types";
 import { ContactForm } from "./contact-form";
 import { isContactConfigured } from "@/lib/contact-server";
-import { CTABand, LocationSection, Portrait } from "./site-sections";
+import { CTABand, Portrait } from "./site-sections";
 import { RichText } from "./rich-text";
+import { Icon } from "./icon";
+import { DeferredMap } from "./deferred-map";
 import { cleanText, publicBlocks, getPublicPageContent } from "@/lib/public-content";
 
 function Breadcrumb({ page }: { page: PageDraft }) {
@@ -42,7 +44,14 @@ function Hero({ page, lead, eyebrow }: { page: PageDraft; lead: string; eyebrow:
       <div className="container">
         <Breadcrumb page={page} />
         <p className="eyebrow">{eyebrow}</p>
-        <h1 className="display-title">{resolveCopy(page.h1)}</h1>
+        <h1 className="display-title">
+          {page.route === "/about"
+            ? `About ${site.business.principal}`
+            : page.route === "/contact"
+              ? `Speak With ${site.business.name}`
+              : (services.find((service) => service.href === page.route)?.title ??
+                resolveCopy(page.h1))}
+        </h1>
         {lead ? <p className="lead">{lead}</p> : null}
       </div>
     </header>
@@ -141,55 +150,94 @@ function About({ page }: { page: PageDraft }) {
     <>
       <Hero
         page={page}
-        eyebrow="THE PERSON BEHIND THE PRACTICE"
-        lead={`Meet the principal of ${site.business.name}, a paralegal practice on Danforth Avenue in Scarborough.`}
+        eyebrow="ABOUT"
+        lead="Professional paralegal services in Scarborough and Toronto, with a clear and personal approach."
       />
-      <section className="section">
-        <div className="container reading-layout">
-          <article className="prose page-content">
-            <Portrait />
-            <h2>Clear guidance starts with understanding.</h2>
+      <section className="section about-introduction">
+        <div className="container biography-grid">
+          <Portrait />
+          <article className="biography-panel prose">
+            <h2>{site.business.principal}</h2>
+            <p className="eyebrow">PRINCIPAL PARALEGAL</p>
             <p>
-              A legal problem often arrives as paperwork: a ticket, a notice, a claim, or a letter
-              with an important date. Before you can decide what to do, you need to understand what
-              it means and which process applies.
+              {site.business.principal} is the principal of {site.business.name}, based on Danforth
+              Avenue in Scarborough.
             </p>
             <p>
-              {site.business.principal} is the principal of {site.business.name}. The practice lists
-              traffic tickets and provincial offences, accident benefits claims, refugee hearings
-              and appeals, landlord and tenant matters, employment and human rights matters, and
-              Small Claims Court matters among its services.
+              A legal problem often arrives as a ticket, a notice, a claim, or a letter with an
+              important date. Start with a conversation about what it means, which process applies,
+              and whether the practice can assist.
             </p>
-            <h2>Professional credentials</h2>
+            <p>
+              Discuss the proposed scope of work and consultation arrangements before deciding how
+              to proceed.
+            </p>
             <ul className="credential-list">
-              {site.business.credentials.map((credential) => (
-                <li key={credential}>{credential}</li>
+              {site.business.credentials.map((credential, index) => (
+                <li key={credential}>
+                  <Icon name={["shield", "document", "globe"][index]} />
+                  {credential}
+                </li>
               ))}
             </ul>
             <p className="form-note">
-              The Bangladesh advocate credential relates to a different jurisdiction. It does not
-              indicate a licence to practise as a lawyer in Ontario.
-            </p>
-            <div className="placeholder-note">
-              <strong>A little more about Sharf, coming soon.</strong>
-              <p>
-                The full biography and a personal introduction will be added after they have been
-                provided and reviewed.
-              </p>
-            </div>
-            <h2>{site.business.tagline.replaceAll(" | ", ". ")}.</h2>
-            <p>
-              Start by discussing your situation, whether the practice can assist, and what a
-              proposed retainer would involve. You can ask questions about the process and
-              consultation arrangements before deciding how to proceed.
-            </p>
-            <h2>A Scarborough practice</h2>
-            <p>
-              {fullAddress}. Please call before travelling to confirm availability and appointment
-              arrangements.
+              The Bangladesh advocate credential does not indicate a licence to practise as a lawyer
+              in Ontario. Full biography and professional details await client review.
             </p>
           </article>
-          <Sidebar current="/about" />
+        </div>
+      </section>
+      <section className="editorial-band">
+        <div className="container editorial-row">
+          <h2>Why Lexora Legal Services</h2>
+          <p>
+            Legal matters can feel unfamiliar and time-sensitive. A clear conversation helps you
+            understand the process, discuss the work involved, and ask questions before making a
+            decision.
+          </p>
+        </div>
+      </section>
+      <section className="container values-grid" aria-label="Our approach">
+        {[
+          {
+            icon: "shield",
+            title: "Trust",
+            text: "A considered conversation about your matter and the work involved.",
+          },
+          {
+            icon: "document",
+            title: "Dedication",
+            text: "An approach that starts with understanding your situation.",
+          },
+          {
+            icon: "globe",
+            title: "Practical support",
+            text: "Discuss the available options and the process that applies.",
+          },
+          {
+            icon: "arrow-right",
+            title: "Clear guidance",
+            text: "Straightforward information so you can understand your next step.",
+          },
+        ].map((value) => (
+          <article key={value.title}>
+            <Icon name={value.icon} />
+            <h2>{value.title}</h2>
+            <p>{value.text}</p>
+          </article>
+        ))}
+      </section>
+      <section className="editorial-band">
+        <div className="container editorial-row">
+          <h2>Our Practice Focus</h2>
+          <div className="focus-links">
+            {services.map((service) => (
+              <Link href={service.href} key={service.slug}>
+                <Icon name="check" />
+                {service.title}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
       <CTABand />
@@ -198,53 +246,117 @@ function About({ page }: { page: PageDraft }) {
 }
 
 function Contact({ page }: { page: PageDraft }) {
+  const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(fullAddress)}`;
+  const listing = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
+
   return (
     <>
       <Hero
         page={page}
-        eyebrow="LET’S START WITH A CONVERSATION"
-        lead="Tell us what you need help with. We’ll discuss whether your matter is a fit and how to arrange a consultation."
+        eyebrow="CONTACT"
+        lead="Have a legal matter or need notary services? Call the office or send a consultation request. Start with a conversation about your options."
       />
       <section className="section" id="consultation">
-        <div className="container reading-layout">
-          <div className="page-content">
-            <p className="eyebrow">MAKE AN INQUIRY</p>
-            <h2>What’s on your mind?</h2>
-            <p>
-              Keep your message brief and mention any upcoming hearing or response date. Please
-              leave sensitive documents and personal records out of this first inquiry.
-            </p>
-            <ContactForm deliveryConfigured={isContactConfigured()} />
-          </div>
-          <aside className="page-sidebar">
-            <div className="sidebar-card">
-              <p className="eyebrow">PREFER TO CALL?</p>
-              <h2>We’re a phone call away.</h2>
-              <a className="contact-phone" href={site.phones.primary.href}>
-                {site.phones.primary.display}
-              </a>
-              <a className="text-link" href={site.phones.office.href}>
-                Office: {site.phones.office.display}
-              </a>
-              <div className="divider" />
-              <h3>Our office</h3>
-              <address>{fullAddress}</address>
-              <p>Please call before visiting to confirm availability.</p>
-              <p className="form-note">
-                Office hours, consultation fees, and available appointment formats are being
-                confirmed for this preview.
-              </p>
-              <div className="divider" />
-              <h3>Have a deadline?</h3>
+        <div className="container contact-layout">
+          <div className="contact-main">
+            <div className="consultation-panel">
+              <h2>Request a Consultation</h2>
               <p>
-                Call and explain the date at the start. Sending a message does not mean the practice
-                has agreed to act or protect a deadline.
+                Tell us briefly what you need help with. Please leave sensitive documents and
+                personal records out of this first inquiry.
               </p>
+              <ContactForm deliveryConfigured={isContactConfigured()} />
             </div>
+            <div id="location">
+              <DeferredMap
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&z=15&output=embed`}
+                title={`Map showing ${site.business.name} address: ${fullAddress}`}
+              >
+                <span className="map-caption">
+                  {site.address.street} · {site.address.city}
+                </span>
+              </DeferredMap>
+            </div>
+          </div>
+          <aside className="contact-information">
+            <h2>{site.business.name}</h2>
+            <p className="eyebrow">ONTARIO PARALEGAL PRACTICE</p>
+            <div className="contact-detail">
+              <Icon name="pin" />
+              <div>
+                <h3>Office address</h3>
+                <address>{fullAddress}</address>
+              </div>
+            </div>
+            <div className="contact-detail">
+              <Icon name="phone" />
+              <div>
+                <h3>Phone</h3>
+                <a href={site.phones.primary.href}>{site.phones.primary.display}</a>
+                <a href={site.phones.office.href}>{site.phones.office.display}</a>
+              </div>
+            </div>
+            <div className="contact-detail">
+              <Icon name="clock" />
+              <div>
+                <h3>Office hours</h3>
+                <p>Call to confirm hours and appointment availability.</p>
+                <p className="form-note">Consultation terms and fees are being confirmed.</p>
+              </div>
+            </div>
+            <a className="button button-primary" href={site.phones.primary.href}>
+              <Icon name="phone" />
+              Call Now
+            </a>
+            <a
+              className="button button-outline"
+              href={directions}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="pin" />
+              Get Directions
+            </a>
+            <a
+              className="button button-outline"
+              href={listing}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View address on Google Maps
+            </a>
+            <p className="form-note">
+              Have a deadline? Call and explain the date. An inquiry does not mean the practice has
+              agreed to act or protect a deadline.
+            </p>
           </aside>
         </div>
       </section>
-      <LocationSection large />
+      <section className="editorial-band">
+        <div className="container next-steps">
+          <h2>What happens after you contact us</h2>
+          {[
+            {
+              title: "We review your inquiry",
+              text: "The office reviews the brief details you provide.",
+            },
+            {
+              title: "We discuss the next step",
+              text: "The office can use your contact details to discuss whether it can help.",
+            },
+            {
+              title: "We confirm the arrangements",
+              text: "Scope, consultation terms, and any proposed work are discussed before proceeding.",
+            },
+          ].map((step, index) => (
+            <article key={step.title}>
+              <span>{index + 1}</span>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
@@ -383,8 +495,8 @@ export function ContentPage({ page }: { page: PageDraft }) {
   return (
     <>
       <Hero page={page} eyebrow="PARALEGAL SERVICES · SCARBOROUGH" lead={content.intro[0] ?? ""} />
-      <section className="section">
-        <div className="container reading-layout">
+      <section className="section service-detail-section">
+        <div className="container service-detail-layout">
           <article className="prose page-content">
             {content.intro.slice(1).map((text, index) => (
               <RichText text={text} key={index} />
@@ -399,7 +511,17 @@ export function ContentPage({ page }: { page: PageDraft }) {
             ))}
             <FaqList faqs={content.faqs} />
           </article>
-          <Sidebar current={page.route} />
+          <nav className="related-services" aria-label="Other practice areas">
+            <h2>Explore our services</h2>
+            {services
+              .filter((service) => service.href !== page.route)
+              .map((service) => (
+                <Link href={service.href} key={service.slug}>
+                  {service.shortTitle}
+                  <Icon name="arrow-right" />
+                </Link>
+              ))}
+          </nav>
         </div>
       </section>
       <CTABand />

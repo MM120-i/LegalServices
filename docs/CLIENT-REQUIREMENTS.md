@@ -120,3 +120,12 @@ Phase 5 preparation is underway; launch is not complete. All unchecked Phase 4 i
 Our responsibilities after these inputs are available: configure/verify HTTPS and redirects, publish only the approved candidate, submit the sitemap and indexing request, implement/test approved analytics, assist Business Profile verification, and perform the live mobile-data test. These technical tasks are not requests for the client to carry out our QA.
 
 **Next phase checkpoint:** update this file with newly discovered dependencies and mark fulfilled items only when confirmed. The execution record is [PHASE-5-LAUNCH.md](PHASE-5-LAUNCH.md). No client communication has been sent.
+
+## UI redesign checkpoint — November 5, 2026
+
+- [ ] Approve the navy, warm-white, and gold visual direction and the final responsive preview.
+- [ ] Approve the preview wordmark and decorative architectural banner, or supply approved brand assets.
+- [ ] Supply the real headshot or approve its omission. The mockup person has not been used; the portrait remains labelled as a placeholder.
+- [ ] Confirm the final About text, service scope, contact details, hours, consultation terms, and policies. The mockup email, opening hours, expanded biography, and one-business-day response promise have not been adopted as business facts.
+
+Existing launch and inbox-confirmation requirements above still apply. Previous Lighthouse scores describe the earlier design; the redesigned candidate requires fresh performance validation before launch.

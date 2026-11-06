@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { site } from "@/config/site";
+import { fullAddress, site } from "@/config/site";
 import { services } from "@/content/services";
 import { Icon } from "./icon";
 import { Brand } from "./brand";
@@ -31,16 +31,21 @@ export function SiteHeader() {
       </div>
       <div className="topbar">
         <div className="container topbar-inner">
-          <span>
-            <Icon name="shield" /> Licensed Paralegal · Law Society of Ontario
-          </span>
           <a href={site.phones.primary.href}>
             <Icon name="phone" />
             {site.phones.primary.display}
           </a>
+          <a href={site.phones.office.href}>
+            <Icon name="phone" />
+            {site.phones.office.display}
+          </a>
           <span className="topbar-location">
             <Icon name="pin" />
-            {site.address.city}, Toronto
+            {fullAddress}
+          </span>
+          <span className="topbar-credential">
+            <Icon name="shield" />
+            Licensed Paralegal · Law Society of Ontario
           </span>
         </div>
       </div>
@@ -107,7 +112,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <Link href="/contact" className="button button-primary header-cta">
-            Let’s talk <Icon name="arrow-up-right" />
+            Request a Consultation
           </Link>
           <button
             ref={menuButton}

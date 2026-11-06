@@ -5,6 +5,7 @@ import { getPublishedOrigin } from "@/lib/seo";
 import { SiteHeader } from "@/components/site-header";
 import { MobileCallBar, SiteFooter } from "@/components/site-footer";
 import "./globals.css";
+import "./legal-elegance.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getPublishedOrigin() ?? "http://localhost:3000"),

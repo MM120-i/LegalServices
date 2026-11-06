@@ -1,0 +1,19 @@
+{
+  "mobileMenu": {
+    "expandedWhenOpen": "true",
+    "expanded": "false",
+    "focus": "Open navigation"
+  },
+  "form": {
+    "alert": "Please check the fields below.Call 416-722-3244 or 416-900-0494 if you need to get in touch.",
+    "focusedRole": "alert",
+    "invalid": 4
+  },
+  "faqOpensWithEnter": true,
+  "skipFocus": "main-content",
+  "desktopDropdown": {
+    "display": "none",
+    "focusedHref": "/practice-areas"
+  },
+  "nativeFallback": "Invalid native POST returned 422 with both phone numbers"
+}

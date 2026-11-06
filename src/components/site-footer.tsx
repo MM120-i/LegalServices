@@ -33,9 +33,13 @@ export function SiteFooter() {
             ))}
           </div>
           <div>
-            <h2>Explore</h2>
+            <h2>Company</h2>
+            <Link href="/">Home</Link>
             <Link href="/about">About the practice</Link>
             <Link href="/contact">Contact & location</Link>
+          </div>
+          <div>
+            <h2>Legal</h2>
             <Link href="/privacy-policy">Privacy policy</Link>
             <Link href="/accessibility">Accessibility</Link>
             <Link href="/disclaimer">Website disclaimer</Link>

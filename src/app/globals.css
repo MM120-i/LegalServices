@@ -549,7 +549,7 @@ main {
 .hero-note {
   position: absolute;
   left: -26px;
-  bottom: 0;
+  bottom: -24px;
   padding: 18px 21px;
   background: #fff;
   box-shadow: 0 8px 35px #193f3610;
@@ -753,7 +753,7 @@ main {
 }
 .about-portrait-note {
   position: absolute;
-  bottom: -17px;
+  bottom: -77px;
   right: -25px;
   max-width: 240px;
   background: var(--forest);
@@ -1962,7 +1962,7 @@ textarea {
   .about-portrait-note {
     right: 0;
     font-size: 1.18rem;
-    bottom: -15px;
+    bottom: -75px;
   }
   .about-copy h2 {
     font-size: 2.4rem;
