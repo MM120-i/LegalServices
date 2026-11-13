@@ -156,7 +156,7 @@ export default function HomePage() {
               Meet {site.business.principal}, principal of {site.business.name}.
             </p>
             <p>
-              Based on Danforth Avenue in Scarborough, Lexora offers a starting point for people
+              Based on Danforth Avenue in Scarborough, {site.business.shortName} offers a starting point for people
               facing an unfamiliar legal process. Ask questions, understand the options, and discuss
               the work before deciding how to move forward.
             </p>

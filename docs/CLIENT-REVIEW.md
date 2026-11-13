@@ -1,4 +1,4 @@
-# Lexora — consolidated client review
+# Abed Legal Services — consolidated client review
 
 Prepared October 26, 2026. Status: **pending client review**. This document has not been sent. A local preview and technical QA are not client approval.
 

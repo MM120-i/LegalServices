@@ -6,7 +6,7 @@ H1: Small Claims Court paralegal services in Scarborough, Toronto.
 
 You may be owed money, disagree about a contract, or have received a claim you need to answer. Before deciding how to proceed, understand what the dispute is about, what evidence you have, and which dates need attention.
 
-Lexora Legal Services lists Small Claims Court matters among its practice areas. Contact the office to discuss making or defending a claim and the work you may need help with.
+Abed Legal Services Professional Corporation lists Small Claims Court matters among its practice areas. Contact the office to discuss making or defending a claim and the work you may need help with.
 
 ## What you can ask about
 
@@ -29,7 +29,7 @@ If your concern involves another tribunal, a different kind of remedy, or a larg
 
 Write down who the dispute involves, what was agreed, what happened, and what result you are seeking. Collect supporting records in date order. Include documents that do not support your position as well as those that do; an assessment needs the full picture.
 
-If you were served with a claim, keep the complete package and note when and how you received it. Seek advice about the response requirements promptly. Sending Lexora an inquiry does not file a defence or stop the court process.
+If you were served with a claim, keep the complete package and note when and how you received it. Seek advice about the response requirements promptly. Sending Abed an inquiry does not file a defence or stop the court process.
 
 ## Proposed approach
 

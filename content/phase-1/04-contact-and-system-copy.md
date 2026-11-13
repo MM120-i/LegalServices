@@ -6,7 +6,7 @@ Route: `/contact`
 
 H1: Let’s talk about your next step.
 
-Tell Lexora briefly what you need help with, or call the Scarborough office. Mention any hearing, response date, or other approaching deadline at the start.
+Tell Abed briefly what you need help with, or call the Scarborough office. Mention any hearing, response date, or other approaching deadline at the start.
 
 ### Call the office
 
@@ -20,7 +20,7 @@ Editorial note: Do not turn this placeholder into an email link. The brief’s `
 
 ### Visit us
 
-Lexora Legal Services
+Abed Legal Services Professional Corporation
 
 3205 Danforth Avenue, Scarborough, ON M1L 1B8
 
@@ -34,7 +34,7 @@ Access: `[CONFIRM: office entry, stairs/lift, parking, transit, and available ac
 
 Directions link label: Get Directions
 
-Google listing link label: Find Lexora on Google
+Google listing link label: Find Abed on Google
 
 Editorial note: Use the real Google profile when available; an address-search fallback must be presented as “View address on Google Maps.” Do not imply a verified listing exists before it does.
 
@@ -50,7 +50,7 @@ Field labels and helpers:
 - **What do you need help with?** — Required. Options: Traffic Tickets / Provincial Offences; Accident Benefits Claims; Refugee Hearings & Appeals; Landlord & Tenant Matters; Employment & Human Rights Matters; Small Claims Court Matters; Notary Public & Commissioning; Other / Not sure.
 - **Brief description** — Optional. Placeholder: “Tell us briefly what happened and mention any upcoming date. Please leave out sensitive details.”
 
-Required acknowledgement: “I understand that submitting this form does not create a paralegal–client relationship and does not mean Lexora has agreed to act or meet a deadline for me.”
+Required acknowledgement: “I understand that submitting this form does not create a paralegal–client relationship and does not mean Abed has agreed to act or meet a deadline for me.”
 
 Privacy notice beside the submit button: “We will use the contact details and message you provide to assess and respond to your inquiry. Read our Privacy Policy for information about how inquiry data is handled.” → `/privacy-policy`
 
@@ -82,9 +82,9 @@ Route: `/thank-you` · Future indexing: noindex.
 
 H1: Your inquiry has been sent.
 
-Thank you for contacting Lexora Legal Services. The office will review your message and use the contact details you provided to get in touch.
+Thank you for contacting Abed Legal Services Professional Corporation. The office will review your message and use the contact details you provided to get in touch.
 
-This confirmation does not mean Lexora has accepted your matter or agreed to protect a deadline. Representation begins only after the practice accepts the matter and a retainer is agreed.
+This confirmation does not mean Abed has accepted your matter or agreed to protect a deadline. Representation begins only after the practice accepts the matter and a retainer is agreed.
 
 Have a deadline approaching? Call 416-722-3244. If you cannot reach the office, do not assume your matter is being handled.
 
@@ -96,13 +96,13 @@ Editorial note: Show this success copy only after a future form provider confirm
 
 Editorial note: Copy only; no email is being sent or integration selected in Phase 1. Use only if a visitor supplies an email and the future delivery service accepts the inquiry.
 
-Subject: Your inquiry to Lexora Legal Services
+Subject: Your inquiry to Abed Legal Services Professional Corporation
 
-Thank you for getting in touch. Your website inquiry has been received for review. This automated acknowledgement is not confirmation that Lexora has accepted your matter or will take any action on your behalf.
+Thank you for getting in touch. Your website inquiry has been received for review. This automated acknowledgement is not confirmation that Abed has accepted your matter or will take any action on your behalf.
 
 If you have an approaching deadline, please call 416-722-3244 or 416-900-0494. Do not send sensitive documents in reply until the office confirms how to share them.
 
-Lexora Legal Services
+Abed Legal Services Professional Corporation
 3205 Danforth Avenue, Scarborough, ON M1L 1B8
 
 Internal notification subject: New website inquiry — [Practice Area] — [Name]
@@ -119,7 +119,7 @@ Footer brand line: Trust | Dedication | Results
 
 Footer contact block:
 
-Lexora Legal Services
+Abed Legal Services Professional Corporation
 3205 Danforth Avenue, Scarborough, ON M1L 1B8
 416-722-3244 · 416-900-0494
 `[PLACEHOLDER: confirmed business email]`
@@ -131,7 +131,7 @@ Footer disclaimer: This website provides general information only and is not leg
 
 Footer legal links: Privacy Policy · Accessibility · Disclaimer
 
-Copyright: © [current year] Lexora Legal Services.
+Copyright: © [current year] Abed Legal Services Professional Corporation.
 
 Editorial note: Keep the full Bangladesh credential and jurisdiction explanation on About. Confirm licensing before publication; do not use an unapproved regulator logo as a badge.
 
@@ -153,6 +153,6 @@ H1: We couldn’t find that page.
 
 The link may have changed. Explore our services or contact the office for help finding the right information.
 
-Buttons: View Practice Areas · Contact Lexora
+Buttons: View Practice Areas · Contact Abed
 
 Call 416-722-3244 or 416-900-0494.

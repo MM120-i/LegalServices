@@ -4,7 +4,7 @@ Route: `/practice-areas`
 
 H1: Paralegal services in Scarborough, Toronto.
 
-Start with the issue you are facing. Lexora Legal Services lists six practice areas, along with notary public services. Each page explains what to ask about and what information may help at an initial conversation.
+Start with the issue you are facing. Abed Legal Services Professional Corporation lists six practice areas, along with notary public services. Each page explains what to ask about and what information may help at an initial conversation.
 
 ## Traffic Tickets & Provincial Offences
 
@@ -26,7 +26,7 @@ Link: `/practice-areas/refugee-hearings-appeals`
 
 ## Landlord & Tenant Matters
 
-Understand a rental notice, application, or hearing process before deciding your next step. Whether you are a landlord or tenant, confirm whether Lexora accepts your type of matter.
+Understand a rental notice, application, or hearing process before deciding your next step. Whether you are a landlord or tenant, confirm whether Abed accepts your type of matter.
 
 Link: `/practice-areas/landlord-tenant-matters`
 
@@ -50,7 +50,7 @@ Link: `/notary-public`
 
 ## Not sure where your matter fits?
 
-You do not need to identify the legal category before calling. Give a short description and mention any upcoming date. Lexora can discuss whether the matter falls within the services it accepts.
+You do not need to identify the legal category before calling. Give a short description and mention any upcoming date. Abed can discuss whether the matter falls within the services it accepts.
 
 CTA: Request a Consultation → `/contact`
 

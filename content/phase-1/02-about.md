@@ -4,7 +4,7 @@ Route: `/about`
 
 H1: Meet Sharf Uddin Abead.
 
-Lexora Legal Services is a paralegal practice based in Scarborough, Toronto. Its principal, Sharf Uddin Abead, lists the following professional credentials:
+Abed Legal Services Professional Corporation is a paralegal practice based in Scarborough, Toronto. Its principal, Sharf Uddin Abead, lists the following professional credentials:
 
 - Licensed Paralegal | Law Society of Ontario
 - Notary Public
@@ -16,7 +16,7 @@ The practice’s listed areas include traffic tickets and provincial offences, a
 
 A legal problem often arrives as paperwork: a ticket, a notice, a claim, or a letter with an important date. Before you can decide what to do, you need to understand what it means and which process applies.
 
-Lexora’s proposed service approach is to make that first conversation useful: identify the issue, discuss whether the practice can assist, and explain the proposed work and fees before representation begins.
+Abed’s proposed service approach is to make that first conversation useful: identify the issue, discuss whether the practice can assist, and explain the proposed work and fees before representation begins.
 
 Editorial note: Client to approve this proposed service approach; remove “proposed” only after confirmation.
 
@@ -26,11 +26,11 @@ Sharf’s Ontario paralegal credential and Bangladesh advocate credential relate
 
 `[PLACEHOLDER: approved biography paragraph covering education, career timeline, and relevant experience. Do not invent institutions, dates, years in practice, or case results.]`
 
-## Why Lexora
+## Why Abed
 
 Trust | Dedication | Results
 
-These are the values on Lexora’s business card. The website should express them through accurate information, a clear explanation of the process, and straightforward ways to contact the office.
+These are the values on Abed’s business card. The website should express them through accurate information, a clear explanation of the process, and straightforward ways to contact the office.
 
 `[PLACEHOLDER: 60–100 words in Sharf’s own voice about why he founded the practice and the clients he hopes to serve.]`
 
@@ -46,7 +46,7 @@ Please call before travelling to confirm appointment arrangements.
 
 Portrait: `[PLACEHOLDER: professional headshot; any temporary portrait must be labelled as a sample image.]`
 
-Office photograph: `[PLACEHOLDER: actual office/exterior photo; do not label stock imagery as the Lexora office.]`
+Office photograph: `[PLACEHOLDER: actual office/exterior photo; do not label stock imagery as the Abed office.]`
 
 ## Discuss your matter
 

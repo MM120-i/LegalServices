@@ -6,7 +6,7 @@ H1: Refugee hearing and appeal paralegal services in Toronto.
 
 A refugee hearing or negative decision can bring difficult questions about evidence, preparation, and what comes next. You deserve a clear explanation of the process and an accurate understanding of who can represent you.
 
-Lexora Legal Services lists refugee hearings and appeals among its practice areas. Contact the Scarborough office to ask about your Immigration and Refugee Board proceeding and the services available within permitted Ontario paralegal scope.
+Abed Legal Services Professional Corporation lists refugee hearings and appeals among its practice areas. Contact the Scarborough office to ask about your Immigration and Refugee Board proceeding and the services available within permitted Ontario paralegal scope.
 
 ## What you can ask about
 
@@ -35,7 +35,7 @@ Do not include your detailed protection narrative, immigration identification nu
 ## Proposed approach
 
 1. Confirm the division, stage of proceedings, and any urgent dates.
-2. Determine whether the matter fits the services Lexora accepts.
+2. Determine whether the matter fits the services Abed accepts.
 3. Explain the proposed work, fees, and document needs.
 4. If retained, prepare for the agreed proceeding and discuss its requirements with you.
 

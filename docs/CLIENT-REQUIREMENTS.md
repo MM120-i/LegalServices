@@ -1,4 +1,4 @@
-# Lexora — information and approval needed from the client
+# Abed Legal Services — information and approval needed from the client
 
 Prepared November 2, 2026. All items below are pending unless explicitly recorded otherwise. This checklist has not been sent to the client.
 
@@ -6,11 +6,11 @@ Please provide the missing information and mark existing wording **Approved**, *
 
 ## 1. Confirm business and contact details
 
-- [ ] Business name: **Lexora Legal Services**.
+- [x] Business name: **Abed Legal Services Professional Corporation**.
 - [ ] Principal’s name and spelling: **Sharf Uddin Abead**.
 - [ ] Primary phone: **416-722-3244**.
 - [ ] Office phone: **416-900-0494**; confirm which number visitors should use first.
-- [ ] Office address: **3205 Danforth Avenue, Scarborough, ON M1L 1B8**.
+- [x] Office address: **3205 Danforth Avenue, Scarborough, ON M1L 1B8**.
 - [ ] A monitored public email address and the inbox that should receive website inquiries; these may be different.
 - [ ] The production domain the business owns or intends to obtain.
 - [ ] Office hours, appointment requirements, and whether walk-ins are accepted.
@@ -129,3 +129,7 @@ Our responsibilities after these inputs are available: configure/verify HTTPS an
 - [ ] Confirm the final About text, service scope, contact details, hours, consultation terms, and policies. The mockup email, opening hours, expanded biography, and one-business-day response promise have not been adopted as business facts.
 
 Existing launch and inbox-confirmation requirements above still apply. Previous Lighthouse scores describe the earlier design; the redesigned candidate requires fresh performance validation before launch.
+
+## Business details confirmed November 13, 2026
+
+The client supplied the new legal name and confirmed the office address. The website uses “Abed Legal Services” in the wordmark and the full corporate name in business details and structured data.

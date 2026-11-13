@@ -189,7 +189,7 @@ function About({ page }: { page: PageDraft }) {
       </section>
       <section className="editorial-band">
         <div className="container editorial-row">
-          <h2>Why Lexora Legal Services</h2>
+          <h2>Why {site.business.shortName} Legal Services</h2>
           <p>
             Legal matters can feel unfamiliar and time-sensitive. A clear conversation helps you
             understand the process, discuss the work involved, and ask questions before making a

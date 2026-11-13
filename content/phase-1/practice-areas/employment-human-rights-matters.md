@@ -6,7 +6,7 @@ H1: Employment and human rights paralegal services in Toronto.
 
 Losing a job, dealing with unpaid wages, or experiencing possible discrimination can leave you unsure which process to use. These concerns can involve different rights, decision-makers, and time limits.
 
-Lexora Legal Services lists employment and human rights matters among its practice areas. Contact the Scarborough office to discuss the issue and whether it falls within the work the practice accepts.
+Abed Legal Services Professional Corporation lists employment and human rights matters among its practice areas. Contact the Scarborough office to discuss the issue and whether it falls within the work the practice accepts.
 
 ## What you can ask about
 
@@ -35,7 +35,7 @@ For a human rights inquiry, explain briefly what happened and what connection yo
 ## Proposed approach
 
 1. Understand the events, employment context, and any active proceeding.
-2. Identify whether Lexora can assist in an appropriate forum.
+2. Identify whether Abed can assist in an appropriate forum.
 3. Discuss evidence, time limits, proposed fees, and the scope of work.
 4. If retained, prepare the agreed correspondence, application, response, or hearing steps.
 
@@ -47,7 +47,7 @@ No. The legal test requires more than a general feeling of unfairness. The facts
 
 ### Can I bring a human rights issue outside the workplace?
 
-The Code also covers other areas, including housing and services. Confirm whether Lexora accepts your particular type of matter.
+The Code also covers other areas, including housing and services. Confirm whether Abed accepts your particular type of matter.
 
 ### Should I sign a severance document before calling?
 

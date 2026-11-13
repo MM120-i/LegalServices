@@ -2,8 +2,8 @@
 export const site = {
   stage: "phase-3-website-preview",
   business: {
-    name: "Lexora Legal Services",
-    shortName: "Lexora",
+    name: "Abed Legal Services Professional Corporation",
+    shortName: "Abed",
     principal: "Sharf Uddin Abead",
     tagline: "Trust | Dedication | Results",
     credentials: [

@@ -6,7 +6,7 @@ H1: Notary public and commissioning services in Scarborough.
 
 If an organization has asked you for a notarized copy, affidavit, or declaration, start with its written instructions. Different documents require different services, and the receiving organization may have specific requirements.
 
-Sharf Uddin Abead lists Notary Public among his credentials. Call Lexora Legal Services to confirm whether the office can assist with your document and to ask about fees and appointment arrangements.
+Sharf Uddin Abead lists Notary Public among his credentials. Call Abed Legal Services Professional Corporation to confirm whether the office can assist with your document and to ask about fees and appointment arrangements.
 
 ## Document services to ask about
 
@@ -16,7 +16,7 @@ Sharf Uddin Abead lists Notary Public among his credentials. Call Lexora Legal S
 - Oaths and affirmations.
 - Documents accompanying invitation letters, where the requested notarial service is appropriate.
 
-Editorial note: This is a proposed service menu requiring confirmation. Notarizing or commissioning a document does not imply that Lexora prepares every underlying application or advises on matters outside its scope. Confirm whether invitation-letter drafting is offered before adding it.
+Editorial note: This is a proposed service menu requiring confirmation. Notarizing or commissioning a document does not imply that Abed prepares every underlying application or advises on matters outside its scope. Confirm whether invitation-letter drafting is offered before adding it.
 
 ## Notarization and commissioning are different
 
@@ -30,7 +30,7 @@ Ontario currently requires physical presence for notarization. Do not assume a v
 
 Call with the type and number of documents, where they will be used, and any instructions from the receiving organization. Ask what identification and originals are required. Avoid signing in advance when the signature needs to be witnessed; confirm the instructions first.
 
-Documents for use outside Canada can involve additional steps such as authentication or an apostille. Ask the receiving authority what it requires. This page does not promise that notarization alone makes a document acceptable everywhere or that Lexora offers authentication services.
+Documents for use outside Canada can involve additional steps such as authentication or an apostille. Ask the receiving authority what it requires. This page does not promise that notarization alone makes a document acceptable everywhere or that Abed offers authentication services.
 
 ## Proposed appointment process
 

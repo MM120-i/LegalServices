@@ -19,7 +19,7 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "Eyebrow: LEXORA LEGAL SERVICES · SCARBOROUGH"
+            "markdown": "Eyebrow: ABED LEGAL SERVICES PROFESSIONAL CORPORATION · SCARBOROUGH"
           },
           {
             "kind": "copy",
@@ -437,7 +437,7 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Paralegal in Scarborough, Toronto | {{business.name}}",
+      "title": "Scarborough Paralegal | {{business.shortName}} Legal Services",
       "description": "Explore {{business.shortName}}’s paralegal services in Scarborough, Toronto. Traffic tickets, rental disputes, small claims and more. Request a consultation.",
       "productionIndexing": "index"
     }
@@ -571,7 +571,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "{{business.principal}} | {{business.name}}",
+      "title": "{{business.principal}} | {{business.shortName}} Legal Services",
       "description": "Meet {{business.principal}}, principal of {{business.name}} in Scarborough. Read about his listed credentials and paralegal practice.",
       "productionIndexing": "index"
     }
@@ -715,7 +715,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Paralegal Services in Scarborough | {{business.name}}",
+      "title": "Paralegal Services in Scarborough | {{business.shortName}} Legal Services",
       "description": "Explore traffic tickets, accident benefits, refugee hearings, rental disputes, employment, human rights, small claims and notary services.",
       "productionIndexing": "index"
     }
@@ -1841,7 +1841,7 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "{{business.notaryCredential}} in Scarborough | {{business.name}}",
+      "title": "{{business.notaryCredential}} in Scarborough | {{business.shortName}} Legal Services",
       "description": "Need notarization or commissioning in Scarborough? Call {{business.shortName}} to confirm document requirements, fees and appointment availability.",
       "productionIndexing": "index"
     }
@@ -1985,7 +1985,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Contact {{business.name}} | Scarborough, Toronto",
+      "title": "Contact {{business.shortName}} Legal Services | Scarborough, Toronto",
       "description": "Contact {{business.name}} at {{address.street}}, Scarborough. Call {{phone.primary}} or {{phone.office}} to ask about a consultation.",
       "productionIndexing": "index"
     }
@@ -2025,8 +2025,8 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Inquiry Sent | {{business.name}}",
-      "description": "Your inquiry has been sent to {{business.name}}. If you have an approaching deadline, call the office rather than waiting for a reply.",
+      "title": "Inquiry Sent | {{business.shortName}} Legal Services",
+      "description": "Your inquiry has been sent to {{business.shortName}} Legal Services. If you have an approaching deadline, call the office rather than waiting for a reply.",
       "productionIndexing": "noindex"
     }
   },
@@ -2057,7 +2057,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Page Not Found | {{business.name}}",
+      "title": "Page Not Found | {{business.shortName}} Legal Services",
       "description": "Find {{business.shortName}}’s practice areas and contact information, or return to the homepage.",
       "productionIndexing": "noindex"
     }
@@ -2191,7 +2191,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Privacy Policy | {{business.name}}",
+      "title": "Privacy Policy | {{business.shortName}} Legal Services",
       "description": "Read how {{business.name}} handles website inquiries and personal information, including privacy questions and contact details.",
       "productionIndexing": "index"
     }
@@ -2269,7 +2269,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Accessibility | {{business.name}}",
+      "title": "Accessibility | {{business.shortName}} Legal Services",
       "description": "Contact {{business.name}} about website access, alternate formats or office access arrangements in Scarborough.",
       "productionIndexing": "index"
     }
@@ -2372,7 +2372,7 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Website Disclaimer | {{business.name}}",
+      "title": "Website Disclaimer | {{business.shortName}} Legal Services",
       "description": "Read the terms for general website information, professional scope, deadlines and inquiries at {{business.name}}.",
       "productionIndexing": "index"
     }
