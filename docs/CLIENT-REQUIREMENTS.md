@@ -14,7 +14,7 @@ Please provide the missing information and mark existing wording **Approved**, *
 - [ ] A monitored public email address and the inbox that should receive website inquiries; these may be different.
 - [ ] The production domain the business owns or intends to obtain.
 - [ ] Office hours, appointment requirements, and whether walk-ins are accepted.
-- [ ] Languages actually offered and any interpretation arrangements.
+- [ ] Confirm which languages the office offers for appointments and any interpretation arrangements. The biography lists English, Bengali, and Sylheti.
 - [ ] Accurate office access information, including entry, accessibility, parking, and transit details where known.
 - [ ] Official Google Business Profile / Maps listing link, if one exists.
 
@@ -27,10 +27,13 @@ The phone numbers, address, and names above are currently configured from suppli
   - **Notary Public**
   - **Advocate | Supreme Court of Bangladesh**
 - [ ] Confirm any licence/registration information intended for public display and provide its exact wording if required.
-- [ ] Review the About page; approve or correct biography, education, experience, and professional background.
+- [x] Supply the biography, education, and professional history. Received November 13, 2026.
+- [ ] Review the adapted About page and homepage introduction for accuracy.
 - [ ] Confirm that the distinction between Ontario paralegal services and the Bangladesh advocate credential is described accurately.
 
 ## 3. Approve every service page
+
+The supplied biography describes past refugee and immigration-related work in Canada. Confirm separately which refugee hearing and appeal services the Ontario practice currently accepts.
 
 For each page, confirm the work actually accepted, the parties represented, relevant courts/tribunals, geographic coverage, and exclusions. Correct any claim that is too broad.
 

@@ -4,56 +4,30 @@ Route: `/about`
 
 H1: Meet Sharf Uddin Abead.
 
-Abed Legal Services Professional Corporation is a paralegal practice based in Scarborough, Toronto. Its principal, Sharf Uddin Abead, lists the following professional credentials:
+Sharf Uddin Abead is the principal of Abed Legal Services Professional Corporation in Scarborough. He has more than two decades of experience in legal services, administration, advocacy, and client representation across Bangladesh and Canada.
 
-- Licensed Paralegal | Law Society of Ontario
-- Notary Public
-- Advocate | Supreme Court of Bangladesh
-
-The practice’s listed areas include traffic tickets and provincial offences, accident benefits claims, refugee hearings and appeals, landlord and tenant matters, employment and human rights matters, and Small Claims Court matters.
-
-## A practical starting point
-
-A legal problem often arrives as paperwork: a ticket, a notice, a claim, or a letter with an important date. Before you can decide what to do, you need to understand what it means and which process applies.
-
-Abed’s proposed service approach is to make that first conversation useful: identify the issue, discuss whether the practice can assist, and explain the proposed work and fees before representation begins.
-
-Editorial note: Client to approve this proposed service approach; remove “proposed” only after confirmation.
-
-## Professional background
-
-Sharf’s Ontario paralegal credential and Bangladesh advocate credential relate to different jurisdictions. The Bangladesh credential does not mean he is licensed as a lawyer in Ontario. Services in Ontario are offered within the permitted scope of his Ontario licence and any applicable appointment.
-
-`[PLACEHOLDER: approved biography paragraph covering education, career timeline, and relevant experience. Do not invent institutions, dates, years in practice, or case results.]`
-
-## Why Abed
-
-Trust | Dedication | Results
-
-These are the values on Abed’s business card. The website should express them through accurate information, a clear explanation of the process, and straightforward ways to contact the office.
-
-`[PLACEHOLDER: 60–100 words in Sharf’s own voice about why he founded the practice and the clients he hopes to serve.]`
-
-`[PLACEHOLDER: confirmed languages and any factual community involvement.]`
-
-Editorial note: These are biography slots, not fabricated personal statements. For a later preview, a labelled text block can fill their space.
-
-## Visit the Scarborough office
-
-3205 Danforth Avenue, Scarborough, ON M1L 1B8.
-
-Please call before travelling to confirm appointment arrangements.
+His work in Ontario is informed by his experience in court advocacy, dispute resolution, legal research, and document preparation. He communicates in English, Bengali, and Sylheti.
 
 Portrait: `[PLACEHOLDER: professional headshot; any temporary portrait must be labelled as a sample image.]`
 
-Office photograph: `[PLACEHOLDER: actual office/exterior photo; do not label stock imagery as the Abed office.]`
+## Education and qualifications
 
-## Discuss your matter
+Sharf earned a Bachelor of Laws (LL.B.) and a Master of Laws (LL.M.) in Bangladesh. He completed the Paralegal program at Centennial College in Toronto and became a Licensed Paralegal with the Law Society of Ontario in 2026. He is also a Notary Public and Commissioner for Taking Affidavits in Ontario.
 
-Tell us briefly what happened and whether you have an upcoming date. Ask about the consultation arrangements before booking.
+## Professional experience in Bangladesh
 
-CTA: Request a Consultation → `/contact`
+**Chief Executive Officer, Britannia Law and Immigration Services · May 2001 to March 2013.** Based in Sylhet, Sharf managed operations for a legal and immigration services practice, coordinated client matters, and oversaw administrative work.
 
-Call 416-722-3244 or 416-900-0494.
+**Advocate, Judge’s Court in Sylhet · Since April 2013.** Sharf enrolled with the Bangladesh Bar Council in 2013. His work in Bangladesh has included civil and criminal litigation, mediation, arbitration, legal research, and drafting pleadings and affidavits.
 
-Related: Explore practice areas → `/practice-areas`; Refugee hearings and appeals → `/practice-areas/refugee-hearings-appeals`.
+**Advocate, Supreme Court of Bangladesh · Since January 2017.** Sharf obtained permission to practise before the Supreme Court of Bangladesh in 2017.
+
+## Canadian legal experience
+
+After moving to Canada, Sharf worked in Toronto as a legal assistant and Bengali interpreter, including assisting barrister Rodney L. H. Woolf. His work included legal documentation, client interviews, and interpretation in refugee and immigration-related proceedings.
+
+## Approach to client service
+
+Sharf listens to clients’ concerns, explains the process in plain language, and discusses practical next steps. He provides legal services in Ontario within the permitted scope of his paralegal licence.
+
+“Every client deserves to be heard, every legal concern deserves careful attention, and every matter deserves professional dedication.”

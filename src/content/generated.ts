@@ -454,117 +454,67 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "{{business.name}} is a paralegal practice based in Scarborough, Toronto. Its principal, {{business.principal}}, lists the following professional credentials:"
+            "markdown": "{{business.principal}} is the principal of {{business.name}} in Scarborough. He has more than two decades of experience in legal services, administration, advocacy, and client representation across Bangladesh and Canada."
           },
           {
             "kind": "copy",
-            "markdown": "- {{business.paralegalCredential}}\n- {{business.notaryCredential}}\n- {{business.bangladeshCredential}}"
-          },
-          {
-            "kind": "copy",
-            "markdown": "The practice’s listed areas include traffic tickets and provincial offences, accident benefits claims, refugee hearings and appeals, landlord and tenant matters, employment and human rights matters, and Small Claims Court matters."
-          }
-        ]
-      },
-      {
-        "heading": "A practical starting point",
-        "depth": 2,
-        "blocks": [
-          {
-            "kind": "copy",
-            "markdown": "A legal problem often arrives as paperwork: a ticket, a notice, a claim, or a letter with an important date. Before you can decide what to do, you need to understand what it means and which process applies."
-          },
-          {
-            "kind": "copy",
-            "markdown": "{{business.shortName}}’s proposed service approach is to make that first conversation useful: identify the issue, discuss whether the practice can assist, and explain the proposed work and fees before representation begins."
-          },
-          {
-            "kind": "editorial",
-            "markdown": "Editorial note: Client to approve this proposed service approach; remove “proposed” only after confirmation."
-          }
-        ]
-      },
-      {
-        "heading": "Professional background",
-        "depth": 2,
-        "blocks": [
-          {
-            "kind": "copy",
-            "markdown": "Sharf’s Ontario paralegal credential and Bangladesh advocate credential relate to different jurisdictions. The Bangladesh credential does not mean he is licensed as a lawyer in Ontario. Services in Ontario are offered within the permitted scope of his Ontario licence and any applicable appointment."
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[PLACEHOLDER: approved biography paragraph covering education, career timeline, and relevant experience. Do not invent institutions, dates, years in practice, or case results.]`"
-          }
-        ]
-      },
-      {
-        "heading": "Why {{business.shortName}}",
-        "depth": 2,
-        "blocks": [
-          {
-            "kind": "copy",
-            "markdown": "{{business.tagline}}"
-          },
-          {
-            "kind": "copy",
-            "markdown": "These are the values on {{business.shortName}}’s business card. The website should express them through accurate information, a clear explanation of the process, and straightforward ways to contact the office."
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[PLACEHOLDER: 60–100 words in Sharf’s own voice about why he founded the practice and the clients he hopes to serve.]`"
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[PLACEHOLDER: confirmed languages and any factual community involvement.]`"
-          },
-          {
-            "kind": "editorial",
-            "markdown": "Editorial note: These are biography slots, not fabricated personal statements. For a later preview, a labelled text block can fill their space."
-          }
-        ]
-      },
-      {
-        "heading": "Visit the Scarborough office",
-        "depth": 2,
-        "blocks": [
-          {
-            "kind": "copy",
-            "markdown": "{{address.full}}."
-          },
-          {
-            "kind": "copy",
-            "markdown": "Please call before travelling to confirm appointment arrangements."
+            "markdown": "His work in Ontario is informed by his experience in court advocacy, dispute resolution, legal research, and document preparation. He communicates in English, Bengali, and Sylheti."
           },
           {
             "kind": "editorial",
             "markdown": "Portrait: `[PLACEHOLDER: professional headshot; any temporary portrait must be labelled as a sample image.]`"
-          },
-          {
-            "kind": "editorial",
-            "markdown": "Office photograph: `[PLACEHOLDER: actual office/exterior photo; do not label stock imagery as the {{business.shortName}} office.]`"
           }
         ]
       },
       {
-        "heading": "Discuss your matter",
+        "heading": "Education and qualifications",
         "depth": 2,
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "Tell us briefly what happened and whether you have an upcoming date. Ask about the consultation arrangements before booking."
+            "markdown": "Sharf earned a Bachelor of Laws (LL.B.) and a Master of Laws (LL.M.) in Bangladesh. He completed the Paralegal program at Centennial College in Toronto and became a Licensed Paralegal with the Law Society of Ontario in 2026. He is also a {{business.notaryCredential}} and Commissioner for Taking Affidavits in Ontario."
+          }
+        ]
+      },
+      {
+        "heading": "Professional experience in Bangladesh",
+        "depth": 2,
+        "blocks": [
+          {
+            "kind": "copy",
+            "markdown": "**Chief Executive Officer, Britannia Law and Immigration Services · May 2001 to March 2013.** Based in Sylhet, Sharf managed operations for a legal and immigration services practice, coordinated client matters, and oversaw administrative work."
           },
           {
             "kind": "copy",
-            "markdown": "CTA: Request a Consultation → `/contact`"
+            "markdown": "**Advocate, Judge’s Court in Sylhet · Since April 2013.** Sharf enrolled with the Bangladesh Bar Council in 2013. His work in Bangladesh has included civil and criminal litigation, mediation, arbitration, legal research, and drafting pleadings and affidavits."
           },
           {
             "kind": "copy",
-            "markdown": "Call {{phone.primary}} or {{phone.office}}."
+            "markdown": "**Advocate, Supreme Court of Bangladesh · Since January 2017.** Sharf obtained permission to practise before the Supreme Court of Bangladesh in 2017."
+          }
+        ]
+      },
+      {
+        "heading": "Canadian legal experience",
+        "depth": 2,
+        "blocks": [
+          {
+            "kind": "copy",
+            "markdown": "After moving to Canada, Sharf worked in Toronto as a legal assistant and Bengali interpreter, including assisting barrister Rodney L. H. Woolf. His work included legal documentation, client interviews, and interpretation in refugee and immigration-related proceedings."
+          }
+        ]
+      },
+      {
+        "heading": "Approach to client service",
+        "depth": 2,
+        "blocks": [
+          {
+            "kind": "copy",
+            "markdown": "Sharf listens to clients’ concerns, explains the process in plain language, and discusses practical next steps. He provides legal services in Ontario within the permitted scope of his paralegal licence."
           },
           {
             "kind": "copy",
-            "markdown": "Related: Explore practice areas → `/practice-areas`; Refugee hearings and appeals → `/practice-areas/refugee-hearings-appeals`."
+            "markdown": "“Every client deserves to be heard, every legal concern deserves careful attention, and every matter deserves professional dedication.”"
           }
         ]
       }

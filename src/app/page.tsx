@@ -156,9 +156,9 @@ export default function HomePage() {
               Meet {site.business.principal}, principal of {site.business.name}.
             </p>
             <p>
-              Based on Danforth Avenue in Scarborough, {site.business.shortName} offers a starting point for people
-              facing an unfamiliar legal process. Ask questions, understand the options, and discuss
-              the work before deciding how to move forward.
+              Sharf brings more than two decades of experience in legal services and advocacy in
+              Bangladesh and Canada. He completed the Paralegal program at Centennial College and
+              communicates in English, Bengali, and Sylheti.
             </p>
             <div className="about-credentials">
               <span>
@@ -171,7 +171,7 @@ export default function HomePage() {
               </span>
             </div>
             <Link href="/about" className="text-link">
-              Get to know {site.business.shortName} <Icon name="arrow-right" />
+              Read Sharf’s biography <Icon name="arrow-right" />
             </Link>
             <p className="credential-footnote">
               The Bangladesh advocate credential does not indicate a licence to practise as a lawyer

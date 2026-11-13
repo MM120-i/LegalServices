@@ -146,6 +146,8 @@ function ServicesOverview({ page }: { page: PageDraft }) {
 }
 
 function About({ page }: { page: PageDraft }) {
+  const { intro, sections } = getPublicPageContent(page);
+
   return (
     <>
       <Hero
@@ -159,19 +161,9 @@ function About({ page }: { page: PageDraft }) {
           <article className="biography-panel prose">
             <h2>{site.business.principal}</h2>
             <p className="eyebrow">PRINCIPAL PARALEGAL</p>
-            <p>
-              {site.business.principal} is the principal of {site.business.name}, based on Danforth
-              Avenue in Scarborough.
-            </p>
-            <p>
-              A legal problem often arrives as a ticket, a notice, a claim, or a letter with an
-              important date. Start with a conversation about what it means, which process applies,
-              and whether the practice can assist.
-            </p>
-            <p>
-              Discuss the proposed scope of work and consultation arrangements before deciding how
-              to proceed.
-            </p>
+            {intro.map((text, index) => (
+              <RichText key={index} text={text} />
+            ))}
             <ul className="credential-list">
               {site.business.credentials.map((credential, index) => (
                 <li key={credential}>
@@ -182,51 +174,23 @@ function About({ page }: { page: PageDraft }) {
             </ul>
             <p className="form-note">
               The Bangladesh advocate credential does not indicate a licence to practise as a lawyer
-              in Ontario. Full biography and professional details await client review.
+              in Ontario.
             </p>
           </article>
         </div>
       </section>
-      <section className="editorial-band">
-        <div className="container editorial-row">
-          <h2>Why {site.business.shortName} Legal Services</h2>
-          <p>
-            Legal matters can feel unfamiliar and time-sensitive. A clear conversation helps you
-            understand the process, discuss the work involved, and ask questions before making a
-            decision.
-          </p>
-        </div>
-      </section>
-      <section className="container values-grid" aria-label="Our approach">
-        {[
-          {
-            icon: "shield",
-            title: "Trust",
-            text: "A considered conversation about your matter and the work involved.",
-          },
-          {
-            icon: "document",
-            title: "Dedication",
-            text: "An approach that starts with understanding your situation.",
-          },
-          {
-            icon: "globe",
-            title: "Practical support",
-            text: "Discuss the available options and the process that applies.",
-          },
-          {
-            icon: "arrow-right",
-            title: "Clear guidance",
-            text: "Straightforward information so you can understand your next step.",
-          },
-        ].map((value) => (
-          <article key={value.title}>
-            <Icon name={value.icon} />
-            <h2>{value.title}</h2>
-            <p>{value.text}</p>
-          </article>
-        ))}
-      </section>
+      {sections.map((section, index) => (
+        <section className={index % 2 === 0 ? "editorial-band" : "section"} key={section.heading}>
+          <div className="container editorial-row">
+            <h2>{section.heading}</h2>
+            <div className="prose">
+              {section.blocks.map((text, block) => (
+                <RichText key={block} text={text} />
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
       <section className="editorial-band">
         <div className="container editorial-row">
           <h2>Our Practice Focus</h2>
