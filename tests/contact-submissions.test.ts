@@ -50,7 +50,6 @@ for (const [index, scenario] of scenarios.entries()) {
       });
     };
 
-    // Identical browser retries must retain the same provider idempotency key.
     for (let attempt = 0; attempt < 2; attempt++) {
       const request = new Request("http://localhost:3100/api/contact", {
         method: "POST",

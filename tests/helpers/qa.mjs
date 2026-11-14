@@ -8,9 +8,8 @@ export const launchOrigin = "https://qa.lexora.test";
 
 const target = new URL(baseUrl);
 
-if (!["127.0.0.1", "localhost", "[::1]"].includes(target.hostname)) {
+if (!["127.0.0.1", "localhost", "[::1]"].includes(target.hostname))
   throw new Error("QA requests must target a local server.");
-}
 
 export function normalize(text) {
   return text.replace(/\s+/g, " ").trim();
@@ -23,9 +22,8 @@ export function documentFrom(html) {
 export function visibleText(document) {
   const copy = document.cloneNode(true);
 
-  for (const element of copy.querySelectorAll("script, style, noscript, template")) {
+  for (const element of copy.querySelectorAll("script, style, noscript, template"))
     element.remove();
-  }
 
   return normalize(copy.body.textContent ?? "");
 }

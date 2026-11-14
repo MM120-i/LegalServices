@@ -52,6 +52,7 @@ const server = createServer(async (request, response) => {
     if (process.env.QA_BLOCK_MAP === "true") {
       returnedHeaders["content-security-policy"] = "frame-src 'none'";
     }
+
     response.writeHead(upstream.status, returnedHeaders);
 
     if (upstream.body) {
