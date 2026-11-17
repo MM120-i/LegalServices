@@ -41,7 +41,13 @@ Do not edit `src/content/generated.ts` directly. Editorial instructions and unre
 
 ## Email configuration
 
-Copy `.env.example` to `.env.local`, then supply the Resend API key, verified sender email, and real recipient address. Supply these values before building the production preview so the Contact page can show the configured state. These secrets stay on the server; never prefix them with `NEXT_PUBLIC_`.
+The consultation form uses Resend to send office notifications to `info@abeadlegalservices.ca`. When a visitor supplies an email, the office can reply directly and the visitor receives an acknowledgement.
+
+1. Verify `notify.abeadlegalservices.ca` as a sending domain in Resend using the DNS records it provides. Keep the mailbox provider's existing DNS records for `abeadlegalservices.ca` in place.
+2. In Netlify's environment variables, set `CONTACT_TO_EMAIL=info@abeadlegalservices.ca`, `CONTACT_FROM_EMAIL=website@notify.abeadlegalservices.ca`, and `RESEND_API_KEY` to a Resend sending key scoped to the verified subdomain. Use the intended deploy context and include Builds and Functions if Netlify offers scope selection. Store the key privately.
+3. Redeploy so the Contact page and its API pick up the configuration. Submit the three sample inquiries in the client checklist and confirm receipt and Reply behavior.
+
+For local setup, copy `.env.example` to `.env.local`. Keep the API key blank for ordinary preview work. Never prefix the key with `NEXT_PUBLIC_`.
 
 Without these values the form shows an explicit preview notice and rejects delivery with a phone fallback. No emails are sent by the automated tests. A provider acceptance response is not a delivery receipt; test the real inbox before launch.
 

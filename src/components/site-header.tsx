@@ -26,9 +26,6 @@ export function SiteHeader() {
 
   return (
     <>
-      <div className="preview-bar">
-        Website preview <span>·</span> Sample reviews and missing details are labelled.
-      </div>
       <div className="topbar">
         <div className="container topbar-inner">
           <a href={site.phones.primary.href}>

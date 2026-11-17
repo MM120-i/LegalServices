@@ -11,7 +11,7 @@ Please provide the missing information and mark existing wording **Approved**, *
 - [ ] Primary phone: **416-722-3244**.
 - [ ] Office phone: **416-900-0494**; confirm which number visitors should use first.
 - [x] Office address: **3205 Danforth Avenue, Scarborough, ON M1L 1B8**.
-- [ ] A monitored public email address and the inbox that should receive website inquiries; these may be different.
+- [ ] Confirm that `info@abeadlegalservices.ca` is active, monitored, and should receive website inquiries.
 - [ ] The production domain the business owns or intends to obtain.
 - [ ] Office hours, appointment requirements, and whether walk-ins are accepted.
 - [ ] Confirm which languages the office offers for appointments and any interpretation arrangements. The biography lists English, Bengali, and Sylheti.
