@@ -74,11 +74,11 @@ Eyebrow: MEET YOUR PARALEGAL
 
 H2: Meet Sharf Uddin Abead.
 
-Sharf Uddin Abead is the principal of Abed Legal Services Professional Corporation, a paralegal practice based on Danforth Avenue in Scarborough. His credentials include Licensed Paralegal | Law Society of Ontario, Notary Public, and Advocate | Supreme Court of Bangladesh.
+Sharf Uddin Abead is the principal of Abead Legal Services Professional Corporation, a paralegal practice based on Danforth Avenue in Scarborough. His credentials include Licensed Paralegal | Law Society of Ontario, Notary Public, and Advocate | Supreme Court of Bangladesh.
 
-Legal processes can be unfamiliar. Abed’s proposed approach is straightforward: explain the issues, discuss the available options, and agree on the work before moving ahead.
+Legal processes can be unfamiliar. Abead’s proposed approach is straightforward: explain the issues, discuss the available options, and agree on the work before moving ahead.
 
-Editorial note: Replace “Abed’s proposed approach is” with “Abed’s approach is” after the client confirms this commitment.
+Editorial note: Replace “Abead’s proposed approach is” with “Abead’s approach is” after the client confirms this commitment.
 
 Asset: `[PLACEHOLDER: portrait of Sharf Uddin Abead — use a visibly labelled sample portrait or portrait placeholder in a later private preview.]`
 
@@ -93,8 +93,8 @@ Eyebrow: YOUR NEXT STEP
 H2: Start with a conversation.
 
 1. **Tell us the basics.** Call or send a short inquiry. Mention any hearing date or response deadline, and avoid sending sensitive documents through the website.
-2. **Understand the options.** Discuss whether Abed can assist, what the proposed work involves, and the fees before deciding how to proceed.
-3. **Agree on representation.** If Abed accepts your matter and you agree to retain the practice, the scope of work and next steps will be set out.
+2. **Understand the options.** Discuss whether Abead can assist, what the proposed work involves, and the fees before deciding how to proceed.
+3. **Agree on representation.** If Abead accepts your matter and you agree to retain the practice, the scope of work and next steps will be set out.
 
 CTA: Request a Consultation → `/contact`
 
@@ -132,7 +132,7 @@ H2: A few questions before you get in touch.
 
 ### What can a licensed Ontario paralegal help with?
 
-Licensed paralegals can provide legal services within a defined scope, including certain court and tribunal proceedings. Whether Abed can help depends on the type of matter, the forum, and the circumstances. Call to discuss the basics before sending documents.
+Licensed paralegals can provide legal services within a defined scope, including certain court and tribunal proceedings. Whether Abead can help depends on the type of matter, the forum, and the circumstances. Call to discuss the basics before sending documents.
 
 ### Is the first consultation free?
 
@@ -154,7 +154,7 @@ Call 416-722-3244 and explain the date at the start of the conversation. Do not 
 
 ### Do you offer notary services?
 
-Sharf Uddin Abead lists Notary Public among his credentials. Call with your document type and the receiving organization’s instructions to confirm whether Abed can provide the service you need.
+Sharf Uddin Abead lists Notary Public among his credentials. Call with your document type and the receiving organization’s instructions to confirm whether Abead can provide the service you need.
 
 ## Location and final contact
 
@@ -162,7 +162,7 @@ Eyebrow: VISIT US
 
 H2: Legal services on Danforth Avenue.
 
-Abed Legal Services Professional Corporation
+Abead Legal Services Professional Corporation
 
 3205 Danforth Avenue, Scarborough, ON M1L 1B8
 
@@ -182,4 +182,4 @@ Tell us what kind of help you need. We can discuss whether your matter is a fit 
 
 CTA: Request a Consultation → `/contact`
 
-Small print: General information only. Contacting Abed does not create a paralegal–client relationship.
+Small print: General information only. Contacting Abead does not create a paralegal–client relationship.

@@ -522,7 +522,7 @@ export const pageDrafts = [
     "faqs": [],
     "metadata": {
       "title": "{{business.principal}} | {{business.shortName}} Legal Services",
-      "description": "Meet {{business.principal}}, principal of {{business.name}} in Scarborough. Read about his listed credentials and paralegal practice.",
+      "description": "Meet {{business.principal}}, principal of {{business.shortName}} Legal Services in Scarborough. Read about his listed credentials and paralegal practice.",
       "productionIndexing": "index"
     }
   },

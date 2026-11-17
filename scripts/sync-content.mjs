@@ -6,8 +6,8 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (path) => readFileSync(resolve(root, path), "utf8");
 
 const tokenPairs = [
-  ["Abed Legal Services Professional Corporation", "business.name"],
-  ["Abed", "business.shortName"],
+  ["Abead Legal Services Professional Corporation", "business.name"],
+  ["Abead", "business.shortName"],
   ["Sharf Uddin Abead", "business.principal"],
   ["Trust | Dedication | Results", "business.tagline"],
   ["Licensed Paralegal | Law Society of Ontario", "business.paralegalCredential"],

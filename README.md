@@ -1,4 +1,4 @@
-# Abed Legal Services Professional Corporation
+# Abead Legal Services Professional Corporation
 
 Responsive paralegal-practice website built with Next.js App Router, TypeScript, and Tailwind CSS. Phases 1–3 are implemented locally. Phase 4 local QA and client-review preparation are implemented; client approval is pending. This is a private development preview, not a launched business website.
 

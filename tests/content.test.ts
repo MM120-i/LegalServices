@@ -54,7 +54,7 @@ test("content drafts have valid routes, metadata, links, FAQs, and preview label
   assert.equal(getPageDraft("/missing"), undefined);
   assert.throws(() => resolveCopy("{{unknown.token}}"), /Unknown content token/);
   assert.equal(resolveCopy("{{business.name}}"), site.business.name);
-  assert.equal(site.email, null, "Do not invent a business email");
+  assert.equal(site.email, "info@abeadlegalservices.ca", "Use the email printed on the client’s card");
   assert.equal(site.domain, null, "Do not invent a production domain");
   assert.equal(site.consultationModel, null, "Consultation terms are not confirmed");
 

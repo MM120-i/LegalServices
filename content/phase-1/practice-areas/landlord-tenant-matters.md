@@ -6,7 +6,7 @@ H1: Landlord and tenant paralegal services in Scarborough.
 
 A rental dispute may put your housing, rental income, or day-to-day living conditions under pressure. Whether you received a notice or need to address a problem, first identify what the document says and which process applies.
 
-Abed Legal Services Professional Corporation lists landlord and tenant matters among its practice areas. Call to discuss your situation and confirm whether the practice accepts matters for your side of the dispute.
+Abead Legal Services Professional Corporation lists landlord and tenant matters among its practice areas. Call to discuss your situation and confirm whether the practice accepts matters for your side of the dispute.
 
 ## What you can ask about
 
@@ -17,7 +17,7 @@ Abed Legal Services Professional Corporation lists landlord and tenant matters a
 - Preparing or responding to Landlord and Tenant Board applications.
 - Evidence, settlement discussions, and hearing preparation.
 
-Editorial note: `[CONFIRM: whether Abed represents landlords, tenants, or both, and which application types it accepts.]` Do not publish a categorical promise to represent both sides until confirmed. Representation of opposing parties in the same matter is not implied.
+Editorial note: `[CONFIRM: whether Abead represents landlords, tenants, or both, and which application types it accepts.]` Do not publish a categorical promise to represent both sides until confirmed. Representation of opposing parties in the same matter is not implied.
 
 ## Understand the document before reacting
 
@@ -36,7 +36,7 @@ Before sharing records, ask which documents the office needs and how to provide 
 ## Proposed approach
 
 1. Identify your role, the tenancy issue, and the stage of the proceeding.
-2. Review the documents and check whether Abed can accept the matter.
+2. Review the documents and check whether Abead can accept the matter.
 3. Discuss options, evidence needs, fees, and the proposed scope of work.
 4. If retained, prepare the agreed application, response, negotiations, or hearing steps.
 
@@ -44,7 +44,7 @@ Before sharing records, ask which documents the office needs and how to provide 
 
 ### Do you act for landlords and tenants?
 
-Call to confirm whether Abed accepts your type of matter. `[CONFIRM: replace with the approved policy.]`
+Call to confirm whether Abead accepts your type of matter. `[CONFIRM: replace with the approved policy.]`
 
 ### Does a notice mean I must leave immediately?
 

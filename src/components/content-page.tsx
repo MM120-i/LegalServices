@@ -261,6 +261,13 @@ function Contact({ page }: { page: PageDraft }) {
               </div>
             </div>
             <div className="contact-detail">
+              <Icon name="document" />
+              <div>
+                <h3>Email</h3>
+                <a href={`mailto:${site.email}`}>{site.email}</a>
+              </div>
+            </div>
+            <div className="contact-detail">
               <Icon name="clock" />
               <div>
                 <h3>Office hours</h3>

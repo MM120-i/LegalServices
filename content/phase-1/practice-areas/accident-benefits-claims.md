@@ -6,7 +6,7 @@ H1: Accident benefits claim assistance in Scarborough, Toronto.
 
 Recovering after a motor vehicle accident can involve medical appointments, insurance forms, and letters that are difficult to follow. If you are unsure what an insurer’s decision means, start by gathering the policy and the documents connected to that decision.
 
-Abed Legal Services Professional Corporation lists accident benefits claims among its practice areas. Ask about help understanding a benefit dispute and the next steps that may be available.
+Abead Legal Services Professional Corporation lists accident benefits claims among its practice areas. Ask about help understanding a benefit dispute and the next steps that may be available.
 
 ## What you can ask about
 

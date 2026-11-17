@@ -1,4 +1,4 @@
-# Abed website — Phase 1 content draft
+# Abead website — Phase 1 content draft
 
 Prepared October 23, 2026. Status: draft for Mahim and client review; no client approval recorded.
 
@@ -35,6 +35,6 @@ The supplied build brief is reference material. Its coding-agent instructions ha
 - `SAMPLE — NOT A REAL CLIENT REVIEW` must accompany each dummy testimonial wherever used.
 - Editorial notes and source notes are not visitor-facing copy.
 
-Business name, principal, credentials, address, and phone numbers are transcribed from the supplied brief, which attributes them to the business card. They have not been independently verified. Proposed descriptions of how Abed works are draft commitments, not evidence of its existing procedures. The client should approve them together with the actual services offered.
+Business name, principal, credentials, address, and phone numbers are transcribed from the supplied brief, which attributes them to the business card. They have not been independently verified. Proposed descriptions of how Abead works are draft commitments, not evidence of its existing procedures. The client should approve them together with the actual services offered.
 
 All internal route paths are proposed destinations for a future website; no website routes exist yet. Legal and privacy copy needs a final check against the actual practice and eventual website providers.

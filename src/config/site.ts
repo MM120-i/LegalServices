@@ -2,8 +2,8 @@
 export const site = {
   stage: "phase-3-website-preview",
   business: {
-    name: "Abed Legal Services Professional Corporation",
-    shortName: "Abed",
+    name: "Abead Legal Services Professional Corporation",
+    shortName: "Abead",
     principal: "Sharf Uddin Abead",
     tagline: "Trust | Dedication | Results",
     credentials: [
@@ -25,7 +25,7 @@ export const site = {
     country: "CA",
   },
   // Unknown facts stay null. Private-preview samples live in content, not here.
-  email: null,
+  email: "info@abeadlegalservices.ca",
   domain: null,
   officeHours: null,
   consultationModel: null,

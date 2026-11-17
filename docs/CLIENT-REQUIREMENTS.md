@@ -1,4 +1,4 @@
-# Abed Legal Services — information and approval needed from the client
+# Abead Legal Services — information and approval needed from the client
 
 Prepared November 2, 2026. All items below are pending unless explicitly recorded otherwise. This checklist has not been sent to the client.
 
@@ -6,7 +6,7 @@ Please provide the missing information and mark existing wording **Approved**, *
 
 ## 1. Confirm business and contact details
 
-- [x] Business name: **Abed Legal Services Professional Corporation**.
+- [x] Business name: **Abead Legal Services Professional Corporation**.
 - [ ] Principal’s name and spelling: **Sharf Uddin Abead**.
 - [ ] Primary phone: **416-722-3244**.
 - [ ] Office phone: **416-900-0494**; confirm which number visitors should use first.
@@ -135,4 +135,4 @@ Existing launch and inbox-confirmation requirements above still apply. Previous 
 
 ## Business details confirmed November 13, 2026
 
-The client supplied the new legal name and confirmed the office address. The website uses “Abed Legal Services” in the wordmark and the full corporate name in business details and structured data.
+The client supplied the new legal name and confirmed the office address. The website uses “Abead Legal Services” in the wordmark and the full corporate name in business details and structured data.

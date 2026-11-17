@@ -4,7 +4,7 @@ Route: `/about`
 
 H1: Meet Sharf Uddin Abead.
 
-Sharf Uddin Abead is the principal of Abed Legal Services Professional Corporation in Scarborough. He has more than two decades of experience in legal services, administration, advocacy, and client representation across Bangladesh and Canada.
+Sharf Uddin Abead is the principal of Abead Legal Services Professional Corporation in Scarborough. He has more than two decades of experience in legal services, administration, advocacy, and client representation across Bangladesh and Canada.
 
 His work in Ontario is informed by his experience in court advocacy, dispute resolution, legal research, and document preparation. He communicates in English, Bengali, and Sylheti.
 

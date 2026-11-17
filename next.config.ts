@@ -3,6 +3,9 @@ import { canonicalRedirects } from "./src/lib/launch.ts";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  experimental: {
+    agentUpgrade: "security",
+  },
   async redirects() {
     return canonicalRedirects(
       process.env.NEXT_PUBLIC_SITE_URL,

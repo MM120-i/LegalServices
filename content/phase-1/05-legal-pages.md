@@ -12,9 +12,9 @@ Effective date: `[CONFIRM: publication date]`
 
 ### Who this policy covers
 
-This policy explains how Abed Legal Services Professional Corporation handles personal information collected through this website. It does not replace any separate privacy information or terms provided when you retain the practice.
+This policy explains how Abead Legal Services Professional Corporation handles personal information collected through this website. It does not replace any separate privacy information or terms provided when you retain the practice.
 
-Privacy contact: `[CONFIRM: responsible person or role]`, Abed Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Call 416-722-3244 or email `[PLACEHOLDER: real privacy contact email]`.
+Privacy contact: `[CONFIRM: responsible person or role]`, Abead Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Call 416-722-3244 or email `[PLACEHOLDER: real privacy contact email]`.
 
 ### Information you choose to provide
 
@@ -64,7 +64,7 @@ Route: `/accessibility`
 
 H1: Accessibility
 
-Abed Legal Services Professional Corporation aims to make information about its services clear and usable. If you have difficulty using this website or need information in another format, contact the office so your request can be discussed.
+Abead Legal Services Professional Corporation aims to make information about its services clear and usable. If you have difficulty using this website or need information in another format, contact the office so your request can be discussed.
 
 Phone: 416-722-3244 or 416-900-0494.
 
@@ -98,15 +98,15 @@ H1: Website Disclaimer
 
 ### General information
 
-This website provides general information about Abed Legal Services Professional Corporation and the types of matters the practice may accept. It is not legal advice and should not be relied on to decide what to do in a particular matter. Laws, procedures, and individual circumstances can change the appropriate response.
+This website provides general information about Abead Legal Services Professional Corporation and the types of matters the practice may accept. It is not legal advice and should not be relied on to decide what to do in a particular matter. Laws, procedures, and individual circumstances can change the appropriate response.
 
 ### No automatic client relationship
 
-Visiting this website, calling, or submitting an inquiry does not by itself create a paralegal–client relationship. Abed must confirm that it can accept your matter, and the scope and terms of representation must be agreed before the practice undertakes work for you.
+Visiting this website, calling, or submitting an inquiry does not by itself create a paralegal–client relationship. Abead must confirm that it can accept your matter, and the scope and terms of representation must be agreed before the practice undertakes work for you.
 
 ### Deadlines
 
-Limitation periods, filing dates, and other deadlines may apply. Do not delay seeking advice. An inquiry, automated confirmation, or request for an appointment does not mean Abed will file documents, attend a hearing, or protect a deadline on your behalf.
+Limitation periods, filing dates, and other deadlines may apply. Do not delay seeking advice. An inquiry, automated confirmation, or request for an appointment does not mean Abead will file documents, attend a hearing, or protect a deadline on your behalf.
 
 ### Professional scope and credentials
 
@@ -126,6 +126,6 @@ Links to courts, tribunals, maps, reviews, or other websites are provided for co
 
 ### Contact
 
-Abed Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Call 416-722-3244 or 416-900-0494.
+Abead Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Call 416-722-3244 or 416-900-0494.
 
 Editorial note: Client to approve this disclaimer against actual intake and retainer procedures. Do not insert a broad claim that unsolicited inquiries have no privacy or confidentiality protection.
