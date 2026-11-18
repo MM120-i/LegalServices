@@ -717,6 +717,24 @@ textarea.input {
   font-size: 12px;
   color: #f3f4f5;
 }
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.footer-social-links a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #b0904b88;
+  border-radius: 50%;
+  color: #edc75b;
+}
+.footer-social-links a:hover {
+  border-color: currentColor;
+}
 .footer-grid address,
 .footer-muted {
   font-size: 12px;

@@ -66,6 +66,30 @@ const paths: Record<string, React.ReactNode> = {
       <path d="m4 15-1 6 6-1L21 8l-5-5L4 15ZM13 6l5 5M4 15l5 5" />
     </>
   ),
+  facebook: (
+    <path
+      d="M14 21v-8h3l.5-3H14V8c0-1 .4-2 2-2h2V3h-3c-3 0-5 2-5 5v2H7v3h3v8Z"
+      fill="currentColor"
+      stroke="none"
+    />
+  ),
+  instagram: (
+    <>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </>
+  ),
+  linkedin: (
+    <>
+      <path
+        d="M4 9h3v11H4zm6 0h3v1.5c.8-1.1 2-1.8 3.5-1.8 3 0 4.5 1.8 4.5 5V20h-3v-6c0-1.6-.7-2.5-2.1-2.5-1.7 0-2.9 1.1-2.9 2.8V20h-3Z"
+        fill="currentColor"
+        stroke="none"
+      />
+      <circle cx="5.5" cy="5.5" r="1.8" fill="currentColor" stroke="none" />
+    </>
+  ),
   menu: <path d="M3 6h18M3 12h18M3 18h18" />,
   close: <path d="m5 5 14 14M5 19 19 5" />,
   plus: <path d="M12 4v16M4 12h16" />,

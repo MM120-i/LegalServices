@@ -4,6 +4,13 @@ import { services } from "@/content/services";
 import { Brand } from "./brand";
 import { Icon } from "./icon";
 
+// Replace the platform homepages with the practice's confirmed profiles.
+const socialLinks = [
+  { label: "Facebook", icon: "facebook", href: "https://www.facebook.com/" },
+  { label: "Instagram", icon: "instagram", href: "https://www.instagram.com/" },
+  { label: "LinkedIn", icon: "linkedin", href: "https://www.linkedin.com/" },
+];
+
 export function SiteFooter() {
   return (
     <footer className="site-footer">
@@ -23,6 +30,13 @@ export function SiteFooter() {
             <a href={site.phones.primary.href}>{site.phones.primary.display}</a>
             <a href={site.phones.office.href}>{site.phones.office.display}</a>
             <span className="footer-muted">Call to confirm appointment availability.</span>
+            <nav className="footer-social-links" aria-label="Social media">
+              {socialLinks.map(({ label, icon, href }) => (
+                <a key={icon} href={href} aria-label={label}>
+                  <Icon name={icon} width={20} height={20} />
+                </a>
+              ))}
+            </nav>
           </div>
           <div>
             <h2>How we help</h2>

@@ -107,7 +107,7 @@ function Sidebar({ current }: { current: string }) {
           .filter((service) => service.href !== current)
           .map((service) => (
             <Link href={service.href} key={service.slug}>
-              {service.shortTitle}
+              {service.title}
               <span aria-hidden="true">↗</span>
             </Link>
           ))}
@@ -488,7 +488,7 @@ export function ContentPage({ page }: { page: PageDraft }) {
               .filter((service) => service.href !== page.route)
               .map((service) => (
                 <Link href={service.href} key={service.slug}>
-                  {service.shortTitle}
+                  {service.title}
                   <Icon name="arrow-right" />
                 </Link>
               ))}
