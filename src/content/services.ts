@@ -7,3 +7,5 @@ export const services = [
   { slug: "small-claims-court-matters", href: "/practice-areas/small-claims-court-matters", title: "Small Claims Court", shortTitle: "Small Claims Court", description: "Whether you’re making a claim or responding to one, get help understanding the process and preparing your case.", icon: "document" },
   { slug: "notary-public", href: "/notary-public", title: "Notary Public & Commissioning", shortTitle: "Notary Public", description: "For the documents that need an official signature. Call to confirm requirements, fees, and availability.", icon: "pen" },
 ] as const;
+
+export const practiceAreas = services.filter((service) => service.slug !== "notary-public");

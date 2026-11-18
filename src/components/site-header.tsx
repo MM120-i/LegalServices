@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 import { fullAddress, site } from "@/config/site";
-import { services } from "@/content/services";
+import { practiceAreas } from "@/content/services";
 import { Icon } from "./icon";
 import { Brand } from "./brand";
 
@@ -97,7 +97,7 @@ export function SiteHeader() {
                 </Link>
                 {item.label === "Practice Areas" ? (
                   <div className="dropdown-panel">
-                    {services.map((service) => (
+                    {practiceAreas.map((service) => (
                       <Link href={service.href} key={service.slug}>
                         {service.title}
                         <Icon name="arrow-up-right" />

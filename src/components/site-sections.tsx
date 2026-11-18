@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { fullAddress, site } from "@/config/site";
-import { services } from "@/content/services";
+import { practiceAreas } from "@/content/services";
 import { Icon } from "./icon";
 import { DeferredMap } from "./deferred-map";
 
 export function PracticeGrid({ overview = false }: { overview?: boolean }) {
   return (
     <div className="practice-grid">
-      {services.map((service, index) => (
+      {practiceAreas.map((service, index) => (
         <Link
           key={service.slug}
           href={service.href}

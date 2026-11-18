@@ -538,7 +538,7 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "Start with the issue you are facing. {{business.name}} lists six practice areas, along with notary public services. Each page explains what to ask about and what information may help at an initial conversation."
+            "markdown": "Start with the issue you are facing. {{business.name}} lists six practice areas. Each page explains what to ask about and what information may help at an initial conversation."
           }
         ]
       },
@@ -623,20 +623,6 @@ export const pageDrafts = [
           {
             "kind": "copy",
             "markdown": "Link: `/practice-areas/small-claims-court-matters`"
-          }
-        ]
-      },
-      {
-        "heading": "{{business.notaryCredential}} & Commissioning",
-        "depth": 2,
-        "blocks": [
-          {
-            "kind": "copy",
-            "markdown": "Confirm what your receiving organization requires, then call to ask about document services and appointment availability."
-          },
-          {
-            "kind": "copy",
-            "markdown": "Link: `/notary-public`"
           }
         ]
       },

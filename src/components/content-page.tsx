@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { site, fullAddress } from "@/config/site";
 import { resolveCopy } from "@/content";
-import { services } from "@/content/services";
+import { practiceAreas, services } from "@/content/services";
 import type { DraftFaq, PageDraft } from "@/content/types";
 import { ContactForm } from "./contact-form";
 import { isContactConfigured } from "@/lib/contact-server";
@@ -103,7 +103,7 @@ function Sidebar({ current }: { current: string }) {
       </div>
       <nav className="sidebar-links" aria-label="Other practice areas">
         <h3>Explore our services</h3>
-        {services
+        {practiceAreas
           .filter((service) => service.href !== current)
           .map((service) => (
             <Link href={service.href} key={service.slug}>
@@ -127,7 +127,7 @@ function ServicesOverview({ page }: { page: PageDraft }) {
       <section className="section">
         <div className="container">
           <div className="service-grid">
-            {services.map((service, index) => (
+            {practiceAreas.map((service, index) => (
               <Link className="service-card" href={service.href} key={service.slug}>
                 <span className="service-number">0{index + 1}</span>
                 <h2>{service.title}</h2>
@@ -195,7 +195,7 @@ function About({ page }: { page: PageDraft }) {
         <div className="container editorial-row">
           <h2>Our Practice Focus</h2>
           <div className="focus-links">
-            {services.map((service) => (
+            {practiceAreas.map((service) => (
               <Link href={service.href} key={service.slug}>
                 <Icon name="check" />
                 {service.title}
@@ -484,7 +484,7 @@ export function ContentPage({ page }: { page: PageDraft }) {
           </article>
           <nav className="related-services" aria-label="Other practice areas">
             <h2>Explore our services</h2>
-            {services
+            {practiceAreas
               .filter((service) => service.href !== page.route)
               .map((service) => (
                 <Link href={service.href} key={service.slug}>

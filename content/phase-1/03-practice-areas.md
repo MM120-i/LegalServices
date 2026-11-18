@@ -4,7 +4,7 @@ Route: `/practice-areas`
 
 H1: Paralegal services in Scarborough, Toronto.
 
-Start with the issue you are facing. Abead Legal Services Professional Corporation lists six practice areas, along with notary public services. Each page explains what to ask about and what information may help at an initial conversation.
+Start with the issue you are facing. Abead Legal Services Professional Corporation lists six practice areas. Each page explains what to ask about and what information may help at an initial conversation.
 
 ## Traffic Tickets & Provincial Offences
 
@@ -41,12 +41,6 @@ Link: `/practice-areas/employment-human-rights-matters`
 Get oriented before making or defending a claim for money or personal property. Ask about pleadings, evidence, settlement, and hearing preparation.
 
 Link: `/practice-areas/small-claims-court-matters`
-
-## Notary Public & Commissioning
-
-Confirm what your receiving organization requires, then call to ask about document services and appointment availability.
-
-Link: `/notary-public`
 
 ## Not sure where your matter fits?
 
