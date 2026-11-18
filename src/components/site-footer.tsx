@@ -26,11 +26,14 @@ export function SiteFooter() {
           </div>
           <div>
             <h2>How we help</h2>
-            {services.map((service) => (
-              <Link key={service.slug} href={service.href}>
-                {service.shortTitle}
-              </Link>
-            ))}
+            <Link href="/practice-areas">Practice Areas</Link>
+            {services
+              .filter((service) => service.slug !== "traffic-tickets-provincial-offences")
+              .map((service) => (
+                <Link key={service.slug} href={service.href}>
+                  {service.shortTitle}
+                </Link>
+              ))}
           </div>
           <div>
             <h2>Company</h2>
