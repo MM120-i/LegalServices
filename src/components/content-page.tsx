@@ -231,16 +231,6 @@ function Contact({ page }: { page: PageDraft }) {
               </p>
               <ContactForm deliveryConfigured={isContactConfigured()} />
             </div>
-            <div id="location">
-              <DeferredMap
-                src={`https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&z=15&output=embed`}
-                title={`Map showing ${site.business.name} address: ${fullAddress}`}
-              >
-                <span className="map-caption">
-                  {site.address.street} · {site.address.city}
-                </span>
-              </DeferredMap>
-            </div>
           </div>
           <aside className="contact-information">
             <h2>{site.business.name}</h2>
@@ -326,6 +316,20 @@ function Contact({ page }: { page: PageDraft }) {
               <p>{step.text}</p>
             </article>
           ))}
+        </div>
+      </section>
+      <section className="section contact-map-section" aria-label="Office location">
+        <div className="container">
+          <div id="location">
+            <DeferredMap
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&z=15&output=embed`}
+              title={`Map showing ${site.business.name} address: ${fullAddress}`}
+            >
+              <span className="map-caption">
+                {site.address.street} · {site.address.city}
+              </span>
+            </DeferredMap>
+          </div>
         </div>
       </section>
     </>

@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { site } from "@/config/site";
 import { getPublishedOrigin } from "@/lib/seo";
 import { SiteHeader } from "@/components/site-header";
-import { MobileCallBar, SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 import "./legal-elegance.css";
 
@@ -29,8 +28,6 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <main id="main-content" tabIndex={-1}>
           {children}
         </main>
-        <SiteFooter />
-        <MobileCallBar />
       </body>
     </html>
   );

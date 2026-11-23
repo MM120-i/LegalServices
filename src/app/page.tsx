@@ -5,7 +5,7 @@ import { getPageDraft, resolveCopy } from "@/content";
 import { getPageMetadata, getLegalServiceSchema, getFaqSchema } from "@/lib/seo";
 import { getPublicPageContent } from "@/lib/public-content";
 import { Icon } from "@/components/icon";
-import { CTABand, LocationSection, Portrait, PracticeGrid } from "@/components/site-sections";
+import { LocationSection, Portrait, PracticeGrid } from "@/components/site-sections";
 import { RichText } from "@/components/rich-text";
 import { JsonLd } from "@/components/json-ld";
 
@@ -304,7 +304,6 @@ export default function HomePage() {
         </div>
       </section>
       <LocationSection />
-      <CTABand />
       <JsonLd data={getLegalServiceSchema()} />
       <JsonLd data={getFaqSchema(faqs)} />
     </>

@@ -27,7 +27,8 @@ p {
   text-wrap: pretty;
 }
 .container {
-  width: min(1200px, calc(100% - 64px));
+  width: calc(100% - clamp(36px, 6vw, 160px));
+  max-width: none;
 }
 .section {
   padding-block: 44px;
@@ -1194,4 +1195,10 @@ textarea.input {
 .contact-detail > div {
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+/* The map is the final section on the home and contact pages. */
+.section.location-section,
+.section.contact-map-section {
+  padding-bottom: 0;
 }
