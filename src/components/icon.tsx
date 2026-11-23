@@ -14,6 +14,13 @@ const paths: Record<string, React.ReactNode> = {
   phone: (
     <path d="m5 3 4 1 1 5-3 2a16 16 0 0 0 6 6l2-3 5 1 1 4c0 2-2 3-4 2C9 19 5 15 3 7 2 5 3 3 5 3Z" />
   ),
+  telephone: (
+    <>
+      <path d="M4 10c-1 0-2-1-2-2V6c0-3 20-3 20 0v2c0 1-1 2-2 2h-3V7H7v3H4Z" />
+      <path d="M8 10h8l4 7v4H4v-4l4-7ZM10 7v3m4-3v3" />
+      <circle cx="12" cy="16" r="2.5" />
+    </>
+  ),
   pin: (
     <>
       <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { site } from "@/config/site";
 
 export function Brand() {
   return (
@@ -36,9 +35,7 @@ export function Brand() {
           />
         </svg>
       </span>
-      <span className="brand-type">
-        {site.business.shortName.toUpperCase()} <span>LEGAL SERVICES</span>
-      </span>
+      <span className="brand-type">Abed Legal Services</span>
     </Link>
   );
 }

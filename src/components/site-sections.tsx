@@ -96,12 +96,15 @@ export function LocationSection({ large = false }: { large?: boolean }) {
               <br />
               {site.address.city}, {site.address.province} {site.address.postalCode}
             </address>
-            <div className="location-detail">
-              <Icon name="phone" />
-              <div>
-                <a href={site.phones.primary.href}>{site.phones.primary.display}</a>
-                <a href={site.phones.office.href}>{site.phones.office.display}</a>
-              </div>
+            <div className="location-detail location-phones">
+              <a href={site.phones.primary.href}>
+                <Icon name="phone" />
+                {site.phones.primary.display}
+              </a>
+              <a href={site.phones.office.href}>
+                <Icon name="telephone" />
+                {site.phones.office.display}
+              </a>
             </div>
             <div className="location-detail">
               <Icon name="clock" />

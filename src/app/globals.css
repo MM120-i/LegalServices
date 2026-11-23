@@ -32,7 +32,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -265,13 +265,13 @@ main {
   border: 1px solid currentColor;
   position: relative;
   font-family: var(--serif);
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 46px;
   padding-left: 9px;
 }
 .brand-mark > span {
   font-family: var(--sans);
-  font-size: 17px;
+  font-size: 1.0625rem;
   position: absolute;
   right: 4px;
   top: -10px;
@@ -279,14 +279,14 @@ main {
 }
 .brand-type {
   font-family: var(--serif);
-  font-size: 34px;
+  font-size: 2.125rem;
   line-height: 0.9;
   letter-spacing: -0.045em;
 }
 .brand-type > span {
   display: block;
   font-family: var(--sans);
-  font-size: 8px;
+  font-size: 0.5rem;
   font-weight: 500;
   letter-spacing: 0.21em;
   margin-top: 9px;
@@ -309,7 +309,7 @@ main {
   text-decoration-thickness: 1px;
 }
 .nav-chevron {
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding-left: 6px;
 }
 .nav-dropdown {
@@ -461,7 +461,7 @@ main {
 }
 .hero-assurance > p {
   font-size: 0.62rem;
-  max-width: 90px;
+  max-width: 5.625rem;
 }
 .hero-visual {
   position: relative;
@@ -545,7 +545,7 @@ main {
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 266px;
+  width: 16.625rem;
   border-radius: 3px;
 }
 .hero-note-icon {
@@ -1716,7 +1716,7 @@ textarea {
     width: calc(100% - 40px);
   }
   body {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .topbar {
     font-size: 0.61rem;
@@ -1741,20 +1741,20 @@ textarea {
   .brand-mark {
     width: 35px;
     height: 39px;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 38px;
     padding-left: 7px;
   }
   .brand-mark > span {
     right: 3px;
     top: -9px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .brand-type {
-    font-size: 29px;
+    font-size: 1.8125rem;
   }
   .brand-type > span {
-    font-size: 6.5px;
+    font-size: 0.40625rem;
     margin-top: 7px;
   }
   .brand {
@@ -2181,7 +2181,7 @@ textarea {
   input:not([type="checkbox"]):not([type="hidden"]),
   textarea,
   select {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .not-found h1 {
     font-size: 3.6rem;

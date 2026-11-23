@@ -33,7 +33,7 @@ export function SiteHeader() {
             {site.phones.primary.display}
           </a>
           <a href={site.phones.office.href}>
-            <Icon name="phone" />
+            <Icon name="telephone" />
             {site.phones.office.display}
           </a>
           <span className="topbar-location">
