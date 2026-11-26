@@ -8,6 +8,7 @@
   --muted: #526070;
   --line: #dedbd3;
   --accent: #b88b27;
+  --gold-600: #805b0b;
   --serif: Georgia, "Times New Roman", serif;
   --sans: "Segoe UI", Arial, sans-serif;
 }
@@ -43,7 +44,7 @@ p {
   font-size: clamp(1.75rem, 3vw, 2.375rem);
 }
 .eyebrow {
-  color: #88620d;
+  color: var(--gold-600);
   font-weight: 700;
   letter-spacing: 0.23em;
   font-size: 0.6875rem;
@@ -204,9 +205,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    linear-gradient(90deg, #0b1d2df5 0%, #0b1d2dd9 45%, #0b1d2d30 100%),
-    url("/legal-architecture.webp") center 48% / cover;
+  background: linear-gradient(90deg, #0b1d2df5 0%, #0b1d2dd9 45%, #0b1d2d30 100%);
 }
 .page-hero .breadcrumb {
   font-size: 0.6875rem;
@@ -522,7 +521,7 @@ textarea.input {
   width: 32px;
   height: 32px;
   border: 1px solid #ad8226;
-  color: #8c6614;
+  color: var(--gold-600);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -581,7 +580,7 @@ textarea.input {
   background: #fbfbfb;
   margin-bottom: 7px;
 }
-.faq-item summary {
+.faq-trigger {
   font-family: var(--serif);
   font-weight: 600;
   font-size: 1.0625rem;
@@ -631,10 +630,12 @@ textarea.input {
   background: #fcfaf5;
 }
 .service-icon,
-.service-number,
-.practice-card svg,
-.service-index {
+.practice-card svg {
   color: #8c6614;
+}
+.service-number,
+.service-index {
+  color: var(--gold-600);
 }
 .service-card h2,
 .practice-card h3 {
@@ -798,7 +799,7 @@ textarea.input {
   color: var(--ink);
 }
 .reviews-section .eyebrow {
-  color: #88620d;
+  color: var(--gold-600);
 }
 .reviews-section .section-heading h2 {
   color: var(--ink);
@@ -808,7 +809,7 @@ textarea.input {
   border-color: #ded7c6;
 }
 .about-copy h2 em {
-  color: #8c6614;
+  color: var(--gold-600);
 }
 .about-portrait-note {
   background: var(--forest);
@@ -1191,7 +1192,7 @@ textarea.input {
 /* The map is the final section on the home and contact pages. */
 .section.location-section,
 .section.contact-map-section {
-  padding-bottom: clamp(24px, 3vw, 64px);
+  padding-bottom: 0;
   background: #fff;
 }
 
@@ -1381,4 +1382,59 @@ textarea.input {
     grid-column: 1 / -1;
     justify-content: center;
   }
+}
+
+.page-hero-image {
+  z-index: -2;
+  object-fit: cover;
+  object-position: center 48%;
+}
+.faq-trigger {
+  width: 100%;
+  text-align: left;
+  color: inherit;
+}
+.faq-trigger > span:last-child {
+  flex-shrink: 0;
+}
+.map-frame {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+}
+.contact-map-section .map-frame {
+  aspect-ratio: 16 / 9;
+}
+
+/* Let the address content set the shared row height without overflowing it. */
+.location-grid {
+  align-items: stretch;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+}
+.location-grid > .map-frame {
+  aspect-ratio: auto;
+  min-height: clamp(420px, 36vw, 900px);
+}
+.location-card {
+  min-width: 0;
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .location-grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .location-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .location-grid > .map-frame {
+    aspect-ratio: 16 / 9;
+    min-height: 330px;
+  }
+}
+
+main:has(> .location-section:last-of-type) + .site-footer,
+main:has(> .contact-map-section:last-of-type) + .site-footer {
+  border-top: clamp(24px, 3vw, 64px) solid #fff;
 }

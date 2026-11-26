@@ -1,16 +1,9 @@
 "use client";
 
+import { site } from "@/config/site";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-export function DeferredMap({
-  src,
-  title,
-  children,
-}: {
-  src: string;
-  title: string;
-  children: ReactNode;
-}) {
+export function DeferredMap({ src, children }: { src: string; children: ReactNode }) {
   const frame = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -36,7 +29,7 @@ export function DeferredMap({
     <iframe
       src={src}
       loading="lazy"
-      title={title}
+      title={`Map — Abead Legal Services, ${site.address.street}, ${site.address.city}`}
       referrerPolicy="no-referrer-when-downgrade"
       allowFullScreen
     />

@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Icon } from "@/components/icon";
 import { site } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: "Page Not Found | Abead Legal Services",
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (
@@ -18,12 +24,15 @@ export default function NotFound() {
           Our services and contact details are right here.
         </p>
         <div className="hero-actions">
+          <Link href="/" className="button button-secondary">
+            Return to Home
+          </Link>
           <Link href="/practice-areas" className="button button-primary">
-            Explore our services
+            View Practice Areas
             <Icon name="arrow-right" />
           </Link>
-          <Link href="/contact" className="button button-secondary">
-            Contact {site.business.shortName}
+          <Link href="/contact#consultation" className="button button-secondary">
+            Request a Consultation
           </Link>
         </div>
         <a className="text-link" href={site.phones.primary.href}>

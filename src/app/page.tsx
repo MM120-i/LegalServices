@@ -1,3 +1,4 @@
+import { FaqItem } from "@/components/faq-item";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/config/site";
@@ -63,9 +64,10 @@ export default function HomePage() {
           <div className="hero-visual">
             <div className="hero-image-wrap">
               <Image
-                src="/toronto-skyline.jpg"
+                src="/images/toronto-skyline.webp"
                 alt="Toronto’s waterfront skyline with the CN Tower"
-                fill
+                width={1600}
+                height={645}
                 sizes="(max-width: 760px) 100vw, 45vw"
                 loading="eager"
                 fetchPriority="high"
@@ -282,15 +284,9 @@ export default function HomePage() {
           </div>
           <div className="faq-list">
             {faqs.map((faq) => (
-              <details className="faq-item" key={faq.question}>
-                <summary>
-                  {resolveCopy(faq.question)}
-                  <Icon name="plus" />
-                </summary>
-                <div className="faq-answer">
-                  <RichText text={resolveCopy(faq.answer)} />
-                </div>
-              </details>
+              <FaqItem question={resolveCopy(faq.question)} key={faq.question}>
+                <RichText text={resolveCopy(faq.answer)} />
+              </FaqItem>
             ))}
           </div>
         </div>

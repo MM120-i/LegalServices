@@ -103,10 +103,7 @@ export function LocationSection({ large = false }: { large?: boolean }) {
               View address on Google Maps <Icon name="arrow-up-right" />
             </a>
           </div>
-          <DeferredMap
-            src={map}
-            title={`Map showing ${site.business.name} address: ${fullAddress}`}
-          >
+          <DeferredMap src={map}>
             <span className="map-caption">
               {site.address.street} · {site.address.city}
             </span>

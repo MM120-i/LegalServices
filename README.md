@@ -120,3 +120,7 @@ In the Netlify dashboard, open the project, then **Project configuration → Gen
 After saving, check the public deployment in a fresh browser session. Confirm the badge and its “build your own site” prompt are absent on Home and Employment & Human Rights, and scroll through the closing CTA to check the full address. A visitor's “Hide this badge” action affects that visitor's browser only.
 
 Reference: https://docs.netlify.com/manage/projects/powered-by-netlify-badge/
+
+## Hero photograph
+
+The locally stored Toronto waterfront photograph is by Mathew Schwartz, sourced from https://unsplash.com/photos/panoramic-photography-of-city-nwtJyl-2iMI under the Unsplash License (https://unsplash.com/license). The original was downloaded for this project on October 23, 2026. It is served as `public/images/toronto-skyline.webp` with explicit dimensions and responsive sizes.

@@ -1,4 +1,5 @@
-import { contentTokens } from "../config/site.ts";
+import { services } from "./services.ts";
+import { contentTokens, site } from "../config/site.ts";
 import { pageDrafts, sharedCopyDraft } from "./generated.ts";
 import type { ContentRoute, PageDraft } from "./types.ts";
 
@@ -25,4 +26,16 @@ export function resolveCopy(copy: string): string {
 
     return contentTokens[key as keyof typeof contentTokens];
   });
+}
+
+export function getPageHeading(page: PageDraft): string {
+  if (page.route === "/about") {
+    return `About ${site.business.principal}`;
+  }
+
+  if (page.route === "/contact") {
+    return `Speak With ${site.business.name}`;
+  }
+
+  return services.find((service) => service.href === page.route)?.title ?? resolveCopy(page.h1);
 }

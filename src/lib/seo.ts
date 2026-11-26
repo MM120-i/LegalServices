@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { parsePublishedOrigin } from "./launch.ts";
 import { site, fullAddress } from "@/config/site";
-import { getPageDraft, resolveCopy } from "@/content";
+import { getPageDraft, resolveCopy, getPageHeading } from "@/content";
 import type { ContentRoute, DraftFaq, PageDraft } from "@/content/types";
 
 export function getPublishedOrigin(): string | null {
@@ -90,7 +90,7 @@ export function getBreadcrumbSchema(page: PageDraft) {
   if (page.route.startsWith("/practice-areas/"))
     items.push({ name: "Practice areas", item: `${origin}/practice-areas` });
 
-  items.push({ name: resolveCopy(page.h1), item: `${origin}${page.route}` });
+  items.push({ name: getPageHeading(page), item: `${origin}${page.route}` });
 
   return {
     "@context": "https://schema.org",

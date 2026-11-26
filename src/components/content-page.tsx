@@ -1,7 +1,9 @@
+import Image from "next/image";
+import { FaqItem } from "./faq-item";
 import Link from "next/link";
 import { site, fullAddress } from "@/config/site";
-import { resolveCopy } from "@/content";
-import { practiceAreas, services } from "@/content/services";
+import { getPageHeading } from "@/content";
+import { practiceAreas } from "@/content/services";
 import type { DraftFaq, PageDraft } from "@/content/types";
 import { ContactForm } from "./contact-form";
 import { isContactConfigured } from "@/lib/contact-server";
@@ -23,16 +25,7 @@ function Breadcrumb({ page }: { page: PageDraft }) {
             <Link href="/practice-areas">Practice areas</Link>
           </li>
         ) : null}
-        <li aria-current="page">
-          {page.route === "/about"
-            ? "About"
-            : page.route === "/contact"
-              ? "Contact"
-              : page.route === "/practice-areas"
-                ? "Practice areas"
-                : (services.find((service) => service.href === page.route)?.shortTitle ??
-                  resolveCopy(page.h1))}
-        </li>
+        <li aria-current="page">{getPageHeading(page)}</li>
       </ol>
     </nav>
   );
@@ -41,17 +34,11 @@ function Breadcrumb({ page }: { page: PageDraft }) {
 function Hero({ page, lead, eyebrow }: { page: PageDraft; lead: string; eyebrow: string }) {
   return (
     <header className="page-hero">
+      <Image className="page-hero-image" src="/legal-architecture.webp" alt="" fill sizes="100vw" />
       <div className="container">
         <Breadcrumb page={page} />
         <p className="eyebrow">{eyebrow}</p>
-        <h1 className="display-title">
-          {page.route === "/about"
-            ? `About ${site.business.principal}`
-            : page.route === "/contact"
-              ? `Speak With ${site.business.name}`
-              : (services.find((service) => service.href === page.route)?.title ??
-                resolveCopy(page.h1))}
-        </h1>
+        <h1 className="display-title">{getPageHeading(page)}</h1>
         {lead ? <p className="lead">{lead}</p> : null}
       </div>
     </header>
@@ -69,15 +56,9 @@ function FaqList({ faqs }: { faqs: DraftFaq[] }) {
       <h2>Your questions, answered.</h2>
       <div className="faq-list">
         {faqs.map((faq) => (
-          <details className="faq-item" key={faq.question}>
-            <summary>
-              {faq.question}
-              <span aria-hidden="true">+</span>
-            </summary>
-            <div className="prose">
-              <RichText text={faq.answer} />
-            </div>
-          </details>
+          <FaqItem question={faq.question} key={faq.question}>
+            <RichText text={faq.answer} />
+          </FaqItem>
         ))}
       </div>
     </section>
@@ -323,7 +304,6 @@ function Contact({ page }: { page: PageDraft }) {
           <div id="location">
             <DeferredMap
               src={`https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&z=15&output=embed`}
-              title={`Map showing ${site.business.name} address: ${fullAddress}`}
             >
               <span className="map-caption">
                 {site.address.street} · {site.address.city}

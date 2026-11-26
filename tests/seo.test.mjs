@@ -60,13 +60,30 @@ test("SEO directives, sitemap, structured data, and displayed FAQs agree", async
     assert.equal(business.founder.name, site.business.principal);
     schemas.forEach(assertNoRatings);
 
+    for (const image of document.querySelectorAll("img")) {
+      assert.ok(image.hasAttribute("alt"), `${route}: missing image alternative`);
+    }
+
+    const breadcrumbLabel = document.querySelector('.breadcrumb [aria-current="page"]');
+    if (breadcrumbLabel) {
+      assert.equal(
+        normalize(breadcrumbLabel.textContent),
+        normalize(document.querySelector("h1").textContent),
+      );
+    }
+
     const faqSchema = schemas.find((schema) => schema["@type"] === "FAQPage");
     const displayedFaqs = [...document.querySelectorAll(".faq-item")];
 
     assert.equal(faqSchema?.mainEntity.length ?? 0, displayedFaqs.length, `${route}: FAQ count`);
 
     displayedFaqs.forEach((item, index) => {
-      const summary = item.querySelector("summary")?.cloneNode(true);
+      const trigger = item.querySelector(".faq-trigger");
+      assert.equal(trigger.getAttribute("aria-expanded"), "false");
+      const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+      assert.ok(panel?.hasAttribute("hidden"));
+      assert.equal(panel.getAttribute("aria-labelledby"), trigger.id);
+      const summary = trigger.cloneNode(true);
       summary.querySelectorAll('[aria-hidden="true"]').forEach((element) => element.remove());
       const answer = item.querySelector(".faq-answer, .prose");
       const entity = faqSchema.mainEntity[index];
@@ -95,6 +112,11 @@ test("SEO directives, sitemap, structured data, and displayed FAQs agree", async
       assert.equal(breadcrumb.itemListElement.at(-1).item, `${launchOrigin}${route}`);
     }
   }
+
+  const missing = await fetch(new URL("/accessibility-missing-page", baseUrl));
+  assert.equal(missing.status, 404);
+  const missingHtml = await missing.text();
+  assert.ok(missingHtml.includes("<title>Page Not Found | Abead Legal Services</title>"));
 
   const robots = await (await fetch(new URL("/robots.txt", baseUrl))).text();
   const sitemap = await (await fetch(new URL("/sitemap.xml", baseUrl))).text();

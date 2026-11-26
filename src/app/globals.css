@@ -474,6 +474,10 @@ main {
   background: var(--forest);
 }
 .hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 34% 50%;
   filter: saturate(0.5) brightness(0.8);
@@ -874,7 +878,7 @@ main {
 .faq-item {
   border-bottom: 1px solid var(--line);
 }
-.faq-item summary {
+.faq-trigger {
   font-size: 0.86rem;
   font-weight: 500;
   display: flex;
@@ -887,16 +891,13 @@ main {
   min-height: 66px;
   line-height: 1.65;
 }
-.faq-item summary::-webkit-details-marker {
+.faq-trigger::-webkit-details-marker {
   display: none;
 }
-.faq-item summary svg {
+.faq-trigger svg {
   width: 17px;
   height: 17px;
   transition: transform 0.2s;
-}
-.faq-item[open] summary svg {
-  transform: rotate(45deg);
 }
 .faq-answer {
   font-size: 0.83rem;
@@ -1945,7 +1946,7 @@ textarea {
     grid-template-columns: 1fr;
     gap: 34px;
   }
-  .faq-item summary {
+  .faq-trigger {
     font-size: 0.86rem;
     padding-block: 22px;
   }
