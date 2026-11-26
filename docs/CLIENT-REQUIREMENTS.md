@@ -136,3 +136,11 @@ Existing launch and inbox-confirmation requirements above still apply. Previous 
 ## Business details confirmed November 13, 2026
 
 The client supplied the new legal name and confirmed the office address. The website uses “Abead Legal Services” in the wordmark and the full corporate name in business details and structured data.
+
+
+## Metadata and mobile QA checkpoint — November 25, 2026
+
+- [ ] Supply the client-owned GA4 Web stream measurement ID (`G-...`) if page-view analytics is wanted. Integration is ready but stays disabled without it. Confirm privacy wording, retention and consent settings, then verify actual receipt in GA4.
+- [ ] Confirm the Search Console property owner and grant access, or complete Google's exact TXT verification. Sitemap submission and ownership cannot be confirmed from the public website alone.
+
+Developer follow-up: disable the injected hosting badge in Netlify → Project configuration → General → Powered by Netlify badge → Off → Save. The public Netlify preview still injected the badge during this audit. Account/plan restrictions may require the account owner. Recheck the live site after deployment; no client action is needed for the code fixes.

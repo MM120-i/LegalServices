@@ -404,7 +404,8 @@ function LegalPage({ page }: { page: PageDraft }) {
                   technical information with Google.
                 </p>
                 <p>
-                  No analytics or marketing tracking has been enabled. Final provider details,
+                  Google Analytics 4 page-view measurement runs only when configured. Marketing
+                  tracking is not enabled. Final provider details,
                   retention periods, and the practice’s privacy contact will be added before
                   publication.
                 </p>

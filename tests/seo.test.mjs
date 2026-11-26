@@ -21,7 +21,21 @@ function assertNoRatings(value) {
 test("SEO directives, sitemap, structured data, and displayed FAQs agree", async () => {
   const pages = await loadPages();
 
+  const titles = new Set();
+  const descriptions = new Set();
+
   for (const { route, document } of pages) {
+    const title = document.querySelector("title")?.textContent ?? "";
+    const description =
+      document.querySelector('meta[name="description"]')?.getAttribute("content") ?? "";
+
+    assert.ok(title.length > 0 && title.length <= 60, `${route}: title length`);
+    assert.ok(description.length > 0 && description.length <= 155, `${route}: description length`);
+    assert.ok(title.endsWith(" | Abead Legal Services"), `${route}: full brand suffix`);
+    assert.ok(!titles.has(title), `${route}: duplicate title`);
+    assert.ok(!descriptions.has(description), `${route}: duplicate description`);
+    titles.add(title);
+    descriptions.add(description);
     assert.equal(
       document.querySelector('script[src^="/.netlify/scripts/hud"]'),
       null,

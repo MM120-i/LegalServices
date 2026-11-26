@@ -107,7 +107,7 @@ Read [the launch execution record](docs/PHASE-5-LAUNCH.md) and the updated [clie
 
 `npm run launch:check` scans the existing build and shipping source, writes `artifacts/launch/readiness.json`, and returns exit code 1 while launch blockers remain. Run a build first; optionally use `LAUNCH_BUILD_DIR` for an isolated build. This command reads `.env.local` without printing credentials. It does not publish, send email, prove client approval, or replace the documented live checks. The current preview is expected to fail because it retains labelled sample material and missing real configuration.
 
-The canonical redirect is conditional on a valid HTTPS `NEXT_PUBLIC_SITE_URL` and `SITE_PUBLISHED=true`. Hosting must handle HTTPS/certificates for both www and non-www. `GOOGLE_SITE_VERIFICATION` optionally adds a public Search Console verification token; Domain properties use DNS verification. GA4 activation remains pending client-owned account details and privacy/consent decisions.
+The canonical redirect is conditional on a valid HTTPS `NEXT_PUBLIC_SITE_URL` and `SITE_PUBLISHED=true`. Hosting must handle HTTPS/certificates for both www and non-www. `GOOGLE_SITE_VERIFICATION` optionally adds a public Search Console verification token; Domain properties use DNS verification. GA4 activation requires the client-owned Web stream measurement ID and finalized privacy information.
 
 At each phase checkpoint, update `docs/CLIENT-REQUIREMENTS.md` with all remaining client dependencies; do not mark a phase complete merely because its preparation is finished.
 
@@ -124,3 +124,18 @@ Reference: https://docs.netlify.com/manage/projects/powered-by-netlify-badge/
 ## Hero photograph
 
 The locally stored Toronto waterfront photograph is by Mathew Schwartz, sourced from https://unsplash.com/photos/panoramic-photography-of-city-nwtJyl-2iMI under the Unsplash License (https://unsplash.com/license). The original was downloaded for this project on October 23, 2026. It is served as `public/images/toronto-skyline.webp` with explicit dimensions and responsive sizes.
+
+
+### GA4 and Search Console setup
+
+GA4 was absent before this audit. It remains **not yet activated** because no real client-owned measurement ID was supplied. There is no evidence available here to confirm the private Search Console property or sitemap submission.
+
+1. In the client’s GA4 property, create a Web data stream for `https://abeadlegalservices.ca`. Copy its `G-...` measurement ID.
+2. Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` in the intended Netlify deploy context, then rebuild. Leave it blank on ordinary previews. Use the real ID on an approved preview only when verifying actual receipt.
+3. Turn **Enhanced Measurement off** for that stream. The app sends one explicit page_view on initial load and each pathname change. Automatic history pageviews would double-count; no scroll, form, outbound-click or advertising measurement is requested. Google Signals and ad personalization are disabled in code. Page locations exclude query strings and fragments, and referrer is blank so contact form values are not sent.
+4. Verify each route and client-side navigation in GA4 Realtime/DebugView, including browser Back. Actual event receipt remains pending access to the real stream. Finalize the privacy policy and retention/consent settings before activation.
+5. In Search Console, add the Domain property `abeadlegalservices.ca`. Copy Google’s exact TXT verification value to the authoritative DNS host at `@`; retain existing email records. Click Verify, then submit `https://abeadlegalservices.ca/sitemap.xml`. Alternatively, for a URL-prefix property set `GOOGLE_SITE_VERIFICATION` to the token value and rebuild. Record verification and sitemap receipt in the client handoff.
+
+References: [GA4 pageviews](https://developers.google.com/analytics/devguides/collection/ga4/views), [Search Console ownership verification](https://support.google.com/webmasters/answer/9008080).
+
+Run `npm run qa:mobile` after building `.next-qa-launch` with `NEXT_BUILD_DIR=.next-qa-launch SITE_PUBLISHED=true NEXT_PUBLIC_SITE_URL=https://qa.lexora.test npm run build -- --webpack`. The test uses installed Microsoft Edge with touch-enabled mobile emulation at 360px and 390px, covers all routes including 404, and saves results/screenshots in `artifacts/qa/mobile/`. These checks do not substitute for physical iPhone/Android or Safari testing.

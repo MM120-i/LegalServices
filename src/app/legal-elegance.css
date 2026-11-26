@@ -1398,6 +1398,8 @@ textarea.input {
   flex-shrink: 0;
 }
 .map-frame {
+  width: 100%;
+  min-width: 0;
   aspect-ratio: 16 / 9;
   min-height: 0;
 }
@@ -1437,4 +1439,45 @@ textarea.input {
 main:has(> .location-section:last-of-type) + .site-footer,
 main:has(> .contact-map-section:last-of-type) + .site-footer {
   border-top: clamp(24px, 3vw, 64px) solid #fff;
+}
+
+/* Touch targets include inline legal links and compact navigation labels. */
+@media (max-width: 900px) {
+  .topbar .topbar-inner > a,
+  main a,
+  .sidebar-links a,
+  .focus-links a,
+  .contact-information a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  main p a,
+  main li a,
+  .breadcrumb a,
+  .form-note a,
+  .form-status a {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .checkbox-label {
+    min-height: 44px;
+    padding-block: 8px;
+    cursor: pointer;
+  }
+  .mobile-practice-menu {
+    border-bottom: 1px solid var(--line);
+  }
+  .mobile-practice-menu summary {
+    min-height: 44px;
+    padding: 12px 0;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .mobile-practice-menu a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 16px;
+  }
 }

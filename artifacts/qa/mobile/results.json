@@ -1,0 +1,500 @@
+[
+  {
+    "width": 360,
+    "route": "/",
+    "status": 200,
+    "menu": "true",
+    "title": "Scarborough & Toronto Paralegal | Abead Legal Services",
+    "description": "Licensed paralegal serving Scarborough and Toronto. Call to discuss tickets, disputes or hearings and understand your next step.",
+    "overflow": false,
+    "small": [],
+    "over": [
+      {
+        "tag": "LI",
+        "cls": "practice-slide",
+        "width": 322
+      },
+      {
+        "tag": "DIV",
+        "cls": "practice-slide-photo",
+        "width": 322
+      },
+      {
+        "tag": "IMG",
+        "cls": "",
+        "width": 322
+      },
+      {
+        "tag": "DIV",
+        "cls": "practice-slide-copy",
+        "width": 322
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "width": 274
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "width": 274
+      },
+      {
+        "tag": "A",
+        "cls": "text-link",
+        "width": 128
+      },
+      {
+        "tag": "svg",
+        "cls": {},
+        "width": 17
+      }
+    ],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/about",
+    "status": 200,
+    "menu": "true",
+    "title": "About Sharf Uddin Abead | Abead Legal Services",
+    "description": "Meet Sharf Uddin Abead, a licensed paralegal in Scarborough serving Toronto. Call to discuss your matter and the help available.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas",
+    "status": 200,
+    "menu": "true",
+    "title": "Scarborough Paralegal Services | Abead Legal Services",
+    "description": "Explore paralegal services in Scarborough and Toronto, from traffic tickets to small claims. Call to find the right starting point.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas/traffic-tickets-provincial-offences",
+    "status": 200,
+    "menu": "true",
+    "title": "Traffic Ticket Paralegal in Toronto | Abead Legal Services",
+    "description": "Facing a traffic ticket or provincial offence in Scarborough or Toronto? Call for help understanding the charge, deadlines and your options.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas/accident-benefits-claims",
+    "status": 200,
+    "menu": "true",
+    "title": "Accident Benefits Paralegal Toronto | Abead Legal Services",
+    "description": "Need help with accident benefits in Scarborough or Toronto? Call to discuss insurer decisions, claim documents and possible next steps.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas/refugee-hearings-appeals",
+    "status": 200,
+    "menu": "true",
+    "title": "Refugee Hearing Paralegal in Toronto | Abead Legal Services",
+    "description": "Preparing for a refugee hearing or appeal in Toronto? Call our Scarborough office to discuss preparation and representation within our scope.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas/landlord-tenant-matters",
+    "status": 200,
+    "menu": "true",
+    "title": "Landlord & Tenant Paralegal Toronto | Abead Legal Services",
+    "description": "Rental notice or landlord and tenant dispute in Scarborough or Toronto? Call for help with the LTB process and hearing preparation.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas/employment-human-rights-matters",
+    "status": 200,
+    "menu": "true",
+    "title": "Employment Paralegal in Toronto | Abead Legal Services",
+    "description": "Employment or human rights concerns in Scarborough or Toronto? Call to discuss your rights, the appropriate process and next steps.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/practice-areas/small-claims-court-matters",
+    "status": 200,
+    "menu": "true",
+    "title": "Small Claims Paralegal in Toronto | Abead Legal Services",
+    "description": "Making or defending a small claim in Scarborough or Toronto? Call for help with claims, settlement discussions and hearing preparation.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/notary-public",
+    "status": 200,
+    "menu": "true",
+    "title": "Scarborough Notary Public | Abead Legal Services",
+    "description": "Need notarization in Scarborough, Toronto? Call to confirm your document requirements, fees and appointment availability before visiting.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/contact",
+    "status": 200,
+    "menu": "true",
+    "title": "Contact Our Scarborough Office | Abead Legal Services",
+    "description": "Visit 3205 Danforth Avenue in Scarborough, Toronto. Call 416-722-3244 or 416-900-0494 to discuss your matter and request a consultation.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/thank-you",
+    "status": 200,
+    "menu": "true",
+    "title": "Inquiry Sent | Abead Legal Services",
+    "description": "Thank you for contacting our Scarborough office. Have an urgent deadline in Toronto? Call the office while you wait for a reply.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/missing-audit-page",
+    "status": 404,
+    "menu": "true",
+    "title": "Page Not Found | Abead Legal Services",
+    "description": "This page could not be found. Explore our Scarborough and Toronto paralegal services, return home or call the office for help.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/privacy-policy",
+    "status": 200,
+    "menu": "true",
+    "title": "Privacy Policy | Abead Legal Services",
+    "description": "Read our website privacy information for the Scarborough and Toronto practice. Call with questions about inquiries and personal information.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/accessibility",
+    "status": 200,
+    "menu": "true",
+    "title": "Accessibility | Abead Legal Services",
+    "description": "Need help accessing our website or Scarborough office? Call to ask about alternate formats and appointment arrangements in Toronto.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 360,
+    "route": "/disclaimer",
+    "status": 200,
+    "menu": "true",
+    "title": "Website Disclaimer | Abead Legal Services",
+    "description": "Read the limits of our website information and paralegal scope in Scarborough, Toronto. Call for advice about your specific circumstances.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 360
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "status": 200,
+    "menu": "true",
+    "title": "Scarborough & Toronto Paralegal | Abead Legal Services",
+    "description": "Licensed paralegal serving Scarborough and Toronto. Call to discuss tickets, disputes or hearings and understand your next step.",
+    "overflow": false,
+    "small": [],
+    "over": [
+      {
+        "tag": "LI",
+        "cls": "practice-slide",
+        "width": 352
+      },
+      {
+        "tag": "DIV",
+        "cls": "practice-slide-photo",
+        "width": 352
+      },
+      {
+        "tag": "IMG",
+        "cls": "",
+        "width": 352
+      },
+      {
+        "tag": "DIV",
+        "cls": "practice-slide-copy",
+        "width": 352
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "width": 304
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "width": 304
+      },
+      {
+        "tag": "A",
+        "cls": "text-link",
+        "width": 128
+      },
+      {
+        "tag": "svg",
+        "cls": {},
+        "width": 17
+      }
+    ],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/about",
+    "status": 200,
+    "menu": "true",
+    "title": "About Sharf Uddin Abead | Abead Legal Services",
+    "description": "Meet Sharf Uddin Abead, a licensed paralegal in Scarborough serving Toronto. Call to discuss your matter and the help available.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas",
+    "status": 200,
+    "menu": "true",
+    "title": "Scarborough Paralegal Services | Abead Legal Services",
+    "description": "Explore paralegal services in Scarborough and Toronto, from traffic tickets to small claims. Call to find the right starting point.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas/traffic-tickets-provincial-offences",
+    "status": 200,
+    "menu": "true",
+    "title": "Traffic Ticket Paralegal in Toronto | Abead Legal Services",
+    "description": "Facing a traffic ticket or provincial offence in Scarborough or Toronto? Call for help understanding the charge, deadlines and your options.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas/accident-benefits-claims",
+    "status": 200,
+    "menu": "true",
+    "title": "Accident Benefits Paralegal Toronto | Abead Legal Services",
+    "description": "Need help with accident benefits in Scarborough or Toronto? Call to discuss insurer decisions, claim documents and possible next steps.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas/refugee-hearings-appeals",
+    "status": 200,
+    "menu": "true",
+    "title": "Refugee Hearing Paralegal in Toronto | Abead Legal Services",
+    "description": "Preparing for a refugee hearing or appeal in Toronto? Call our Scarborough office to discuss preparation and representation within our scope.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas/landlord-tenant-matters",
+    "status": 200,
+    "menu": "true",
+    "title": "Landlord & Tenant Paralegal Toronto | Abead Legal Services",
+    "description": "Rental notice or landlord and tenant dispute in Scarborough or Toronto? Call for help with the LTB process and hearing preparation.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas/employment-human-rights-matters",
+    "status": 200,
+    "menu": "true",
+    "title": "Employment Paralegal in Toronto | Abead Legal Services",
+    "description": "Employment or human rights concerns in Scarborough or Toronto? Call to discuss your rights, the appropriate process and next steps.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/practice-areas/small-claims-court-matters",
+    "status": 200,
+    "menu": "true",
+    "title": "Small Claims Paralegal in Toronto | Abead Legal Services",
+    "description": "Making or defending a small claim in Scarborough or Toronto? Call for help with claims, settlement discussions and hearing preparation.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/notary-public",
+    "status": 200,
+    "menu": "true",
+    "title": "Scarborough Notary Public | Abead Legal Services",
+    "description": "Need notarization in Scarborough, Toronto? Call to confirm your document requirements, fees and appointment availability before visiting.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/contact",
+    "status": 200,
+    "menu": "true",
+    "title": "Contact Our Scarborough Office | Abead Legal Services",
+    "description": "Visit 3205 Danforth Avenue in Scarborough, Toronto. Call 416-722-3244 or 416-900-0494 to discuss your matter and request a consultation.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/thank-you",
+    "status": 200,
+    "menu": "true",
+    "title": "Inquiry Sent | Abead Legal Services",
+    "description": "Thank you for contacting our Scarborough office. Have an urgent deadline in Toronto? Call the office while you wait for a reply.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/missing-audit-page",
+    "status": 404,
+    "menu": "true",
+    "title": "Page Not Found | Abead Legal Services",
+    "description": "This page could not be found. Explore our Scarborough and Toronto paralegal services, return home or call the office for help.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/privacy-policy",
+    "status": 200,
+    "menu": "true",
+    "title": "Privacy Policy | Abead Legal Services",
+    "description": "Read our website privacy information for the Scarborough and Toronto practice. Call with questions about inquiries and personal information.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/accessibility",
+    "status": 200,
+    "menu": "true",
+    "title": "Accessibility | Abead Legal Services",
+    "description": "Need help accessing our website or Scarborough office? Call to ask about alternate formats and appointment arrangements in Toronto.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  },
+  {
+    "width": 390,
+    "route": "/disclaimer",
+    "status": 200,
+    "menu": "true",
+    "title": "Website Disclaimer | Abead Legal Services",
+    "description": "Read the limits of our website information and paralegal scope in Scarborough, Toronto. Call for advice about your specific circumstances.",
+    "overflow": false,
+    "small": [],
+    "over": [],
+    "touch": 1,
+    "viewportWidth": 390
+  }
+]

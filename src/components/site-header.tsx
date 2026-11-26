@@ -129,17 +129,31 @@ export function SiteHeader() {
           className="mobile-nav"
           aria-label="Mobile navigation"
         >
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={close}
-              aria-current={pathname === item.href ? "page" : undefined}
-            >
-              {item.label}
-              <Icon name="arrow-up-right" />
-            </Link>
-          ))}
+          {nav.map((item) =>
+            item.href === "/practice-areas" ? (
+              <details className="mobile-practice-menu" key={item.href}>
+                <summary>Practice Areas</summary>
+                <Link href={item.href} onClick={close}>
+                  View all practice areas
+                </Link>
+                {practiceAreas.map((service) => (
+                  <Link href={service.href} key={service.slug} onClick={close}>
+                    {service.title}
+                  </Link>
+                ))}
+              </details>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={close}
+                aria-current={pathname === item.href ? "page" : undefined}
+              >
+                {item.label}
+                <Icon name="arrow-up-right" />
+              </Link>
+            ),
+          )}
           <a href={site.phones.primary.href} onClick={close}>
             Call {site.phones.primary.display}
           </a>

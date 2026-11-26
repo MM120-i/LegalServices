@@ -5,6 +5,8 @@ import { site } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Page Not Found | Abead Legal Services",
+  description:
+    "This page could not be found. Explore our Scarborough and Toronto paralegal services, return home or call the office for help.",
   robots: { index: false, follow: false },
 };
 

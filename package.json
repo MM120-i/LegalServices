@@ -23,7 +23,8 @@
     "qa:lighthouse": "node scripts/qa-lighthouse.mjs",
     "qa:checks": "npm run check && node scripts/run-qa.mjs",
     "launch:check": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/launch-check.mjs",
-    "launch:test": "node --experimental-strip-types --test tests/launch.test.ts"
+    "launch:test": "node --experimental-strip-types --test tests/launch.test.ts",
+    "qa:mobile": "node --experimental-strip-types --test tests/mobile.test.mjs"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -41,6 +42,7 @@
     "lighthouse": "^13.5.0",
     "linkedom": "^0.18.14",
     "prettier": "^3.9.10",
+    "puppeteer-core": "25.16.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },

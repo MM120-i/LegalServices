@@ -437,8 +437,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Scarborough Paralegal | {{business.shortName}} Legal Services",
-      "description": "Explore {{business.shortName}}’s paralegal services in Scarborough, Toronto. Traffic tickets, rental disputes, small claims and more. Request a consultation.",
+      "title": "Scarborough & Toronto Paralegal | {{business.shortName}} Legal Services",
+      "description": "Licensed paralegal serving Scarborough and Toronto. Call to discuss tickets, disputes or hearings and understand your next step.",
       "productionIndexing": "index"
     }
   },
@@ -521,8 +521,8 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "{{business.principal}} | {{business.shortName}} Legal Services",
-      "description": "Meet {{business.principal}}, principal of {{business.shortName}} Legal Services in Scarborough. Read about his listed credentials and paralegal practice.",
+      "title": "About {{business.principal}} | {{business.shortName}} Legal Services",
+      "description": "Meet {{business.principal}}, a licensed paralegal in Scarborough serving Toronto. Call to discuss your matter and the help available.",
       "productionIndexing": "index"
     }
   },
@@ -651,8 +651,8 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Paralegal Services in Scarborough | {{business.shortName}} Legal Services",
-      "description": "Explore traffic tickets, accident benefits, refugee hearings, rental disputes, employment, human rights, small claims and notary services.",
+      "title": "Scarborough Paralegal Services | {{business.shortName}} Legal Services",
+      "description": "Explore paralegal services in Scarborough and Toronto, from traffic tickets to small claims. Call to find the right starting point.",
       "productionIndexing": "index"
     }
   },
@@ -809,8 +809,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Traffic Ticket Paralegal in Scarborough | {{business.shortName}}",
-      "description": "Received a ticket or summons? Explore traffic ticket and provincial offences services in Scarborough. Call {{business.shortName}} to discuss your next step.",
+      "title": "Traffic Ticket Paralegal in Toronto | {{business.shortName}} Legal Services",
+      "description": "Facing a traffic ticket or provincial offence in Scarborough or Toronto? Call for help understanding the charge, deadlines and your options.",
       "productionIndexing": "index"
     }
   },
@@ -967,8 +967,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Accident Benefits Claims in Toronto | {{business.shortName}}",
-      "description": "Questions about accident-benefits documents or an insurer’s denial? Ask {{business.shortName}} in Scarborough about claim assistance and dispute representation.",
+      "title": "Accident Benefits Paralegal Toronto | {{business.shortName}} Legal Services",
+      "description": "Need help with accident benefits in Scarborough or Toronto? Call to discuss insurer decisions, claim documents and possible next steps.",
       "productionIndexing": "index"
     }
   },
@@ -1139,8 +1139,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Refugee Hearing Paralegal in Toronto | {{business.shortName}}",
-      "description": "Ask {{business.shortName}} in Scarborough about refugee hearing and appeal services before the Immigration and Refugee Board within permitted paralegal scope.",
+      "title": "Refugee Hearing Paralegal in Toronto | {{business.shortName}} Legal Services",
+      "description": "Preparing for a refugee hearing or appeal in Toronto? Call our Scarborough office to discuss preparation and representation within our scope.",
       "productionIndexing": "index"
     }
   },
@@ -1297,8 +1297,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Landlord & Tenant Paralegal in Scarborough | {{business.shortName}}",
-      "description": "Questions about a rental notice or LTB proceeding? Contact {{business.shortName}} in Scarborough to discuss landlord and tenant paralegal services.",
+      "title": "Landlord & Tenant Paralegal Toronto | {{business.shortName}} Legal Services",
+      "description": "Rental notice or landlord and tenant dispute in Scarborough or Toronto? Call for help with the LTB process and hearing preparation.",
       "productionIndexing": "index"
     }
   },
@@ -1455,8 +1455,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Employment & Human Rights Paralegal in Toronto | {{business.shortName}}",
-      "description": "Explore employment and human rights paralegal services at {{business.shortName}} in Scarborough. Ask about your matter, the appropriate process and next steps.",
+      "title": "Employment Paralegal in Toronto | {{business.shortName}} Legal Services",
+      "description": "Employment or human rights concerns in Scarborough or Toronto? Call to discuss your rights, the appropriate process and next steps.",
       "productionIndexing": "index"
     }
   },
@@ -1609,8 +1609,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "Small Claims Court Paralegal in Toronto | {{business.shortName}}",
-      "description": "Making or defending a Small Claims Court claim? Ask {{business.shortName}} in Scarborough about claims, defences, settlement and hearing preparation.",
+      "title": "Small Claims Paralegal in Toronto | {{business.shortName}} Legal Services",
+      "description": "Making or defending a small claim in Scarborough or Toronto? Call for help with claims, settlement discussions and hearing preparation.",
       "productionIndexing": "index"
     }
   },
@@ -1777,8 +1777,8 @@ export const pageDrafts = [
       }
     ],
     "metadata": {
-      "title": "{{business.notaryCredential}} in Scarborough | {{business.shortName}} Legal Services",
-      "description": "Need notarization or commissioning in Scarborough? Call {{business.shortName}} to confirm document requirements, fees and appointment availability.",
+      "title": "Scarborough {{business.notaryCredential}} | {{business.shortName}} Legal Services",
+      "description": "Need notarization in Scarborough, Toronto? Call to confirm your document requirements, fees and appointment availability before visiting.",
       "productionIndexing": "index"
     }
   },
@@ -1921,8 +1921,8 @@ export const pageDrafts = [
     ],
     "faqs": [],
     "metadata": {
-      "title": "Contact {{business.shortName}} Legal Services | Scarborough, Toronto",
-      "description": "Contact {{business.name}} at {{address.street}}, Scarborough. Call {{phone.primary}} or {{phone.office}} to ask about a consultation.",
+      "title": "Contact Our Scarborough Office | {{business.shortName}} Legal Services",
+      "description": "Visit {{address.street}} in Scarborough, Toronto. Call {{phone.primary}} or {{phone.office}} to discuss your matter and request a consultation.",
       "productionIndexing": "index"
     }
   },
@@ -1962,7 +1962,7 @@ export const pageDrafts = [
     "faqs": [],
     "metadata": {
       "title": "Inquiry Sent | {{business.shortName}} Legal Services",
-      "description": "Your inquiry has been sent to {{business.shortName}} Legal Services. If you have an approaching deadline, call the office rather than waiting for a reply.",
+      "description": "Thank you for contacting our Scarborough office. Have an urgent deadline in Toronto? Call the office while you wait for a reply.",
       "productionIndexing": "noindex"
     }
   },
@@ -1994,7 +1994,7 @@ export const pageDrafts = [
     "faqs": [],
     "metadata": {
       "title": "Page Not Found | {{business.shortName}} Legal Services",
-      "description": "Find {{business.shortName}}’s practice areas and contact information, or return to the homepage.",
+      "description": "This page could not be found. Explore our Scarborough and Toronto paralegal services, return home or call the office for help.",
       "productionIndexing": "noindex"
     }
   },
@@ -2128,7 +2128,7 @@ export const pageDrafts = [
     "faqs": [],
     "metadata": {
       "title": "Privacy Policy | {{business.shortName}} Legal Services",
-      "description": "Read how {{business.name}} handles website inquiries and personal information, including privacy questions and contact details.",
+      "description": "Read our website privacy information for the Scarborough and Toronto practice. Call with questions about inquiries and personal information.",
       "productionIndexing": "index"
     }
   },
@@ -2206,7 +2206,7 @@ export const pageDrafts = [
     "faqs": [],
     "metadata": {
       "title": "Accessibility | {{business.shortName}} Legal Services",
-      "description": "Contact {{business.name}} about website access, alternate formats or office access arrangements in Scarborough.",
+      "description": "Need help accessing our website or Scarborough office? Call to ask about alternate formats and appointment arrangements in Toronto.",
       "productionIndexing": "index"
     }
   },
@@ -2299,7 +2299,7 @@ export const pageDrafts = [
     "faqs": [],
     "metadata": {
       "title": "Website Disclaimer | {{business.shortName}} Legal Services",
-      "description": "Read the terms for general website information, professional scope, deadlines and inquiries at {{business.name}}.",
+      "description": "Read the limits of our website information and paralegal scope in Scarborough, Toronto. Call for advice about your specific circumstances.",
       "productionIndexing": "index"
     }
   }

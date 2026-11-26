@@ -4,6 +4,7 @@ import { site } from "@/config/site";
 import { getPublishedOrigin, isPublished } from "@/lib/seo";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
 import "./legal-elegance.css";
 
@@ -19,6 +20,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "";
+
   return (
     <html lang="en-CA">
       <body>
@@ -30,6 +33,9 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           {children}
         </main>
         <SiteFooter />
+        {/^G-[A-Z0-9]+$/.test(measurementId) ? (
+          <GoogleAnalytics measurementId={measurementId} />
+        ) : null}
       </body>
     </html>
   );
