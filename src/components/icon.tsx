@@ -6,6 +6,7 @@ const paths: Record<string, React.ReactNode> = {
       <path d="M4 12h15M13 5l7 7-7 7" />
     </>
   ),
+  "arrow-left": <path d="M20 12H5m6-7-7 7 7 7" />,
   "arrow-up-right": (
     <>
       <path d="M5 19 19 5M5 5h14v14" />

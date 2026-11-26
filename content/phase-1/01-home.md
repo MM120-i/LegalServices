@@ -4,7 +4,7 @@ Route: `/`
 
 ## Hero
 
-Eyebrow: ABED LEGAL SERVICES PROFESSIONAL CORPORATION · SCARBOROUGH
+Eyebrow: ABEAD LEGAL SERVICES PROFESSIONAL CORPORATION · SCARBOROUGH
 
 H1: A clearer next step for your legal matter.
 

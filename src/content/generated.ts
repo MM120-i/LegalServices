@@ -19,7 +19,7 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "Eyebrow: ABED LEGAL SERVICES PROFESSIONAL CORPORATION · SCARBOROUGH"
+            "markdown": "Eyebrow: ABEAD LEGAL SERVICES PROFESSIONAL CORPORATION · SCARBOROUGH"
           },
           {
             "kind": "copy",

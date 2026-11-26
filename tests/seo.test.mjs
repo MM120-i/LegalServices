@@ -22,6 +22,18 @@ test("SEO directives, sitemap, structured data, and displayed FAQs agree", async
   const pages = await loadPages();
 
   for (const { route, document } of pages) {
+    assert.equal(
+      document.querySelector('script[src^="/.netlify/scripts/hud"]'),
+      null,
+      `${route}: hosting badge injection`,
+    );
+
+    assert.doesNotMatch(
+      document.body.textContent,
+      /powered\s+by\s+netlify|build\s+your\s+own\s+site/i,
+      `${route}: hosting advertising`,
+    );
+
     const robots = document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? "";
     const shouldIndex = launchMode && route !== "/thank-you";
 

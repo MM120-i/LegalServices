@@ -5,7 +5,8 @@ import { getPageDraft, resolveCopy } from "@/content";
 import { getPageMetadata, getLegalServiceSchema, getFaqSchema } from "@/lib/seo";
 import { getPublicPageContent } from "@/lib/public-content";
 import { Icon } from "@/components/icon";
-import { LocationSection, Portrait, PracticeGrid } from "@/components/site-sections";
+import { LocationSection, Portrait } from "@/components/site-sections";
+import { PracticeCarousel } from "@/components/practice-carousel";
 import { RichText } from "@/components/rich-text";
 import { JsonLd } from "@/components/json-ld";
 
@@ -127,7 +128,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <PracticeGrid />
+          <PracticeCarousel />
         </div>
       </section>
       <section className="section about-section">

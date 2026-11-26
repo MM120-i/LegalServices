@@ -1,35 +1,7 @@
 import Link from "next/link";
 import { fullAddress, site } from "@/config/site";
-import { practiceAreas } from "@/content/services";
 import { Icon } from "./icon";
 import { DeferredMap } from "./deferred-map";
-
-export function PracticeGrid({ overview = false }: { overview?: boolean }) {
-  return (
-    <div className="practice-grid">
-      {practiceAreas.map((service, index) => (
-        <Link
-          key={service.slug}
-          href={service.href}
-          className={`practice-card ${index === 6 ? "practice-card-wide" : ""}`}
-        >
-          <div className="practice-card-top">
-            <span className="service-icon">
-              <Icon name={service.icon} />
-            </span>
-            <span className="service-index">0{index + 1}</span>
-          </div>
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-          <span className="text-link">
-            {overview ? "Explore this service" : "Find out more"}
-            <Icon name="arrow-up-right" />
-          </span>
-        </Link>
-      ))}
-    </div>
-  );
-}
 
 export function CTABand() {
   return (

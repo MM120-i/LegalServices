@@ -110,3 +110,13 @@ Read [the launch execution record](docs/PHASE-5-LAUNCH.md) and the updated [clie
 The canonical redirect is conditional on a valid HTTPS `NEXT_PUBLIC_SITE_URL` and `SITE_PUBLISHED=true`. Hosting must handle HTTPS/certificates for both www and non-www. `GOOGLE_SITE_VERIFICATION` optionally adds a public Search Console verification token; Domain properties use DNS verification. GA4 activation remains pending client-owned account details and privacy/consent decisions.
 
 At each phase checkpoint, update `docs/CLIENT-REQUIREMENTS.md` with all remaining client dependencies; do not mark a phase complete merely because its preparation is finished.
+
+## Remove hosting advertising
+
+Netlify injects its public badge through `/.netlify/scripts/hud?variant=public` at its edge servers. The application layout and repository configuration contain no badge injection.
+
+In the Netlify dashboard, open the project, then **Project configuration → General → Powered by Netlify badge**. Turn the badge **off** and **Save**. The setting applies on the next request without a redeploy. If the toggle is locked, Netlify documents that the Personal or Pro plan enables it. Confirm the available option in the dashboard before making a billing change.
+
+After saving, check the public deployment in a fresh browser session. Confirm the badge and its “build your own site” prompt are absent on Home and Employment & Human Rights, and scroll through the closing CTA to check the full address. A visitor's “Hide this badge” action affects that visitor's browser only.
+
+Reference: https://docs.netlify.com/manage/projects/powered-by-netlify-badge/

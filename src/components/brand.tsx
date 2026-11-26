@@ -35,7 +35,7 @@ export function Brand() {
           />
         </svg>
       </span>
-      <span className="brand-type">Abed Legal Services</span>
+      <span className="brand-type">Abead Legal Services</span>
     </Link>
   );
 }
