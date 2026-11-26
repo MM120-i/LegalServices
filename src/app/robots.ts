@@ -1,13 +1,11 @@
 import type { MetadataRoute } from "next";
-import { getPublishedOrigin, isPublished } from "@/lib/seo";
+import { getPublishedOrigin } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
-  const origin = getPublishedOrigin();
+  const origin = getPublishedOrigin() ?? "https://abeadlegalservices.ca";
 
   return {
-    rules: isPublished()
-      ? { userAgent: "*", allow: "/", disallow: ["/api/", "/thank-you"] }
-      : { userAgent: "*", disallow: "/" },
-    ...(isPublished() && origin ? { sitemap: `${origin}/sitemap.xml`, host: origin } : {}),
+    rules: { userAgent: "*", allow: "/" },
+    sitemap: `${origin}/sitemap.xml`,
   };
 }

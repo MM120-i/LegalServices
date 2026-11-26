@@ -95,7 +95,9 @@ Read [the Phase 4 QA report](docs/PHASE-4-QA-REPORT.md), [client review checklis
 
 ## Publication remains a separate step
 
-The preview stays noindex by default. `SITE_PUBLISHED=true` plus a valid HTTPS `NEXT_PUBLIC_SITE_URL` controls production canonical URLs, crawl rules, and sitemap output. Leave these disabled until the real domain, contact details, policies, service scope, and reviews are approved. Deployment, DNS, Google Business Profile, analytics, and launch approval have not been performed.
+`netlify.toml` sets `SITE_PUBLISHED=true` and the canonical origin `https://abeadlegalservices.ca` for production. Deploy Previews and branch deploys use their own environment settings to keep pages noindexed. Netlify also adds a noindex response header to Deploy Previews.
+
+`src/app/robots.ts` always allows crawling and advertises the sitemap. Preview indexing protection uses page metadata and hosting settings. `src/app/sitemap.ts` generates production URLs at build time from the same content catalog used to generate pages, excluding the thank-you page and 404. The thank-you page stays noindexed in production.
 
 Read [the technical walkthrough](docs/TECHNICAL-WALKTHROUGH.md) for a plain-language explanation of the code. Image source and licence are recorded in `public/ASSETS.md`.
 

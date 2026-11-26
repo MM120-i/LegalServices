@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { site } from "@/config/site";
-import { getPublishedOrigin } from "@/lib/seo";
+import { getPublishedOrigin, isPublished } from "@/lib/seo";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 import "./legal-elegance.css";
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: { default: site.business.name, template: "%s" },
   description:
     "Licensed paralegal services in Scarborough, Toronto. Find a clearer next step for your legal matter.",
-  robots: { index: false, follow: false },
+  robots: { index: isPublished(), follow: isPublished() },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
   },

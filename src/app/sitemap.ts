@@ -9,7 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [];
   }
 
+  // Use the same catalog as generateStaticParams so only real pages are emitted.
   return pageDrafts
-    .filter((page) => page.metadata.productionIndexing === "index" && page.route !== "404")
+    .filter((page) => page.route.startsWith("/") && page.metadata.productionIndexing === "index")
     .map((page) => ({ url: `${origin}${page.route}` }));
 }

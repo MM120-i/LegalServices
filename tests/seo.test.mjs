@@ -87,15 +87,43 @@ test("SEO directives, sitemap, structured data, and displayed FAQs agree", async
   const robots = await (await fetch(new URL("/robots.txt", baseUrl))).text();
   const sitemap = await (await fetch(new URL("/sitemap.xml", baseUrl))).text();
 
+  assert.match(robots, /Allow: \//);
+  assert.doesNotMatch(robots, /Disallow:/i);
+
   if (launchMode) {
-    assert.match(robots, /Allow: \//);
     assert.ok(robots.includes(`Sitemap: ${launchOrigin}/sitemap.xml`));
     assert.ok(!sitemap.includes("/thank-you"));
 
-    for (const { route } of pages.filter((page) => page.route !== "/thank-you"))
-      assert.ok(sitemap.includes(`<loc>${launchOrigin}${route}</loc>`));
+    const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+    const expected = pages
+      .filter((page) => page.route !== "/thank-you")
+      .map(({ route }) => `${launchOrigin}${route}`);
+
+    assert.deepEqual(
+      urls.sort(),
+      expected.sort(),
+      "Sitemap must exactly match live indexable routes",
+    );
+    assert.match(sitemap, /<urlset xmlns="http:\/\/www.sitemaps.org\/schemas\/sitemap\/0.9">/);
+
+    for (const url of urls) {
+      const route = new URL(url).pathname;
+      const response = await fetch(new URL(route, baseUrl), { redirect: "manual" });
+
+      assert.equal(response.status, 200, `Sitemap URL must return 200: ${route}`);
+    }
+
+    for (const slug of [
+      "accident-benefits-claims",
+      "refugee-hearings-appeals",
+      "landlord-tenant-matters",
+      "employment-human-rights-matters",
+      "small-claims-court-matters",
+    ]) {
+      assert.ok(!urls.includes(`${launchOrigin}/${slug}`), `Dead slug in sitemap: ${slug}`);
+      assert.equal((await fetch(new URL(`/${slug}`, baseUrl))).status, 404);
+    }
   } else {
-    assert.match(robots, /Disallow: \/\s*$/);
     assert.ok(!sitemap.includes("<loc>"));
   }
 });

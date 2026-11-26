@@ -1,0 +1,16 @@
+# Keep indexing decisions scoped to the deployment environment.
+[build.environment]
+  SITE_PUBLISHED = "false"
+  NEXT_PUBLIC_SITE_URL = ""
+
+[context.production.environment]
+  SITE_PUBLISHED = "true"
+  NEXT_PUBLIC_SITE_URL = "https://abeadlegalservices.ca"
+
+[context.deploy-preview.environment]
+  SITE_PUBLISHED = "false"
+  NEXT_PUBLIC_SITE_URL = ""
+
+[context.branch-deploy.environment]
+  SITE_PUBLISHED = "false"
+  NEXT_PUBLIC_SITE_URL = ""
