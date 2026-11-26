@@ -430,10 +430,17 @@ function LegalPage({ page }: { page: PageDraft }) {
                 </p>
               </>
             ) : null}
+            {page.route === "/privacy-policy" ? (
+              <p>
+                See also: <Link href="/disclaimer">Website Disclaimer</Link>
+              </p>
+            ) : null}
             {content.faqs.length ? <FaqList faqs={content.faqs} /> : null}
             <h2>Contact the office</h2>
             <p>
-              {site.business.name}, {fullAddress}. Call{" "}
+              {site.business.name}
+              {", "}
+              {fullAddress}. Call{" "}
               <a href={site.phones.primary.href}>{site.phones.primary.display}</a> or{" "}
               <a href={site.phones.office.href}>{site.phones.office.display}</a>.
             </p>

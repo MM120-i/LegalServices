@@ -19,7 +19,7 @@
     "format": "prettier --write src scripts tests README.md docs",
     "test": "npm run content:check && npm run contact:check && npm run launch:test",
     "qa": "npm run qa:checks && npm run qa:lighthouse",
-    "qa:links": "node --experimental-strip-types --test tests/links.test.mjs tests/seo.test.mjs",
+    "qa:links": "node --experimental-strip-types --test tests/links.test.mjs tests/seo.test.mjs tests/footer.test.mjs",
     "qa:lighthouse": "node scripts/qa-lighthouse.mjs",
     "qa:checks": "npm run check && node scripts/run-qa.mjs",
     "launch:check": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/launch-check.mjs",

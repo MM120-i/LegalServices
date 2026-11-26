@@ -2288,16 +2288,6 @@ export const pageDrafts = [
           {
             "kind": "copy",
             "markdown": "Links to courts, tribunals, maps, reviews, or other websites are provided for convenience. Those services have their own content and policies. Contact the relevant organization if you need to verify its current instructions."
-          }
-        ]
-      },
-      {
-        "heading": "Contact",
-        "depth": 3,
-        "blocks": [
-          {
-            "kind": "copy",
-            "markdown": "{{business.name}}, {{address.full}}. Call {{phone.primary}} or {{phone.office}}."
           },
           {
             "kind": "editorial",

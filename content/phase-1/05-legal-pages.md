@@ -124,8 +124,4 @@ Do not send highly sensitive or detailed confidential records with an initial in
 
 Links to courts, tribunals, maps, reviews, or other websites are provided for convenience. Those services have their own content and policies. Contact the relevant organization if you need to verify its current instructions.
 
-### Contact
-
-Abead Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Call 416-722-3244 or 416-900-0494.
-
 Editorial note: Client to approve this disclaimer against actual intake and retainer procedures. Do not insert a broad claim that unsolicited inquiries have no privacy or confidentiality protection.

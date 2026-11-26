@@ -18,6 +18,7 @@ for (const [mode, port] of [
         "--test",
         "tests/links.test.mjs",
         "tests/seo.test.mjs",
+        "tests/footer.test.mjs",
         "tests/external-links.test.mjs",
       ],
       {

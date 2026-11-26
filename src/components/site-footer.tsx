@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { fullAddress, site } from "@/config/site";
-import { services } from "@/content/services";
-import { Brand } from "./brand";
 import { Icon } from "./icon";
 
 // Replace the platform homepages with the practice's confirmed profiles.
@@ -14,67 +12,26 @@ const socialLinks = [
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <div className="container">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <Brand />
-            <p>
-              Clear guidance.
-              <br />A considered way forward.
-            </p>
-            <span className="footer-tagline">{site.business.tagline}</span>
-          </div>
-          <div>
-            <h2>Get in touch</h2>
-            <address>{fullAddress}</address>
-            <a href={site.phones.primary.href}>{site.phones.primary.display}</a>
-            <a href={site.phones.office.href}>{site.phones.office.display}</a>
-            <span className="footer-muted">Call to confirm appointment availability.</span>
-            <nav className="footer-social-links" aria-label="Social media">
-              {socialLinks.map(({ label, icon, href }) => (
-                <a key={icon} href={href} aria-label={label}>
-                  <Icon name={icon} width={20} height={20} />
-                </a>
-              ))}
-            </nav>
-          </div>
-          <div>
-            <h2>How we help</h2>
-            <Link href="/practice-areas">Practice Areas</Link>
-            {services
-              .filter((service) => service.slug !== "traffic-tickets-provincial-offences")
-              .map((service) => (
-                <Link key={service.slug} href={service.href}>
-                  {service.shortTitle}
-                </Link>
-              ))}
-          </div>
-          <div>
-            <h2>Company</h2>
-            <Link href="/">Home</Link>
-            <Link href="/about">About the practice</Link>
-            <Link href="/contact">Contact & location</Link>
-          </div>
-          <div>
-            <h2>Legal</h2>
-            <Link href="/privacy-policy">Privacy policy</Link>
-            <Link href="/accessibility">Accessibility</Link>
-            <Link href="/disclaimer">Website disclaimer</Link>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>
-            © {new Date().getFullYear()} {site.business.name}
-          </p>
-          <p>
-            General information only. Not legal advice. An inquiry does not create a
-            paralegal–client relationship.
-          </p>
-        </div>
+      <div className="container footer-compact">
+        <p className="footer-copyright">
+          © {new Date().getFullYear()} {site.business.shortName} Legal Services
+        </p>
+        <nav className="footer-legal-links" aria-label="Legal information">
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/disclaimer">Website Disclaimer</Link>
+        </nav>
+        <nav className="footer-social-links" aria-label="Social media">
+          {socialLinks.map(({ label, icon, href }) => (
+            <a key={icon} href={href} aria-label={label} target="_blank" rel="noopener noreferrer">
+              <Icon name={icon} width={20} height={20} />
+            </a>
+          ))}
+        </nav>
       </div>
     </footer>
   );
 }
+
 export function MobileCallBar() {
   const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(fullAddress)}`;
 
