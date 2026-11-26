@@ -139,3 +139,12 @@ GA4 was absent before this audit. It remains **not yet activated** because no re
 References: [GA4 pageviews](https://developers.google.com/analytics/devguides/collection/ga4/views), [Search Console ownership verification](https://support.google.com/webmasters/answer/9008080).
 
 Run `npm run qa:mobile` after building `.next-qa-launch` with `NEXT_BUILD_DIR=.next-qa-launch SITE_PUBLISHED=true NEXT_PUBLIC_SITE_URL=https://qa.lexora.test npm run build -- --webpack`. The test uses installed Microsoft Edge with touch-enabled mobile emulation at 360px and 390px, covers all routes including 404, and saves results/screenshots in `artifacts/qa/mobile/`. These checks do not substitute for physical iPhone/Android or Safari testing.
+
+
+### Contact configuration troubleshooting
+
+The Contact page reads delivery readiness at request time with Next's `connection()` so a build without secrets cannot freeze the disabled notice into the published page. All three settings must be available to the Production Functions runtime. Keep the Netlify settings described above and redeploy after updates.
+
+If submission still returns “Online delivery is not configured”, inspect the Netlify server function logs for `Contact delivery configuration unavailable`. Its `missingOrInvalid` list contains only the names of missing or invalid settings; no credentials, addresses or form contents are logged. Correct those settings and redeploy. A cached-page warning alone does not establish whether a Resend request was made.
+
+Regression: build `.next-qa-launch` without email settings, then run `node --test tests/contact-runtime.test.mjs`. It starts the same build with delivery disabled and with fictional runtime settings and confirms the warning changes without exposing the test key. It sends no email.

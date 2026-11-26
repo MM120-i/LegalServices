@@ -313,6 +313,16 @@ export async function handleContact(
   const config = dependencies.config === undefined ? getContactConfig() : dependencies.config;
 
   if (!config) {
+    if (dependencies.config === undefined) {
+      const missingOrInvalid = [
+        !process.env.RESEND_API_KEY?.trim() ? "RESEND_API_KEY" : null,
+        !isEmail(process.env.CONTACT_TO_EMAIL?.trim() ?? "") ? "CONTACT_TO_EMAIL" : null,
+        !isEmail(process.env.CONTACT_FROM_EMAIL?.trim() ?? "") ? "CONTACT_FROM_EMAIL" : null,
+      ].filter(Boolean);
+
+      console.error("Contact delivery configuration unavailable", { missingOrInvalid });
+    }
+
     return respond(503, {
       ok: false,
       message: "Online delivery is not configured in this preview. Please call the office instead.",

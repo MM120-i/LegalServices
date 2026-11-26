@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { pageDrafts, getPageDraft } from "@/content";
 import type { ContentRoute } from "@/content/types";
 import { ContentPage } from "@/components/content-page";
@@ -33,6 +34,10 @@ export default async function InteriorPage({ params }: Props) {
 
   if (!page) {
     notFound();
+  }
+
+  if (page.route === "/contact") {
+    await connection();
   }
 
   const content = getPublicPageContent(page);
