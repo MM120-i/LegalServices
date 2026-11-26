@@ -31,10 +31,67 @@ export interface ContactResult {
 export type ContactValidation =
   { ok: true; value: ContactInquiry; honeypot: boolean } | { ok: false; errors: ContactErrors };
 
-const emailPattern = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/;
+const namePattern = /^[\p{L}\p{M} .'’ʼ·-]+$/u;
+const emailLocalPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+$/;
 
+/** Checks syntax only; an address passing validation may still have no mailbox. */
 export function isEmail(value: string): boolean {
-  return value.length <= 254 && emailPattern.test(value);
+  if (value.length > 254 || /[\s\u0000-\u001f\u007f]/.test(value)) {
+    return false;
+  }
+
+  const parts = value.split("@");
+
+  if (parts.length !== 2) {
+    return false;
+  }
+
+  const [local, domain] = parts;
+  if (
+    !local ||
+    local.length > 64 ||
+    !emailLocalPattern.test(local) ||
+    local.startsWith(".") ||
+    local.endsWith(".") ||
+    local.includes("..")
+  ) {
+    return false;
+  }
+
+  const labels = domain.split(".");
+
+  return (
+    labels.length >= 2 &&
+    labels.every(
+      (label) =>
+        label.length > 0 &&
+        label.length <= 63 &&
+        /^[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/.test(label),
+    ) &&
+    /[a-zA-Z]/.test(labels.at(-1)!)
+  );
+}
+
+function isPhone(value: string): boolean {
+  if (value.length > 40 || !/^\+?[\d ().-]+$/.test(value)) {
+    return false;
+  }
+
+  // Parentheses must form a single, complete area-code group when supplied.
+  if ((value.includes("(") || value.includes(")")) && !/^[^()]*\(\d{3}\)[^()]*$/.test(value))
+    return false;
+
+  const digits = value.replace(/\D/g, "");
+
+  if (/^(\d)\1+$/.test(digits)) {
+    return false;
+  }
+
+  if (!value.startsWith("+") || digits.startsWith("1")) {
+    return /^(?:1)?[2-9]\d{2}[2-9]\d{6}$/.test(digits);
+  }
+
+  return /^[2-9]\d{7,14}$/.test(digits);
 }
 
 /** Browser checks are for convenience; the server runs the same checks independently. */
@@ -48,20 +105,17 @@ export function validateContact(input: Record<string, unknown>): ContactValidati
   const consent = input.consent === "on" || input.consent === true;
   const errors: ContactErrors = {};
 
-  if (name.length < 2 || name.length > 100 || /[\r\n\u0000-\u001f]/.test(name))
-    errors.name = "Please enter your name (2–100 characters).";
+  if (name.length < 2 || name.length > 100 || !namePattern.test(name) || !/\p{L}/u.test(name))
+    errors.name =
+      "Enter your name using letters, spaces, apostrophes or hyphens (2–100 characters).";
 
-  if (
-    phone.length > 40 ||
-    !/^[+\d\s().\-]+$/.test(phone) ||
-    phone.replace(/\D/g, "").length < 7 ||
-    phone.replace(/\D/g, "").length > 15
-  ) {
-    errors.phone = "Please enter a phone number where the office can reach you.";
+  if (!isPhone(phone)) {
+    errors.phone =
+      "Enter a 10-digit Canadian/US number, or an international number starting with + and its country code.";
   }
 
   if (email && !isEmail(email))
-    errors.email = "Please check your email address, or leave it blank.";
+    errors.email = "Enter an email such as name@example.com, or leave this field blank.";
 
   if (!contactTopics.some((item) => item.value === topic))
     errors.topic = "Please choose a service or select ‘Other / Not sure.’";
@@ -79,7 +133,14 @@ export function validateContact(input: Record<string, unknown>): ContactValidati
 
   return {
     ok: true,
-    value: { name, phone, email, topic: topic as ContactTopic, message, consent: true },
+    value: {
+      name: name.normalize("NFC").replace(/ +/g, " "),
+      phone,
+      email,
+      topic: topic as ContactTopic,
+      message,
+      consent: true,
+    },
     honeypot: Boolean(text("website")),
   };
 }

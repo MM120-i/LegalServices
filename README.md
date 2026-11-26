@@ -148,3 +148,10 @@ The Contact page reads delivery readiness at request time with Next's `connectio
 If submission still returns “Online delivery is not configured”, inspect the Netlify server function logs for `Contact delivery configuration unavailable`. Its `missingOrInvalid` list contains only the names of missing or invalid settings; no credentials, addresses or form contents are logged. Correct those settings and redeploy. A cached-page warning alone does not establish whether a Resend request was made.
 
 Regression: build `.next-qa-launch` without email settings, then run `node --test tests/contact-runtime.test.mjs`. It starts the same build with delivery disabled and with fictional runtime settings and confirms the warning changes without exposing the test key. It sends no email.
+
+
+### Form validation
+
+`src/lib/contact.ts` is shared by the browser and contact API. Names must be 2–100 characters and use letters/marks and common name punctuation; a surname is not required. Canadian/US phone numbers require 10 digits (optional leading 1); international numbers require + and a country code. Email is optional, but a supplied address must have valid supported syntax. Service selection and consent are required; the optional description is limited to 2,000 characters. These are format checks, not proof of identity, a working phone line, or an existing inbox.
+
+Field errors appear on blur and update when corrected. Invalid submissions are blocked before delivery; server validation also protects native submissions and direct API requests. `npm run contact:check` includes the validation cases in `tests/contact-validation.test.ts`. After building `.next-qa-launch`, run `node --test tests/contact-form-browser.test.mjs` for browser feedback, pending state and retained-input checks. Delivery is intercepted in that browser test; no email is sent.

@@ -15,7 +15,7 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
   const summary = useRef<HTMLDivElement>(null);
   const inFlight = useRef(false);
   const submission = useRef<{ fingerprint: string; id: string } | null>(null);
-  const errors: ContactErrors = result?.errors ?? {};
+  const [errors, setErrors] = useState<ContactErrors>({});
 
   useEffect(() => {
     if (result && !result.ok) {
@@ -35,6 +35,7 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
     const checked = validateContact(input);
 
     if (!checked.ok) {
+      setErrors(checked.errors);
       setResult({ ok: false, message: "Please check the fields below.", errors: checked.errors });
       return;
     }
@@ -48,6 +49,7 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
     inFlight.current = true;
     setPending(true);
     setResult(null);
+    setErrors({});
 
     try {
       const response = await fetch("/api/contact", {
@@ -69,6 +71,7 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
         return;
       }
 
+      setErrors(next.errors ?? {});
       setResult({ ...next, ok: false });
     } catch {
       setResult({
@@ -82,6 +85,39 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
     }
   }
 
+  function validateField(target: EventTarget) {
+    if (!(
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLSelectElement ||
+      target instanceof HTMLTextAreaElement
+    )) {
+      return;
+    }
+
+    if (
+      !target.form ||
+      !["name", "phone", "email", "topic", "message", "consent"].includes(target.name)
+    ) {
+      return;
+    }
+
+    const field = target.name as ContactField;
+    const checked = validateContact(Object.fromEntries(new FormData(target.form).entries()));
+    const message = checked.ok ? undefined : checked.errors[field];
+
+    setErrors((previous) => {
+      const next = { ...previous };
+
+      if (message) {
+        next[field] = message;
+      } else {
+        delete next[field];
+      }
+
+      return next;
+    });
+  }
+
   function fieldDescription(field: ContactField, help?: string) {
     return (
       [help, errors[field] ? `contact-${field}-error` : null].filter(Boolean).join(" ") || undefined
@@ -90,7 +126,7 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
 
   function fieldError(field: ContactField) {
     return errors[field] ? (
-      <p className="field-error" id={`contact-${field}-error`}>
+      <p className="field-error" id={`contact-${field}-error`} aria-live="polite">
         {errors[field]}
       </p>
     ) : null;
@@ -101,6 +137,18 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
       action="/api/contact"
       method="post"
       onSubmit={handleSubmit}
+      onBlur={(event) => validateField(event.target)}
+      onChange={(event) => {
+        const target = event.target;
+
+        if ("name" in target && errors[target.name as ContactField]) {
+          validateField(target);
+        }
+
+        if (result) {
+          setResult(null);
+        }
+      }}
       noValidate
       aria-busy={pending}
       className="form-grid"
@@ -146,6 +194,7 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
           name="name"
           autoComplete="name"
           required
+          minLength={2}
           maxLength={100}
           aria-invalid={Boolean(errors.name)}
           aria-describedby={fieldDescription("name")}
@@ -167,7 +216,9 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
           aria-invalid={Boolean(errors.phone)}
           aria-describedby={fieldDescription("phone", "contact-phone-help")}
         />
-        <small id="contact-phone-help">Best number to reach you.</small>
+        <small id="contact-phone-help">
+          For example, 416-555-0123. Include + and the country code for international numbers.
+        </small>
         {fieldError("phone")}
       </div>
       <div className="field">
@@ -180,6 +231,8 @@ export function ContactForm({ deliveryConfigured = false }: { deliveryConfigured
           name="email"
           type="email"
           autoComplete="email"
+          autoCapitalize="none"
+          spellCheck={false}
           maxLength={254}
           aria-invalid={Boolean(errors.email)}
           aria-describedby={fieldDescription("email")}
