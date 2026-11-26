@@ -785,17 +785,6 @@ textarea.input {
   border-radius: 8px;
   border: 1px solid #b0904b;
 }
-.hero-note {
-  background: #f8f6ef;
-  border: 1px solid #d5c596;
-  border-radius: 5px;
-}
-.home-hero .hero-note,
-.home-hero .hero-note p,
-.home-hero .hero-note small,
-.home-hero .hero-note > svg {
-  color: #101b2b;
-}
 .trust-strip {
   background: #f5f1e7;
   border-block: 1px solid #d6c69f;
@@ -1090,11 +1079,6 @@ textarea.input {
   }
   .hero-image-wrap {
     min-height: 310px;
-  }
-  .hero-note {
-    left: 14px;
-    right: 14px;
-    bottom: -10px;
   }
   .about-portrait-note {
     position: static;

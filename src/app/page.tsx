@@ -85,15 +85,6 @@ export default function HomePage() {
                 <span className="image-location-line" />
               </div>
             </div>
-            <div className="hero-note">
-              <span className="hero-note-icon">
-                <Icon name="check" />
-              </span>
-              <p>
-                Licensed Paralegal<small>Law Society of Ontario</small>
-              </p>
-              <Icon name="arrow-up-right" />
-            </div>
           </div>
         </div>
       </section>
