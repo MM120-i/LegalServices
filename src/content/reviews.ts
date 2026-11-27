@@ -8,6 +8,6 @@ export interface PublishedReview {
   permissionToPublish: true;
 }
 
-// Public content only: add genuine reviews after office approval and written permission.
-// Keep private emails and permission evidence in the office's records, never in this file.
+// Public projection only. Runtime reviews are stored privately in Netlify Blobs.
+// This empty legacy export is retained for content checks; it is not a publication source.
 export const publishedReviews: readonly PublishedReview[] = [];

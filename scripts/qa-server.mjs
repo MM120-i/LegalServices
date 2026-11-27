@@ -14,6 +14,10 @@ export function qaEnvironment(mode) {
     RESEND_API_KEY: "",
     CONTACT_TO_EMAIL: "",
     CONTACT_FROM_EMAIL: "",
+    REVIEWS_STORE_NAME: "",
+    REVIEWS_LOCAL_DIRECTORY: "",
+    REVIEWS_SITE_URL: "",
+    REVIEW_MODERATION_SECRET: "",
   };
 }
 
@@ -26,8 +30,18 @@ export async function command(args, env) {
   }
 }
 
-export async function startQaServer(mode, port) {
-  const env = qaEnvironment(mode);
+export async function startQaServer(mode, port, reviewSettings = {}) {
+  const allowed = ["REVIEWS_LOCAL_DIRECTORY", "REVIEWS_SITE_URL", "REVIEW_MODERATION_SECRET"];
+  if (Object.keys(reviewSettings).some((key) => !allowed.includes(key))) {
+    throw new Error("QA overrides only support isolated local review storage.");
+  }
+  if (
+    reviewSettings.REVIEWS_SITE_URL &&
+    !["localhost", "127.0.0.1"].includes(new URL(reviewSettings.REVIEWS_SITE_URL).hostname)
+  ) {
+    throw new Error("Review QA must use a loopback origin.");
+  }
+  const env = { ...qaEnvironment(mode), ...reviewSettings };
 
   const child = spawn(
     process.execPath,

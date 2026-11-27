@@ -1,13 +1,19 @@
-import { randomUUID } from "node:crypto";
+import { randomBytes, randomUUID } from "node:crypto";
 import { site } from "../config/site.ts";
 import { allowContactAttempt, getContactConfig, isTrustedContactOrigin } from "./contact-server.ts";
 import { reviewReceivedMessage, validateReview } from "./reviews.ts";
+import { getReviewStore } from "./review-store.ts";
+import type { ReviewStore, StoredReview } from "./review-store.ts";
+import { getModerationConfig, moderationUrl, sendModerationEmail } from "./review-moderation.ts";
+import type { ModerationConfig } from "./review-moderation.ts";
 import type { ReviewResult } from "./reviews.ts";
 
 type DeliveryConfig = NonNullable<ReturnType<typeof getContactConfig>>;
 
 interface Dependencies {
   config?: DeliveryConfig | null;
+  store?: ReviewStore | null;
+  moderation?: ModerationConfig | null;
   fetcher?: typeof fetch;
   limit?: (identity: string) => boolean;
 }
@@ -153,57 +159,80 @@ export async function handleReview(
   const review = checked.value;
 
   const id =
-    typeof input.submissionId === "string" && /^[a-f\d-]{36}$/i.test(input.submissionId)
+    typeof input.submissionId === "string" &&
+    /^[a-f\d]{8}-[a-f\d]{4}-[a-f\d]{4}-[a-f\d]{4}-[a-f\d]{12}$/i.test(input.submissionId)
       ? input.submissionId
       : randomUUID();
 
+  let store: ReviewStore | null;
+  const moderation =
+    dependencies.moderation === undefined ? getModerationConfig() : dependencies.moderation;
   try {
-    const response = await (dependencies.fetcher ?? fetch)("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${config.apiKey}`,
-        "Content-Type": "application/json",
-        "Idempotency-Key": `abead-review/${id}`,
-      },
-      body: JSON.stringify({
-        from: `${site.business.name} <${config.from}>`,
-        to: [config.to],
-        reply_to: review.email,
-        subject: "Website review — pending office approval",
-        text: [
+    store = dependencies.store === undefined ? getReviewStore() : dependencies.store;
+    if (!store || !moderation) throw new Error("Review setup unavailable");
+  } catch {
+    return respond(503, {
+      ok: false,
+      message:
+        "Online reviews are temporarily unavailable. Please try again later or call the office.",
+    });
+  }
+
+  try {
+    const now = Date.now();
+    const candidate: StoredReview = {
+      ...review,
+      id: id.toLowerCase(),
+      nonce: randomBytes(32).toString("hex"),
+      status: "pending",
+      createdAt: now,
+      updatedAt: now,
+      formVersion: "2026-11-26",
+    };
+    await store.create(candidate);
+    const entry = await store.get(candidate.id);
+    if (!entry) throw new Error("Review was not saved");
+    const saved = entry.review;
+    // A retry can resume notification, but cannot replace an existing submission or its consent.
+    if (
+      Object.keys(review).some(
+        (key) => review[key as keyof typeof review] !== saved[key as keyof typeof review],
+      )
+    ) {
+      return respond(409, {
+        ok: false,
+        message:
+          "This submission reference was already used. Reload the page to send a new review.",
+      });
+    }
+    if (!saved.notifiedAt) {
+      await sendModerationEmail(
+        config,
+        [
           "A website review was submitted. It has NOT been published.",
           "Review form version: 2026-11-26",
-          `Submission reference: ${id}`,
-          `Display name: ${review.displayName}`,
-          `Private email: ${review.email}`,
-          `Rating: ${review.rating}/5`,
-          `First-hand experience confirmed: ${review.genuine ? "Yes" : "No"}`,
-          `Permission to publish: ${review.permissionToPublish ? "YES — subject to authenticity and privacy review" : "NO — PRIVATE FEEDBACK ONLY. Do not publish."}`,
+          `Submission reference: ${saved.id}`,
+          `Display name: ${saved.displayName}`,
+          `Private email: ${saved.email}`,
+          `Rating: ${saved.rating}/5`,
+          "First-hand experience confirmed: Yes",
+          `Permission to publish: ${saved.permissionToPublish ? "YES — subject to authenticity and privacy review" : "NO — PRIVATE FEEDBACK ONLY. Do not publish."}`,
           "Publication permission wording: The practice may publish my review, rating and display name on this website.",
           "",
           "Review text:",
-          review.text,
+          saved.text,
           "",
-          "Review authenticity and confidentiality before publication. Do not publish the email address. Keep permission evidence in office records. Apply the same standards to every rating. If permission was given and publication approved, send the exact approved quote and display name to the website maintainer for the next batch update. Do not materially edit a review without the author's approval.",
+          "Review this submission:",
+          moderationUrl(saved, store, moderation, saved.createdAt),
+          "",
+          "This private link expires in 30 days. Keep it private and save this email. Opening it does not publish anything. Use Publish or Reject on the page. Return to this link to Unpublish later. If expired, request a fresh link on that page; it goes only to the office inbox.",
+          "Check authenticity and confidentiality; apply the same standards to every rating. Never publish private feedback without permission. Do not materially edit a review without the author's approval.",
         ].join("\n"),
-      }),
-      signal: AbortSignal.timeout(12000),
-    });
-
-    if (!response.ok) {
-      throw new Error("Provider rejected review");
-    }
-
-    const receipt: unknown = await response.json();
-
-    if (
-      !receipt ||
-      typeof receipt !== "object" ||
-      !("id" in receipt) ||
-      typeof receipt.id !== "string" ||
-      !receipt.id
-    ) {
-      throw new Error("Missing receipt");
+        `abead-review/${saved.id}`,
+        dependencies.fetcher,
+        saved.email,
+      );
+      await store.update({ ...saved, notifiedAt: Date.now() }, entry.etag);
     }
 
     return respond(200, { ok: true, message: reviewReceivedMessage });

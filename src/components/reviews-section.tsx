@@ -1,8 +1,18 @@
-import { publishedReviews } from "../content/reviews";
+import { connection } from "next/server";
+import { getPublishedReviews, getReviewStore } from "../lib/review-store";
 import { Icon } from "./icon";
 import { ReviewForm } from "./review-form";
 
-export function ReviewsSection() {
+export async function ReviewsSection() {
+  await connection();
+  let publishedReviews: Awaited<ReturnType<typeof getPublishedReviews>> = [];
+  let unavailable = false;
+  try {
+    const store = getReviewStore();
+    if (store) publishedReviews = await getPublishedReviews(store);
+  } catch {
+    unavailable = true;
+  }
   return (
     <section
       className="section reviews-section client-reviews"
@@ -62,8 +72,9 @@ export function ReviewsSection() {
             <div>
               <h3>A space for real experiences.</h3>
               <p>
-                Client reviews will appear here once we have permission to share them. You can leave
-                a review below or send feedback privately.
+                {unavailable
+                  ? "Reviews are temporarily unavailable. Please try again later."
+                  : "Client reviews will appear here once we have permission to share them. You can leave a review below or send feedback privately."}
               </p>
             </div>
           </div>

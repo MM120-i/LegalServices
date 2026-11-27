@@ -399,12 +399,14 @@ function LegalPage({ page }: { page: PageDraft }) {
                 <h2>Reviews and feedback</h2>
                 <p>
                   Review submissions, including your email, rating and publication choice, are sent
-                  to the office through the website’s email delivery provider. Your email is used
-                  for private follow-up and is not displayed with your review. Reviews appear
-                  publicly only after office approval and with your permission. Leaving publication
-                  permission unchecked sends private feedback only. To change or withdraw
-                  permission, contact the office. Please do not submit confidential case details or
-                  other people’s personal information.
+                  to the office through the website’s email delivery provider and stored privately
+                  in Netlify storage for review management. The office uses private email links to
+                  approve, reject or unpublish submissions. Your email is used for private follow-up
+                  and is not displayed with your review. Reviews appear publicly only after office
+                  approval and with your permission. Leaving publication permission unchecked sends
+                  private feedback only. To change or withdraw permission, contact the office.
+                  Please do not submit confidential case details or other people’s personal
+                  information.
                 </p>
                 <h2>Services used by this preview</h2>
                 <p>

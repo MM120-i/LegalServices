@@ -1,0 +1,29 @@
+{
+  "testedAt": "2026-11-27T00:40:32.694Z",
+  "results": [
+    {
+      "width": 360,
+      "overflow": false,
+      "tapTargets": "pass",
+      "getIsReadOnly": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "tapTargets": "pass",
+      "getIsReadOnly": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "tapTargets": "pass",
+      "getIsReadOnly": true
+    }
+  ],
+  "realEmailSent": false,
+  "noJavaScript": "pass",
+  "publication": "pass",
+  "unpublication": "pass",
+  "restartPersistence": "pass",
+  "productionNetlifyCredentials": "not tested locally"
+}

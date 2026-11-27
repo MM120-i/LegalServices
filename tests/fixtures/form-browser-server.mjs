@@ -1,4 +1,3 @@
-/** Browser-only fixture: proxies the real preview, but never forwards contact POSTs. */
 import { createServer } from "node:http";
 import { Readable } from "node:stream";
 
@@ -43,7 +42,6 @@ const server = createServer(async (request, response) => {
     const target = new URL(request.url, "http://127.0.0.1:3100");
     const headers = { ...request.headers, host: target.host };
     delete headers["accept-encoding"];
-
     const upstream = await fetch(target, { method: request.method, headers, redirect: "manual" });
     const returnedHeaders = Object.fromEntries(upstream.headers);
     delete returnedHeaders["content-encoding"];

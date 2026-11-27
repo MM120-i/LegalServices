@@ -148,12 +148,13 @@ Developer follow-up: disable the injected hosting badge in Netlify → Project c
 
 ## Client reviews checkpoint — November 26, 2026
 
-Mahim selected on-site submission → email to the office → approval → batch publication by the maintainer. No automatic publishing or owner dashboard is included.
+Mahim approved upgrading on-site reviews to private email-link approval and persistent Netlify storage. The owner can publish, reject or unpublish without maintainer edits or builds. All changes remain local until Mahim pushes them.
 
-- [ ] Confirm receipt of one real review test in Zoho, including the rating and correct publication-permission choice. Automated tests send no email.
-- [ ] Approve the review-form wording and the added privacy explanation, including who handles moderation and withdrawal requests and how long submission/permission emails are retained.
-- [ ] For each review to publish, supply the exact approved quote, rating and display name, together with confirmation that the author gave permission. Retain the actual permission record privately in the office.
-- [ ] Notify the maintainer promptly when permission is withdrawn or a published review needs correction/removal.
-- [ ] If Google reviews are also wanted, provide the exact official Business Profile review link. On-site submissions do not post to Google.
+- [ ] Add Production review storage name, canonical review origin and a strong moderation secret as documented in README. Keep previews/local work isolated.
+- [ ] After the single setup deployment, confirm one real authorized test reaches Zoho; publish through its private link, verify Home, unpublish and verify removal. Automated tests send no email.
+- [ ] Approve the updated privacy wording and decide who can access the inbox/Netlify records and how long records are retained.
+- [ ] Save notification emails. Links are private, expire after 30 days and can request renewal to the office inbox. Do not forward them to reviewers or post them publicly.
+- [ ] Use Unpublish promptly when consent is withdrawn. Corrected wording or new permission requires a fresh submission.
+- [ ] If Google reviews are also wanted, provide the exact official Business Profile review link; on-site submissions do not post to Google.
 
-Existing Resend/Zoho settings are reused. No new email account, paid widget, database or hosting upgrade is required for this version. Until genuine reviews are approved, the public section contains an invitation and an honest empty state rather than dummy quotes. Changes remain local until Mahim pushes them.
+Existing Resend/Zoho accounts are reused. Netlify functions/storage usage applies; no additional widget, external database account or login provider is introduced. No dummy reviews are migrated.

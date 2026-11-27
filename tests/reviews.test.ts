@@ -1,8 +1,14 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { handleReview } from "../src/lib/review-server.ts";
+import { handleReview as submitReview } from "../src/lib/review-server.ts";
 import { validateReview, reviewReceivedMessage } from "../src/lib/reviews.ts";
 import { publishedReviews } from "../src/content/reviews.ts";
+
+import { memoryReviewStore, moderation } from "./fixtures/review-store.ts";
+
+function handleReview(request: Request, dependencies: Parameters<typeof submitReview>[1] = {}) {
+  return submitReview(request, { store: memoryReviewStore(), moderation, ...dependencies });
+}
 
 const config = {
   apiKey: "mock-key",
@@ -90,6 +96,7 @@ test("review notifications preserve consent, private reply address and idempoten
       assert.equal(response.status, 200);
       assert.deepEqual(await response.json(), { ok: true, message: reviewReceivedMessage });
     }
+
     assert.equal(keys[0], keys[1], "Retry must reuse the provider idempotency key");
   }
 
