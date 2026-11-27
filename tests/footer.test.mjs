@@ -27,7 +27,7 @@ test("every page has the shared footer and legal pages have the required links a
       [...footer.querySelectorAll(".footer-legal-links a")].map((link) =>
         link.getAttribute("href"),
       ),
-      ["/privacy-policy", "/disclaimer"],
+      ["/#reviews", "/privacy-policy", "/disclaimer"],
       route,
     );
     const social = [...footer.querySelectorAll(".footer-social-links a")];

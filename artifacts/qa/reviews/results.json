@@ -1,0 +1,50 @@
+{
+  "viewports": [
+    {
+      "width": 360,
+      "inner": 360,
+      "scroll": 360,
+      "small": [],
+      "disclosure": "keyboard passed",
+      "permissionDefault": false
+    },
+    {
+      "width": 390,
+      "inner": 390,
+      "scroll": 390,
+      "small": [],
+      "disclosure": "keyboard passed",
+      "permissionDefault": false
+    },
+    {
+      "width": 768,
+      "inner": 768,
+      "scroll": 768,
+      "small": [],
+      "disclosure": "keyboard passed",
+      "permissionDefault": false
+    },
+    {
+      "width": 1440,
+      "inner": 1440,
+      "scroll": 1440,
+      "small": [],
+      "disclosure": "keyboard passed",
+      "permissionDefault": false
+    },
+    {
+      "width": 2560,
+      "inner": 2560,
+      "scroll": 2560,
+      "small": [],
+      "disclosure": "keyboard passed",
+      "permissionDefault": false
+    }
+  ],
+  "invalidBlocked": true,
+  "nativeRatingKeyboard": true,
+  "retainedInput": true,
+  "retryIdempotency": true,
+  "successNotPublished": true,
+  "delivery": "mocked only"
+}

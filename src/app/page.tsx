@@ -7,6 +7,7 @@ import { getPageMetadata, getLegalServiceSchema, getFaqSchema } from "@/lib/seo"
 import { getPublicPageContent } from "@/lib/public-content";
 import { Icon } from "@/components/icon";
 import { LocationSection, Portrait } from "@/components/site-sections";
+import { ReviewsSection } from "@/components/reviews-section";
 import { PracticeCarousel } from "@/components/practice-carousel";
 import { RichText } from "@/components/rich-text";
 import { JsonLd } from "@/components/json-ld";
@@ -223,47 +224,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section reviews-section">
-        <div className="container">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">THE EXPERIENCE MATTERS</p>
-              <h2>Room for a little reassurance.</h2>
-            </div>
-            <p className="sample-badge">Preview only · Illustrative reviews</p>
-          </div>
-          <div className="reviews-grid">
-            {[
-              {
-                quote: "The next steps were explained in language I could understand.",
-                name: "Sample reviewer A",
-              },
-              {
-                quote: "I appreciated having space to ask questions about the process.",
-                name: "Sample reviewer B",
-              },
-              {
-                quote: "The conversation helped me understand what information to prepare.",
-                name: "Sample reviewer C",
-              },
-            ].map((review) => (
-              <figure className="review-card" key={review.name}>
-                <Icon name="quote" />
-                <blockquote>“{review.quote}”</blockquote>
-                <figcaption>
-                  <span className="review-avatar" aria-hidden="true">
-                    {review.name.slice(-1)}
-                  </span>
-                  <span>
-                    {review.name}
-                    <small>SAMPLE — NOT A REAL CLIENT REVIEW</small>
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ReviewsSection />
       <section className="section faq-section">
         <div className="container faq-layout">
           <div>

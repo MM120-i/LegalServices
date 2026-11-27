@@ -100,31 +100,15 @@ CTA: Request a Consultation → `/contact`
 
 Editorial note: Client to approve this proposed intake process. The inquiry itself does not begin representation or protect a deadline.
 
-## Reviews — private preview samples
+## Client reviews
 
-H2: What clients say.
+H2: Your experience. In your words.
 
-Section label: SAMPLE CONTENT — REAL CLIENT REVIEWS TO COME
+Have you worked with our practice? Share what the experience was like. We welcome honest feedback, whatever your rating.
 
-Card 1 label: SAMPLE — NOT A REAL CLIENT REVIEW
+Reviews are submitted to the office first and published only after authenticity, privacy and permission checks. Visitors may choose private feedback without publication permission. Do not include case numbers, documents, other people’s names or confidential details.
 
-“The next steps were explained in language I could understand.”
-
-Attribution: Sample reviewer A — fictional preview content
-
-Card 2 label: SAMPLE — NOT A REAL CLIENT REVIEW
-
-“I appreciated having space to ask questions about the process.”
-
-Attribution: Sample reviewer B — fictional preview content
-
-Card 3 label: SAMPLE — NOT A REAL CLIENT REVIEW
-
-“The conversation helped me understand what information to prepare.”
-
-Attribution: Sample reviewer C — fictional preview content
-
-Editorial note: These are dummy content authorized for private preview. Do not attach Google branding, star ratings, dates, case outcomes, real identities, or rating markup to them. Replace with permissioned real reviews or omit this section before publication. Future links: “Read reviews on Google” and “Write a review,” once actual profile URLs exist.
+Editorial note: The on-site form uses /api/reviews and existing email delivery settings. Approved public content is maintained in src/content/reviews.ts. Never publish private email addresses. Until genuine permissioned reviews are approved, display the empty state without quotes, ratings, averages or invented reviewers.
 
 ## Frequently asked questions
 

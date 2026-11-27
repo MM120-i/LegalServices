@@ -55,7 +55,9 @@ test(
               .filter(visible)
               .map((e) => {
                 const r = (
-                  e.matches("input[type=checkbox]") && e.labels?.length ? e.labels[0] : e
+                  e.matches("input[type=checkbox], input[type=radio]") && e.labels?.length
+                    ? e.labels[0]
+                    : e
                 ).getBoundingClientRect();
                 return {
                   text: (e.textContent || e.getAttribute("aria-label") || e.tagName)

@@ -396,6 +396,16 @@ function LegalPage({ page }: { page: PageDraft }) {
             ))}
             {page.route === "/privacy-policy" ? (
               <>
+                <h2>Reviews and feedback</h2>
+                <p>
+                  Review submissions, including your email, rating and publication choice, are sent
+                  to the office through the website’s email delivery provider. Your email is used
+                  for private follow-up and is not displayed with your review. Reviews appear
+                  publicly only after office approval and with your permission. Leaving publication
+                  permission unchecked sends private feedback only. To change or withdraw
+                  permission, contact the office. Please do not submit confidential case details or
+                  other people’s personal information.
+                </p>
                 <h2>Services used by this preview</h2>
                 <p>
                   The contact form sends inquiries to an email delivery provider only when delivery
@@ -405,9 +415,8 @@ function LegalPage({ page }: { page: PageDraft }) {
                 </p>
                 <p>
                   Google Analytics 4 page-view measurement runs only when configured. Marketing
-                  tracking is not enabled. Final provider details,
-                  retention periods, and the practice’s privacy contact will be added before
-                  publication.
+                  tracking is not enabled. Final provider details, retention periods, and the
+                  practice’s privacy contact will be added before publication.
                 </p>
               </>
             ) : null}

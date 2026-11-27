@@ -224,56 +224,24 @@ export const pageDrafts = [
         ]
       },
       {
-        "heading": "Reviews — private preview samples",
+        "heading": "Client reviews",
         "depth": 2,
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "H2: What clients say."
+            "markdown": "H2: Your experience. In your words."
           },
           {
             "kind": "copy",
-            "markdown": "Section label: SAMPLE CONTENT — REAL CLIENT REVIEWS TO COME"
+            "markdown": "Have you worked with our practice? Share what the experience was like. We welcome honest feedback, whatever your rating."
           },
           {
             "kind": "copy",
-            "markdown": "Card 1 label: SAMPLE — NOT A REAL CLIENT REVIEW"
-          },
-          {
-            "kind": "copy",
-            "markdown": "“The next steps were explained in language I could understand.”"
-          },
-          {
-            "kind": "copy",
-            "markdown": "Attribution: Sample reviewer A — fictional preview content"
-          },
-          {
-            "kind": "copy",
-            "markdown": "Card 2 label: SAMPLE — NOT A REAL CLIENT REVIEW"
-          },
-          {
-            "kind": "copy",
-            "markdown": "“I appreciated having space to ask questions about the process.”"
-          },
-          {
-            "kind": "copy",
-            "markdown": "Attribution: Sample reviewer B — fictional preview content"
-          },
-          {
-            "kind": "copy",
-            "markdown": "Card 3 label: SAMPLE — NOT A REAL CLIENT REVIEW"
-          },
-          {
-            "kind": "copy",
-            "markdown": "“The conversation helped me understand what information to prepare.”"
-          },
-          {
-            "kind": "copy",
-            "markdown": "Attribution: Sample reviewer C — fictional preview content"
+            "markdown": "Reviews are submitted to the office first and published only after authenticity, privacy and permission checks. Visitors may choose private feedback without publication permission. Do not include case numbers, documents, other people’s names or confidential details."
           },
           {
             "kind": "editorial",
-            "markdown": "Editorial note: These are dummy content authorized for private preview. Do not attach Google branding, star ratings, dates, case outcomes, real identities, or rating markup to them. Replace with permissioned real reviews or omit this section before publication. Future links: “Read reviews on Google” and “Write a review,” once actual profile URLs exist."
+            "markdown": "Editorial note: The on-site form uses /api/reviews and existing email delivery settings. Approved public content is maintained in src/content/reviews.ts. Never publish private email addresses. Until genuine permissioned reviews are approved, display the empty state without quotes, ratings, averages or invented reviewers."
           }
         ]
       },

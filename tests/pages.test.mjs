@@ -158,14 +158,14 @@ test("built pages have valid metadata, structured data, and preview content", ()
     }
 
     if (route === "/")
-      assert.equal(
-        (text.match(/SAMPLE — NOT A REAL CLIENT REVIEW/g) ?? []).length,
-        3,
-        "Every sample review on Home needs its visible fictional label",
+      assert.doesNotMatch(
+        text,
+        /Sample reviewer|SAMPLE — NOT A REAL CLIENT REVIEW|Illustrative reviews/i,
+        "Home must not publish fictional testimonials",
       );
   }
 
   console.log(
-    `Built-page checks passed: ${routes.length} routes, unique metadata, one H1 each, ${schemaCount} valid JSON-LD blocks, no editorial leaks, preview noindex, and three labelled sample reviews.`,
+    `Built-page checks passed: ${routes.length} routes, unique metadata, one H1 each, ${schemaCount} valid JSON-LD blocks, no editorial leaks, preview noindex, and no fictional testimonials.`,
   );
 });

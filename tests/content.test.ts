@@ -54,7 +54,11 @@ test("content drafts have valid routes, metadata, links, FAQs, and preview label
   assert.equal(getPageDraft("/missing"), undefined);
   assert.throws(() => resolveCopy("{{unknown.token}}"), /Unknown content token/);
   assert.equal(resolveCopy("{{business.name}}"), site.business.name);
-  assert.equal(site.email, "info@abeadlegalservices.ca", "Use the email printed on the client’s card");
+  assert.equal(
+    site.email,
+    "info@abeadlegalservices.ca",
+    "Use the email printed on the client’s card",
+  );
   assert.equal(site.domain, null, "Do not invent a production domain");
   assert.equal(site.consultationModel, null, "Consultation terms are not confirmed");
 
@@ -77,16 +81,13 @@ test("content drafts have valid routes, metadata, links, FAQs, and preview label
   assert.ok(home);
   assert.equal(home.faqs.length, 6);
 
-  const reviews = home.sections.find((section) => section.heading.startsWith("Reviews"));
+  const reviews = home.sections.find((section) => section.heading === "Client reviews");
 
   assert.ok(reviews);
   const reviewCopy = reviews.blocks.map((block) => block.markdown).join("\n");
 
-  assert.equal(
-    (reviewCopy.match(/SAMPLE — NOT A REAL CLIENT REVIEW/g) ?? []).length,
-    3,
-    "Keep every dummy review visibly labelled",
-  );
+  assert.doesNotMatch(reviewCopy, /Sample reviewer|SAMPLE — NOT A REAL CLIENT REVIEW/i);
+  assert.match(reviewCopy, /published only after authenticity, privacy and permission checks/);
 
   for (const page of pageDrafts.filter(
     (page) => page.route.startsWith("/practice-areas/") || page.route === "/notary-public",

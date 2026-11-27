@@ -67,7 +67,7 @@ We can keep “Call to confirm” wording until these facts are supplied. We wil
 - [ ] Official review/profile links, if available.
 - [ ] Approval of the current visual direction and any images to remain on the final site.
 
-The current testimonials are labelled fictional preview samples. They must be replaced with authorized genuine material or removed before publication. The portrait placeholder is not an approved headshot.
+The fictional homepage testimonials have been removed. Genuine reviews appear only after office approval and publication permission. The portrait placeholder is not an approved headshot.
 
 ## 6. Approve policies and intake wording
 
@@ -144,3 +144,16 @@ The client supplied the new legal name and confirmed the office address. The web
 - [ ] Confirm the Search Console property owner and grant access, or complete Google's exact TXT verification. Sitemap submission and ownership cannot be confirmed from the public website alone.
 
 Developer follow-up: disable the injected hosting badge in Netlify → Project configuration → General → Powered by Netlify badge → Off → Save. The public Netlify preview still injected the badge during this audit. Account/plan restrictions may require the account owner. Recheck the live site after deployment; no client action is needed for the code fixes.
+
+
+## Client reviews checkpoint — November 26, 2026
+
+Mahim selected on-site submission → email to the office → approval → batch publication by the maintainer. No automatic publishing or owner dashboard is included.
+
+- [ ] Confirm receipt of one real review test in Zoho, including the rating and correct publication-permission choice. Automated tests send no email.
+- [ ] Approve the review-form wording and the added privacy explanation, including who handles moderation and withdrawal requests and how long submission/permission emails are retained.
+- [ ] For each review to publish, supply the exact approved quote, rating and display name, together with confirmation that the author gave permission. Retain the actual permission record privately in the office.
+- [ ] Notify the maintainer promptly when permission is withdrawn or a published review needs correction/removal.
+- [ ] If Google reviews are also wanted, provide the exact official Business Profile review link. On-site submissions do not post to Google.
+
+Existing Resend/Zoho settings are reused. No new email account, paid widget, database or hosting upgrade is required for this version. Until genuine reviews are approved, the public section contains an invitation and an honest empty state rather than dummy quotes. Changes remain local until Mahim pushes them.

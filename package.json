@@ -14,7 +14,7 @@
     "content:sync": "node scripts/sync-content.mjs",
     "content:check": "node scripts/sync-content.mjs --check && node --experimental-strip-types --test tests/content.test.ts tests/public-content.test.ts",
     "check": "npm test && npm run typecheck && npm run lint",
-    "contact:check": "node --experimental-strip-types --test tests/contact.test.ts tests/contact-submissions.test.ts tests/contact-validation.test.ts",
+    "contact:check": "node --experimental-strip-types --test tests/contact.test.ts tests/contact-submissions.test.ts tests/contact-validation.test.ts tests/reviews.test.ts",
     "pages:check": "node --test tests/pages.test.mjs",
     "format": "prettier --write src scripts tests README.md docs",
     "test": "npm run content:check && npm run contact:check && npm run launch:test",

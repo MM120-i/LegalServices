@@ -17,6 +17,7 @@ export function SiteFooter() {
           © {new Date().getFullYear()} {site.business.shortName} Legal Services
         </p>
         <nav className="footer-legal-links" aria-label="Legal information">
+          <Link href="/#reviews">Leave a review</Link>
           <Link href="/privacy-policy">Privacy Policy</Link>
           <Link href="/disclaimer">Website Disclaimer</Link>
         </nav>

@@ -22,7 +22,7 @@ npm start
 
 - Custom ivory/forest-green homepage, shared header/footer, accessible mobile navigation, sticky phone/directions/contact actions.
 - About, practice-area overview, six service pages, Notary, Contact, policy pages, thank-you, and custom 404.
-- Labelled portrait placeholder and fictional preview testimonials; no fake review ratings or success claims.
+- Labelled portrait placeholder and genuine-review submission/moderation workflow; no fictional public testimonials or rating markup.
 - Shared content templates, native FAQs, local optimized image, lazy map, phone/directions links.
 - Consultation form and server API with validation, errors, native no-JS fallback, and Resend delivery adapter.
 - Page metadata, business/FAQ/breadcrumb JSON-LD, OG image, favicon, preview robots and sitemap rules.
@@ -155,3 +155,38 @@ Regression: build `.next-qa-launch` without email settings, then run `node --tes
 `src/lib/contact.ts` is shared by the browser and contact API. Names must be 2–100 characters and use letters/marks and common name punctuation; a surname is not required. Canadian/US phone numbers require 10 digits (optional leading 1); international numbers require + and a country code. Email is optional, but a supplied address must have valid supported syntax. Service selection and consent are required; the optional description is limited to 2,000 characters. These are format checks, not proof of identity, a working phone line, or an existing inbox.
 
 Field errors appear on blur and update when corrected. Invalid submissions are blocked before delivery; server validation also protects native submissions and direct API requests. `npm run contact:check` includes the validation cases in `tests/contact-validation.test.ts`. After building `.next-qa-launch`, run `node --test tests/contact-form-browser.test.mjs` for browser feedback, pending state and retained-input checks. Delivery is intercepted in that browser test; no email is sent.
+
+
+## Client reviews
+
+The homepage review section follows the process section and precedes FAQs. `/#reviews` is the shareable link; the compact footer includes “Leave a review”. The native “Write a review” disclosure keeps the form collapsed until requested. No extra hosting service, paid widget, account or database is required.
+
+Visitors provide a display name/initials, private email, rating (1–5), review text and confirmation of first-hand experience. Publication permission is a **separate optional checkbox, unchecked by default**. Without it, the submission is private feedback only. Every rating follows the same workflow; there is no low-rating gate or Google redirection.
+
+`POST /api/reviews` validates the request, checks origin, limits request bytes, rejects the honeypot, applies the existing baseline per-process rate limit and emails one plain-text notification to `CONTACT_TO_EMAIL` through Resend. It uses the existing `RESEND_API_KEY` and `CONTACT_FROM_EMAIL`. There is no automatic acknowledgement email. The visitor sees a clear receipt that says the review has not been published. No-JavaScript forms receive a simple confirmation page. Provider failures keep the JavaScript form filled; retries reuse an idempotency key. Delivery acceptance does not prove inbox receipt.
+
+### Office and maintainer workflow
+
+1. The office receives “Website review — pending office approval” in Zoho. That email is the moderation record; it includes the review, rating, display name, private reply address, submission reference and publication choice. Submissions are not saved to the repository, browser storage, server filesystem or a public database.
+2. Check genuine first-hand experience and privacy. Apply the same criteria to positive and negative comments. Do not publish private case information, spam or material without permission. Do not materially change the author's words without agreement. Never describe submissions as independently verified merely because they contain an email address.
+3. If permission was not granted, treat it as private feedback; ask separately before any publication. If permission was granted, retain that email and the office's written approval in office records. The reviewer can contact the office to change or withdraw permission. A withdrawal must be passed to the maintainer for prompt removal, rather than waiting for a routine batch.
+4. Send the maintainer the approved **exact text, rating and display name**. Keep private email addresses and permission evidence out of public source files.
+5. The maintainer adds a `PublishedReview` record to `src/content/reviews.ts` with a stable unique `id`, `displayName`, `rating`, `text` and `permissionToPublish: true`. Review the local preview and publish approved changes together in a batch. **No owner dashboard or automatic publishing is included in this version.** Nothing appears until a maintainer updates that catalog and the site is deployed.
+
+The public catalog starts empty. The site shows an honest invitation until actual reviews are approved; sample quotes have been removed from Home and its content source. Reviews are rendered as escaped React text. No Google logo, fabricated star average, client count, `Review` or `AggregateRating` business markup is added. On-site reviews do not automatically become Google Business Profile reviews.
+
+The anti-abuse limit is per server process, as with the existing consultation form. For sustained abuse, add host-level or durable rate protection; this implementation does not introduce new tracking or collect IPs in the review email. Review messages are processed by Resend and stored in the office inbox; the client must finalize retention/privacy handling.
+
+### Research and design rationale
+
+- [Stonegate Legal Services](https://stonegatelegalservices.ca/) puts client quotations in the homepage's content flow, separately from its contact form. We use the established homepage review placement, not a new review-heavy landing page.
+- [Shakenovsky & Associates](https://www.rslawyers.com.au/review-request/) offers an on-site testimonial form sent by email for possible later publication. This is the model selected for this implementation.
+- [Legal Defenders](https://legaldefenderspc.com/submit-a-law-firm-review-testimonial.html) separates a rating/comments submission from permission to display it. We also separate publication permission and warn against confidential details. The page was available via indexed content during research; direct retrieval was unavailable.
+- [Google's review snippet guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet) excludes self-serving LocalBusiness/Organization reviews from business review rich results. We retain the existing policy of no self-review rating schema; this feature makes no Google star-ranking promise.
+
+Research checked November 26, 2026. No competitor quotations, ratings, clients or design assets were copied.
+
+Tests: `npm run contact:check` now includes `tests/reviews.test.ts` with mocked delivery. After building `.next-qa-launch`, `node --test tests/reviews-browser.test.mjs` checks the disclosure, form, success/failure, keyboard and mobile behavior with all email POSTs intercepted. No real review or client email is sent by these checks.
+
+
+Review QA note: the existing raw-HTML footer check for unknown URLs currently fails because Next returns a 404 error shell before hydration (the title/status are correct). Review-page link and SEO checks on the known routes pass. Framework routing experiments were removed from this change; no routing behavior was changed for the review feature. Track this separately from review delivery and publication.
