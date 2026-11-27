@@ -24,7 +24,9 @@
     "qa:checks": "npm run check && node scripts/run-qa.mjs",
     "launch:check": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/launch-check.mjs",
     "launch:test": "node --experimental-strip-types --test tests/launch.test.ts",
-    "qa:mobile": "node --experimental-strip-types --test tests/mobile.test.mjs"
+    "qa:mobile": "node --experimental-strip-types --test tests/mobile.test.mjs",
+    "ci:build": "node scripts/ci.mjs build",
+    "ci:runtime": "node --experimental-strip-types scripts/ci.mjs runtime"
   },
   "dependencies": {
     "@netlify/blobs": "^11.1.12",

@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Tests, types, lint and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      RESEND_API_KEY: ""
+      CONTACT_TO_EMAIL: ""
+      CONTACT_FROM_EMAIL: ""
+      REVIEWS_STORE_NAME: ""
+      REVIEWS_LOCAL_DIRECTORY: ""
+      REVIEWS_SITE_URL: ""
+      REVIEW_MODERATION_SECRET: ""
+      NEXT_PUBLIC_GA_MEASUREMENT_ID: ""
+      GOOGLE_SITE_VERIFICATION: ""
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Check content, tests, types and lint
+        run: npm run check
+
+      - name: Build production-mode test candidate
+        run: npm run ci:build
+
+      - name: Check rendered pages and redirects
+        run: npm run ci:runtime
