@@ -67,7 +67,7 @@ export function placeholderFindings(value: string) {
 }
 
 /** Historical inbound links remain useful without creating duplicate sitemap routes. */
-export const legacyRedirects = [
+const historicalPages = [
   {
     source: "/practice-areas/small-claims-court",
     destination: "/practice-areas/small-claims-court-matters",
@@ -90,3 +90,8 @@ export const legacyRedirects = [
   },
   { source: "/commissioner-for-taking-affidavits", destination: "/notary-public", permanent: true },
 ];
+
+export const legacyRedirects = historicalPages.flatMap((rule) => {
+  const slug = rule.source.replace(/^\/practice-areas\//, "/");
+  return [slug, `/practice-areas${slug}`].map((source) => ({ ...rule, source }));
+});

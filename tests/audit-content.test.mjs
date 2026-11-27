@@ -13,6 +13,20 @@ test(
     const server = await startQaServer("launch", 3109);
 
     try {
+      assert.equal(legacyRedirects.length, 10);
+
+      for (const slug of [
+        "small-claims-court",
+        "landlord-tenant-board",
+        "human-rights",
+        "immigration-support",
+        "commissioner-for-taking-affidavits",
+      ]) {
+        for (const prefix of ["/", "/practice-areas/"]) {
+          assert.ok(legacyRedirects.some((rule) => rule.source === `${prefix}${slug}`));
+        }
+      }
+
       for (const { source, destination } of legacyRedirects) {
         const response = await fetch(`${base}${source}?ref=audit`, { redirect: "manual" });
         assert.equal(response.status, 308, source);
@@ -21,6 +35,21 @@ test(
         assert.equal(target.searchParams.get("ref"), "audit");
         assert.equal((await fetch(target)).status, 200, destination);
       }
+
+      const accessibility = await fetch(`${base}/accessibility`);
+      assert.equal(accessibility.status, 200);
+
+      const accessibilityText = parseHTML(await accessibility.text()).document.querySelector(
+        "article",
+      ).textContent;
+
+      assert.doesNotMatch(
+        accessibilityText,
+        /Preview policy|final review pending|Some details are still being confirmed/,
+      );
+
+      assert.match(accessibilityText, /Visiting the office/);
+      assert.match(accessibilityText, /Feedback/);
 
       const response = await fetch(`${base}/privacy-policy`);
       assert.equal(response.status, 200);

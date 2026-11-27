@@ -377,15 +377,6 @@ function LegalPage({ page }: { page: PageDraft }) {
       <section className="section">
         <div className="container reading-layout">
           <article className="prose page-content">
-            {page.route === "/accessibility" ? (
-              <div className="placeholder-note">
-                <strong>Preview policy — final review pending.</strong>
-                <p>
-                  Some details are still being confirmed. Please call the office with questions
-                  about privacy, access, or appointment arrangements.
-                </p>
-              </div>
-            ) : null}
             {sections.map((section, index) => (
               <section key={`${section.heading}-${index}`}>
                 {section.depth === 3 ? <h2>{section.heading}</h2> : null}
