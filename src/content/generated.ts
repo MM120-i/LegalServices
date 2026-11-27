@@ -640,7 +640,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.name}} lists traffic tickets and provincial offences among its practice areas. Contact the Scarborough office to discuss your charge and whether the practice can assist."
+            "markdown": "Bring the ticket or summons and note any response date before calling the Scarborough office. Those details help identify the charge, the court process and the help you need before choosing a response."
           }
         ]
       },
@@ -798,7 +798,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.name}} lists accident benefits claims among its practice areas. Ask about help understanding a benefit dispute and the next steps that may be available."
+            "markdown": "A benefit denial or a decision to stop payments raises different questions from an ordinary insurance form. Identify the benefit in dispute and the date of the insurer’s decision so the office can discuss the appropriate next step."
           }
         ]
       },
@@ -826,7 +826,11 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "Changes affecting policies entered into on or after July 1, 2026 make it especially important to check the actual coverage. Do not assume that a benefit included in someone else’s policy is included in yours."
+            "markdown": "For Ontario auto policies entered into on or after July 1, 2026, medical, rehabilitation and attendant care benefits remain mandatory; other accident benefits are optional. Income replacement and caregiver coverage are examples of benefits to check in your own policy. See [FSRA’s explanation of mandatory and optional accident benefits](https://www.fsrao.ca/consumers/auto-insurance/purchasing-your-policy/customize-your-liability-and-accident-benefits-coverage)."
+          },
+          {
+            "kind": "copy",
+            "markdown": "Optional does not mean automatically removed from an existing policy. FSRA explains that, on renewal, existing accident benefits continue as optional coverage unless the policyholder agrees in writing to decline or change them. Check the policy, renewal documents and coverage in force at the time of the accident. See [FSRA’s accident-benefits reform questions and answers](https://www.fsrao.ca/industry/auto-insurance/changes-statutory-accident-benefits-coverage-ontario-july-1-2026/fsra-auto-reform-accident-benefits-optionality-qa-insurers)."
           },
           {
             "kind": "copy",
@@ -956,7 +960,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.name}} lists refugee hearings and appeals among its practice areas. Contact the Scarborough office to ask about your Immigration and Refugee Board proceeding and the services available within permitted Ontario paralegal scope."
+            "markdown": "Preparation depends on the Immigration and Refugee Board division involved and whether you are awaiting a hearing or responding to a decision. Identify the proceeding and any dates in your notice, then ask the office whether it can accept the work within its permitted scope."
           }
         ]
       },
@@ -1128,7 +1132,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.name}} lists landlord and tenant matters among its practice areas. Call to discuss your situation and confirm whether the practice accepts matters for your side of the dispute."
+            "markdown": "A notice, an application and a hearing notice serve different purposes. Keep the complete document, including its form number and dates, so the office can discuss the rental issue and whether it can act for you."
           }
         ]
       },
@@ -1286,7 +1290,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.name}} lists employment and human rights matters among its practice areas. Contact the Scarborough office to discuss the issue and whether it falls within the work the practice accepts."
+            "markdown": "An unpaid-wages concern, a dismissal and a discrimination complaint may follow different procedures. Tell the office what happened, when it happened and whether another proceeding is already underway so the available scope of assistance can be discussed."
           }
         ]
       },
@@ -1444,7 +1448,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.name}} lists Small Claims Court matters among its practice areas. Contact the office to discuss making or defending a claim and the work you may need help with."
+            "markdown": "For a claim you want to bring, start with the amount in dispute and the documents supporting it. If you have been served, keep the claim and service details so the office can discuss a response and the dates that need attention."
           }
         ]
       },
@@ -1598,7 +1602,7 @@ export const pageDrafts = [
           },
           {
             "kind": "copy",
-            "markdown": "{{business.principal}} lists {{business.notaryCredential}} among his credentials. Call {{business.name}} to confirm whether the office can assist with your document and to ask about fees and appointment arrangements."
+            "markdown": "Tell the Scarborough office what the document is, where it will be used and what the receiving organization requires. Before attending, confirm the service, fees, identification and originals you need to bring."
           }
         ]
       },
@@ -1978,7 +1982,7 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "Effective date: `[CONFIRM: publication date]`"
+            "markdown": "Effective date: November 27, 2026."
           }
         ]
       },
@@ -1988,11 +1992,11 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "This policy explains how {{business.name}} handles personal information collected through this website. It does not replace any separate privacy information or terms provided when you retain the practice."
+            "markdown": "This policy explains how {{business.name}} handles personal information collected through this website. It does not replace separate privacy information or terms provided when you retain the practice."
           },
           {
             "kind": "copy",
-            "markdown": "Privacy contact: `[CONFIRM: responsible person or role]`, {{business.name}}, {{address.full}}. Call {{phone.primary}} or email `[PLACEHOLDER: real privacy contact email]`."
+            "markdown": "Privacy inquiries are handled by {{business.principal}} at {{business.name}}, {{address.full}}. Email [info@abeadlegalservices.ca](mailto:info@abeadlegalservices.ca) or call [{{phone.primary}}]({{phone.primaryHref}})."
           }
         ]
       },
@@ -2002,51 +2006,51 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "If you use the inquiry form, we collect the name, phone number, optional email address, service selection, and message you submit. Please provide only the information needed to describe your inquiry. Do not include sensitive records in the initial form."
+            "markdown": "The consultation form collects your name, phone number, service selection, acknowledgement and any optional email address or message you provide. The office uses these details to assess and respond to your inquiry. If you provide an email address, the website also sends a brief acknowledgement without repeating your message. Sending an inquiry does not create a paralegal–client relationship."
           },
           {
             "kind": "copy",
-            "markdown": "We use this information to assess and respond to the inquiry and determine whether the practice may be able to assist. Sending an inquiry does not create a paralegal–client relationship."
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: whether inquiry information is also used for conflict checks, intake records, or other specific purposes, and describe them accurately.]`"
+            "markdown": "Please provide only a brief description. Do not submit medical records, identity documents, case files or other sensitive information through the initial inquiry or review forms."
           }
         ]
       },
       {
-        "heading": "Website services and technical information",
+        "heading": "Reviews and private feedback",
         "depth": 3,
         "blocks": [
           {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: hosting, form delivery, email, spam prevention, and any analytics providers. Describe technical data collected, each purpose, recipients, and the actual cookie/consent choices.]`"
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: if Google Analytics is enabled, identify the configured measurements, retention, and available controls. If not used, remove analytics language.]`"
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: if embedded Google Maps is enabled, explain that loading or interacting with the map may transmit technical information to Google. Provide the applicable provider policy link and any implemented loading choice.]`"
+            "kind": "copy",
+            "markdown": "The review form collects a display name, private email address, rating, review text, first-hand experience confirmation and a separate publication-permission choice. Review records also contain submission and moderation timestamps, status and the version of the form used. The office receives a notification and a private management link."
           },
           {
             "kind": "copy",
-            "markdown": "Links to third-party websites, including mapping or review services, lead to services with their own privacy practices."
+            "markdown": "A review is published only after office approval and with the author's permission. The public review shows the display name, rating and text, not the email address or management link. Leaving publication permission unchecked sends private feedback only. All ratings follow the same approval process."
+          },
+          {
+            "kind": "copy",
+            "markdown": "Contact {{business.principal}} using the details above to request a correction or withdraw publication permission. Unpublishing removes the review from public display; it does not automatically delete the private submission or its email notification."
           }
         ]
       },
       {
-        "heading": "Service providers and disclosure",
+        "heading": "Website services and disclosure",
         "depth": 3,
         "blocks": [
           {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: which providers process inquiry information, what they receive, why they receive it, and where processing/storage may occur, including any processing outside Canada.]`"
+            "kind": "copy",
+            "markdown": "Netlify hosts this website and stores review submissions in private Netlify Blobs storage. Resend processes consultation and review emails for delivery. The office receives and handles these messages through Zoho Mail. These providers receive the information needed to provide their services. Website and email providers may also process technical information such as IP addresses, request details and delivery logs for operation and security."
           },
           {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: actual policy on sale, marketing use, and disclosure, including disclosures required or permitted by law. Do not publish “we never share data” when delivery providers necessarily process it.]`"
+            "kind": "copy",
+            "markdown": "Provider processing and storage may occur outside Canada, depending on the service and its configuration. This website does not promise Canadian-only storage. Provider privacy information is available from [Netlify](https://www.netlify.com/privacy/), [Resend](https://resend.com/legal/privacy-policy) and [Zoho](https://www.zoho.com/privacy.html)."
+          },
+          {
+            "kind": "copy",
+            "markdown": "The embedded Google Map loads as you approach the location section. Loading or interacting with the map can share technical information with Google. External links, including social links, take you to services with their own privacy practices. See [Google's privacy policy](https://policies.google.com/privacy)."
+          },
+          {
+            "kind": "copy",
+            "markdown": "Google Analytics 4 page-view measurement runs only when a measurement ID is configured. The website's analytics code sends the page title and path, excludes query strings and fragments from the page location, and leaves the referrer blank. It does not send inquiry or review text as analytics events. Advertising personalization and Google Signals are disabled in this code. Google may process browser, device and network information and use analytics cookies when measurement is active. Your browser settings can block or delete cookies, and browser controls can block analytics requests."
           }
         ]
       },
@@ -2055,12 +2059,16 @@ export const pageDrafts = [
         "depth": 3,
         "blocks": [
           {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: retention period or criteria for inquiries, deletion practices, access restrictions, and applicable safeguards.]`"
+            "kind": "copy",
+            "markdown": "Review submissions and notification emails are separate records. Website review records have no automatic deletion period: an expired management link does not delete a review, and unpublishing does not erase its private record. The office must handle removal from storage and the inbox separately. Provider logs and backups follow the relevant provider's retention arrangements."
           },
           {
             "kind": "copy",
-            "markdown": "No internet transmission or storage system can be guaranteed completely secure. Avoid sending sensitive information through the initial inquiry form."
+            "markdown": "Retention of office records depends on the purpose for which they were collected and any applicable legal or professional recordkeeping obligations. Contact the privacy contact above to ask about retention or deletion of a particular record; this policy does not promise a fixed deletion deadline."
+          },
+          {
+            "kind": "copy",
+            "markdown": "Review management links are private access credentials, expire after 30 days and can request a replacement sent only to the office inbox. Keep them private. No internet transmission or storage system can be guaranteed completely secure."
           }
         ]
       },
@@ -2070,11 +2078,7 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "Contact the privacy contact above to ask about your information, request access or correction, or discuss withdrawal of consent where applicable. Legal or professional obligations may affect what can be deleted or retained."
-          },
-          {
-            "kind": "placeholder",
-            "markdown": "`[CONFIRM: identity-verification process and how the practice handles requests and complaints.]`"
+            "markdown": "Contact {{business.principal}} using the details above to ask about your information, request access or correction, discuss a privacy concern, or withdraw consent where applicable. The office may need information to verify your identity and locate the relevant record. Do not send identity documents in your first message; ask how to provide anything needed securely. Legal or professional obligations may affect what can be deleted or retained."
           }
         ]
       },
@@ -2084,11 +2088,11 @@ export const pageDrafts = [
         "blocks": [
           {
             "kind": "copy",
-            "markdown": "We may revise this policy when our practices change. The effective date above identifies the current version. `[CONFIRM: how material changes requiring further notice or consent will be communicated.]`"
+            "markdown": "We may revise this policy when website practices change. The effective date at the beginning of this policy identifies the current version. Please review this page when submitting information."
           },
           {
             "kind": "editorial",
-            "markdown": "Research: Sources S13 and S14 in `08-sources.md`; final disclosures must reflect actual operations."
+            "markdown": "Research: Sources S13 and S14 in `08-sources.md`. Provider disclosures describe the implemented website; this policy does not certify legal compliance."
           }
         ]
       }

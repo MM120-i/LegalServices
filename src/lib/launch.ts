@@ -65,3 +65,28 @@ export function placeholderFindings(value: string) {
 
   return rules.filter(([, pattern]) => pattern.test(value)).map(([name]) => name);
 }
+
+/** Historical inbound links remain useful without creating duplicate sitemap routes. */
+export const legacyRedirects = [
+  {
+    source: "/practice-areas/small-claims-court",
+    destination: "/practice-areas/small-claims-court-matters",
+    permanent: true,
+  },
+  {
+    source: "/landlord-tenant-board",
+    destination: "/practice-areas/landlord-tenant-matters",
+    permanent: true,
+  },
+  {
+    source: "/human-rights",
+    destination: "/practice-areas/employment-human-rights-matters",
+    permanent: true,
+  },
+  {
+    source: "/immigration-support",
+    destination: "/practice-areas/refugee-hearings-appeals",
+    permanent: true,
+  },
+  { source: "/commissioner-for-taking-affidavits", destination: "/notary-public", permanent: true },
+];

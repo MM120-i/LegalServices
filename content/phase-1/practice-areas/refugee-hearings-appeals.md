@@ -6,7 +6,7 @@ H1: Refugee hearing and appeal paralegal services in Toronto.
 
 A refugee hearing or negative decision can bring difficult questions about evidence, preparation, and what comes next. You deserve a clear explanation of the process and an accurate understanding of who can represent you.
 
-Abead Legal Services Professional Corporation lists refugee hearings and appeals among its practice areas. Contact the Scarborough office to ask about your Immigration and Refugee Board proceeding and the services available within permitted Ontario paralegal scope.
+Preparation depends on the Immigration and Refugee Board division involved and whether you are awaiting a hearing or responding to a decision. Identify the proceeding and any dates in your notice, then ask the office whether it can accept the work within its permitted scope.
 
 ## What you can ask about
 

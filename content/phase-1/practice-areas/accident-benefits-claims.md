@@ -6,7 +6,7 @@ H1: Accident benefits claim assistance in Scarborough, Toronto.
 
 Recovering after a motor vehicle accident can involve medical appointments, insurance forms, and letters that are difficult to follow. If you are unsure what an insurer’s decision means, start by gathering the policy and the documents connected to that decision.
 
-Abead Legal Services Professional Corporation lists accident benefits claims among its practice areas. Ask about help understanding a benefit dispute and the next steps that may be available.
+A benefit denial or a decision to stop payments raises different questions from an ordinary insurance form. Identify the benefit in dispute and the date of the insurer’s decision so the office can discuss the appropriate next step.
 
 ## What you can ask about
 
@@ -22,7 +22,9 @@ Editorial note: Client to confirm each service and the types of benefits dispute
 
 Ontario’s Statutory Accident Benefits Schedule provides the framework for accident benefits. What is available in a particular case depends on the applicable rules, policy coverage, and individual circumstances.
 
-Changes affecting policies entered into on or after July 1, 2026 make it especially important to check the actual coverage. Do not assume that a benefit included in someone else’s policy is included in yours.
+For Ontario auto policies entered into on or after July 1, 2026, medical, rehabilitation and attendant care benefits remain mandatory; other accident benefits are optional. Income replacement and caregiver coverage are examples of benefits to check in your own policy. See [FSRA’s explanation of mandatory and optional accident benefits](https://www.fsrao.ca/consumers/auto-insurance/purchasing-your-policy/customize-your-liability-and-accident-benefits-coverage).
+
+Optional does not mean automatically removed from an existing policy. FSRA explains that, on renewal, existing accident benefits continue as optional coverage unless the policyholder agrees in writing to decline or change them. Check the policy, renewal documents and coverage in force at the time of the accident. See [FSRA’s accident-benefits reform questions and answers](https://www.fsrao.ca/industry/auto-insurance/changes-statutory-accident-benefits-coverage-ontario-july-1-2026/fsra-auto-reform-accident-benefits-optionality-qa-insurers).
 
 If you disagree with an insurer, the Licence Appeal Tribunal’s Automobile Accident Benefits Service handles certain disputes under this framework. Whether an application is appropriate requires review of your circumstances.
 

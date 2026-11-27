@@ -6,7 +6,7 @@ H1: Notary public and commissioning services in Scarborough.
 
 If an organization has asked you for a notarized copy, affidavit, or declaration, start with its written instructions. Different documents require different services, and the receiving organization may have specific requirements.
 
-Sharf Uddin Abead lists Notary Public among his credentials. Call Abead Legal Services Professional Corporation to confirm whether the office can assist with your document and to ask about fees and appointment arrangements.
+Tell the Scarborough office what the document is, where it will be used and what the receiving organization requires. Before attending, confirm the service, fees, identification and originals you need to bring.
 
 ## Document services to ask about
 

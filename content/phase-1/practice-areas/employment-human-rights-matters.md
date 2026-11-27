@@ -6,7 +6,7 @@ H1: Employment and human rights paralegal services in Toronto.
 
 Losing a job, dealing with unpaid wages, or experiencing possible discrimination can leave you unsure which process to use. These concerns can involve different rights, decision-makers, and time limits.
 
-Abead Legal Services Professional Corporation lists employment and human rights matters among its practice areas. Contact the Scarborough office to discuss the issue and whether it falls within the work the practice accepts.
+An unpaid-wages concern, a dismissal and a discrimination complaint may follow different procedures. Tell the office what happened, when it happened and whether another proceeding is already underway so the available scope of assistance can be discussed.
 
 ## What you can ask about
 

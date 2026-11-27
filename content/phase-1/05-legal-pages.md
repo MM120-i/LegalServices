@@ -1,6 +1,6 @@
 # Legal-page drafts
 
-Editorial status: incomplete until the practice confirms its policies and the future site’s providers and data flows are selected. These drafts are content work, not a compliance certification. Bracketed text must be resolved before publication.
+Editorial status: privacy disclosures updated November 27, 2026 for the implemented website and approved privacy contact. Accessibility notes below still require operational confirmation. These pages are not a compliance certification.
 
 ## Privacy Policy
 
@@ -8,55 +8,55 @@ Route: `/privacy-policy`
 
 H1: Privacy Policy
 
-Effective date: `[CONFIRM: publication date]`
+Effective date: November 27, 2026.
 
 ### Who this policy covers
 
-This policy explains how Abead Legal Services Professional Corporation handles personal information collected through this website. It does not replace any separate privacy information or terms provided when you retain the practice.
+This policy explains how Abead Legal Services Professional Corporation handles personal information collected through this website. It does not replace separate privacy information or terms provided when you retain the practice.
 
-Privacy contact: `[CONFIRM: responsible person or role]`, Abead Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Call 416-722-3244 or email `[PLACEHOLDER: real privacy contact email]`.
+Privacy inquiries are handled by Sharf Uddin Abead at Abead Legal Services Professional Corporation, 3205 Danforth Avenue, Scarborough, ON M1L 1B8. Email [info@abeadlegalservices.ca](mailto:info@abeadlegalservices.ca) or call [416-722-3244](tel:+14167223244).
 
 ### Information you choose to provide
 
-If you use the inquiry form, we collect the name, phone number, optional email address, service selection, and message you submit. Please provide only the information needed to describe your inquiry. Do not include sensitive records in the initial form.
+The consultation form collects your name, phone number, service selection, acknowledgement and any optional email address or message you provide. The office uses these details to assess and respond to your inquiry. If you provide an email address, the website also sends a brief acknowledgement without repeating your message. Sending an inquiry does not create a paralegal–client relationship.
 
-We use this information to assess and respond to the inquiry and determine whether the practice may be able to assist. Sending an inquiry does not create a paralegal–client relationship.
+Please provide only a brief description. Do not submit medical records, identity documents, case files or other sensitive information through the initial inquiry or review forms.
 
-`[CONFIRM: whether inquiry information is also used for conflict checks, intake records, or other specific purposes, and describe them accurately.]`
+### Reviews and private feedback
 
-### Website services and technical information
+The review form collects a display name, private email address, rating, review text, first-hand experience confirmation and a separate publication-permission choice. Review records also contain submission and moderation timestamps, status and the version of the form used. The office receives a notification and a private management link.
 
-`[CONFIRM: hosting, form delivery, email, spam prevention, and any analytics providers. Describe technical data collected, each purpose, recipients, and the actual cookie/consent choices.]`
+A review is published only after office approval and with the author's permission. The public review shows the display name, rating and text, not the email address or management link. Leaving publication permission unchecked sends private feedback only. All ratings follow the same approval process.
 
-`[CONFIRM: if Google Analytics is enabled, identify the configured measurements, retention, and available controls. If not used, remove analytics language.]`
+Contact Sharf Uddin Abead using the details above to request a correction or withdraw publication permission. Unpublishing removes the review from public display; it does not automatically delete the private submission or its email notification.
 
-`[CONFIRM: if embedded Google Maps is enabled, explain that loading or interacting with the map may transmit technical information to Google. Provide the applicable provider policy link and any implemented loading choice.]`
+### Website services and disclosure
 
-Links to third-party websites, including mapping or review services, lead to services with their own privacy practices.
+Netlify hosts this website and stores review submissions in private Netlify Blobs storage. Resend processes consultation and review emails for delivery. The office receives and handles these messages through Zoho Mail. These providers receive the information needed to provide their services. Website and email providers may also process technical information such as IP addresses, request details and delivery logs for operation and security.
 
-### Service providers and disclosure
+Provider processing and storage may occur outside Canada, depending on the service and its configuration. This website does not promise Canadian-only storage. Provider privacy information is available from [Netlify](https://www.netlify.com/privacy/), [Resend](https://resend.com/legal/privacy-policy) and [Zoho](https://www.zoho.com/privacy.html).
 
-`[CONFIRM: which providers process inquiry information, what they receive, why they receive it, and where processing/storage may occur, including any processing outside Canada.]`
+The embedded Google Map loads as you approach the location section. Loading or interacting with the map can share technical information with Google. External links, including social links, take you to services with their own privacy practices. See [Google's privacy policy](https://policies.google.com/privacy).
 
-`[CONFIRM: actual policy on sale, marketing use, and disclosure, including disclosures required or permitted by law. Do not publish “we never share data” when delivery providers necessarily process it.]`
+Google Analytics 4 page-view measurement runs only when a measurement ID is configured. The website's analytics code sends the page title and path, excludes query strings and fragments from the page location, and leaves the referrer blank. It does not send inquiry or review text as analytics events. Advertising personalization and Google Signals are disabled in this code. Google may process browser, device and network information and use analytics cookies when measurement is active. Your browser settings can block or delete cookies, and browser controls can block analytics requests.
 
 ### Retention and protection
 
-`[CONFIRM: retention period or criteria for inquiries, deletion practices, access restrictions, and applicable safeguards.]`
+Review submissions and notification emails are separate records. Website review records have no automatic deletion period: an expired management link does not delete a review, and unpublishing does not erase its private record. The office must handle removal from storage and the inbox separately. Provider logs and backups follow the relevant provider's retention arrangements.
 
-No internet transmission or storage system can be guaranteed completely secure. Avoid sending sensitive information through the initial inquiry form.
+Retention of office records depends on the purpose for which they were collected and any applicable legal or professional recordkeeping obligations. Contact the privacy contact above to ask about retention or deletion of a particular record; this policy does not promise a fixed deletion deadline.
+
+Review management links are private access credentials, expire after 30 days and can request a replacement sent only to the office inbox. Keep them private. No internet transmission or storage system can be guaranteed completely secure.
 
 ### Your privacy questions and requests
 
-Contact the privacy contact above to ask about your information, request access or correction, or discuss withdrawal of consent where applicable. Legal or professional obligations may affect what can be deleted or retained.
-
-`[CONFIRM: identity-verification process and how the practice handles requests and complaints.]`
+Contact Sharf Uddin Abead using the details above to ask about your information, request access or correction, discuss a privacy concern, or withdraw consent where applicable. The office may need information to verify your identity and locate the relevant record. Do not send identity documents in your first message; ask how to provide anything needed securely. Legal or professional obligations may affect what can be deleted or retained.
 
 ### Updates
 
-We may revise this policy when our practices change. The effective date above identifies the current version. `[CONFIRM: how material changes requiring further notice or consent will be communicated.]`
+We may revise this policy when website practices change. The effective date at the beginning of this policy identifies the current version. Please review this page when submitting information.
 
-Research: Sources S13 and S14 in `08-sources.md`; final disclosures must reflect actual operations.
+Research: Sources S13 and S14 in `08-sources.md`. Provider disclosures describe the implemented website; this policy does not certify legal compliance.
 
 ## Accessibility
 

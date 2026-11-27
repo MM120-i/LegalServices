@@ -377,7 +377,7 @@ function LegalPage({ page }: { page: PageDraft }) {
       <section className="section">
         <div className="container reading-layout">
           <article className="prose page-content">
-            {page.route !== "/disclaimer" ? (
+            {page.route === "/accessibility" ? (
               <div className="placeholder-note">
                 <strong>Preview policy — final review pending.</strong>
                 <p>
@@ -394,34 +394,6 @@ function LegalPage({ page }: { page: PageDraft }) {
                 ))}
               </section>
             ))}
-            {page.route === "/privacy-policy" ? (
-              <>
-                <h2>Reviews and feedback</h2>
-                <p>
-                  Review submissions, including your email, rating and publication choice, are sent
-                  to the office through the website’s email delivery provider and stored privately
-                  in Netlify storage for review management. The office uses private email links to
-                  approve, reject or unpublish submissions. Your email is used for private follow-up
-                  and is not displayed with your review. Reviews appear publicly only after office
-                  approval and with your permission. Leaving publication permission unchecked sends
-                  private feedback only. To change or withdraw permission, contact the office.
-                  Please do not submit confidential case details or other people’s personal
-                  information.
-                </p>
-                <h2>Services used by this preview</h2>
-                <p>
-                  The contact form sends inquiries to an email delivery provider only when delivery
-                  has been configured. It does not store case files in this website. The embedded
-                  Google Map is a third-party service; loading or interacting with it can share
-                  technical information with Google.
-                </p>
-                <p>
-                  Google Analytics 4 page-view measurement runs only when configured. Marketing
-                  tracking is not enabled. Final provider details, retention periods, and the
-                  practice’s privacy contact will be added before publication.
-                </p>
-              </>
-            ) : null}
             {page.route === "/privacy-policy" ? (
               <p>
                 See also: <Link href="/disclaimer">Website Disclaimer</Link>

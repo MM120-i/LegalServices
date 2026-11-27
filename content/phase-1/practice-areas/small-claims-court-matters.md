@@ -6,7 +6,7 @@ H1: Small Claims Court paralegal services in Scarborough, Toronto.
 
 You may be owed money, disagree about a contract, or have received a claim you need to answer. Before deciding how to proceed, understand what the dispute is about, what evidence you have, and which dates need attention.
 
-Abead Legal Services Professional Corporation lists Small Claims Court matters among its practice areas. Contact the office to discuss making or defending a claim and the work you may need help with.
+For a claim you want to bring, start with the amount in dispute and the documents supporting it. If you have been served, keep the claim and service details so the office can discuss a response and the dates that need attention.
 
 ## What you can ask about
 

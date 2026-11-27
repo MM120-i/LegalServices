@@ -6,7 +6,7 @@ H1: Traffic ticket and provincial offences paralegal in Scarborough.
 
 You have received a ticket or summons, and you need to decide what to do next. Before paying or choosing a response, understand the charge, the instructions on your document, and the possible consequences.
 
-Abead Legal Services Professional Corporation lists traffic tickets and provincial offences among its practice areas. Contact the Scarborough office to discuss your charge and whether the practice can assist.
+Bring the ticket or summons and note any response date before calling the Scarborough office. Those details help identify the charge, the court process and the help you need before choosing a response.
 
 ## What you can ask about
 

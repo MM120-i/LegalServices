@@ -2,7 +2,7 @@ import { resolveCopy } from "../content/index.ts";
 import type { DraftFaq, DraftSection, PageDraft } from "../content/types.ts";
 
 const operationalLabel =
-  /^(?:CTA:|Related:|Link:|Buttons:|Editorial|Research:|Asset:|Portrait:|Office photograph:|Eyebrow:|H[1-6]:|Field labels|Directions link label:|Google listing link label:|Effective date:)/;
+  /^(?:CTA:|Related:|Link:|Buttons:|Editorial|Research:|Asset:|Portrait:|Office photograph:|Eyebrow:|H[1-6]:|Field labels|Directions link label:|Google listing link label:)/;
 
 /** Editorial instructions are intentionally never sent to the page renderer. */
 export function cleanText(value: string): string {

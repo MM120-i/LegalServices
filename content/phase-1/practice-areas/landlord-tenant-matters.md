@@ -6,7 +6,7 @@ H1: Landlord and tenant paralegal services in Scarborough.
 
 A rental dispute may put your housing, rental income, or day-to-day living conditions under pressure. Whether you received a notice or need to address a problem, first identify what the document says and which process applies.
 
-Abead Legal Services Professional Corporation lists landlord and tenant matters among its practice areas. Call to discuss your situation and confirm whether the practice accepts matters for your side of the dispute.
+A notice, an application and a hearing notice serve different purposes. Keep the complete document, including its form number and dates, so the office can discuss the rental issue and whether it can act for you.
 
 ## What you can ask about
 

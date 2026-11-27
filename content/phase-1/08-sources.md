@@ -18,7 +18,7 @@ Supports the statement that voluntary payment of an offence notice is a guilty p
 
 [FSRA: After an Accident — Understanding the Claims Process](https://www.fsrao.ca/consumers/auto-insurance/protect-yourself/after-accident-understanding-claims-process)
 
-FSRA describes accident benefits and changes for policies entered into on or after July 1, 2026. The draft directs readers to the actual policy and rules, rather than treating every benefit as universally included.
+Checked November 27, 2026: [FSRA’s coverage guide](https://www.fsrao.ca/consumers/auto-insurance/purchasing-your-policy/customize-your-liability-and-accident-benefits-coverage) identifies medical, rehabilitation and attendant care as mandatory for policies entered into on or after July 1, 2026; other benefits are optional. [FSRA’s insurer Q&A](https://www.fsrao.ca/industry/auto-insurance/changes-statutory-accident-benefits-coverage-ontario-july-1-2026/fsra-auto-reform-accident-benefits-optionality-qa-insurers), updated October 14, 2026, explains existing coverage and limits continue on renewal unless the customer agrees to changes in writing. The public page cites both and directs readers to their actual policy.
 
 ## S4 — Accident-benefits tribunal
 
